@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.kh.spring.menu.model.dao.MenuDao">
+	<select id="selectAllMenu" resultType="menu">
+		select 
+			*
+		from
+			menu
+		order by
+			id desc
+	</select>
+	
+	<select id="selectMenuByTypeAndTaste" resultType="menu">
+		select
+			*
+		from
+			menu
+		<where>
+			<if test="type != 'all'">
+				type = #{type}
+			</if>	
+			<if test="taste != 'all'">
+				and taste = #{taste}
+			</if>	
+		</where>
+		order by 
+			restaurant, id desc
+	</select>
+
+</mapper>
+
+
+
+
+
+

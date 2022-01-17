@@ -1,0 +1,35 @@
+INFO :[2022/01/14 20:59:27] ContextLoader.java:270 - Root WebApplicationContext: initialization started
+INFO :[2022/01/14 20:59:30] ContextLoader.java:306 - Root WebApplicationContext initialized in 3267 ms
+INFO :[2022/01/14 20:59:30] FrameworkServlet.java:524 - Initializing Servlet 'appServlet'
+INFO :[2022/01/14 20:59:34] FrameworkServlet.java:546 - Completed initialization in 3954 ms
+DEBUG:[2022/01/14 20:59:45] LogInterceptor.java:31 - ============================== /spring/ ===================================
+DEBUG:[2022/01/14 20:59:45] LogInterceptor.java:46 - -------------------------------------------------------------------------------
+DEBUG:[2022/01/14 20:59:45] LogInterceptor.java:47 - modelAndView = ModelAndView [view="forward:/index.jsp"; model={}]
+DEBUG:[2022/01/14 20:59:45] LogInterceptor.java:48 - -------------------------------------------------------------------------------
+DEBUG:[2022/01/14 20:59:45] LogInterceptor.java:60 - ________________________________________________________________________________
+DEBUG:[2022/01/14 20:59:45] LogInterceptor.java:31 - ============================== /spring/resources/css/style.css ===================================
+DEBUG:[2022/01/14 20:59:45] LogInterceptor.java:31 - ============================== /spring/resources/images/logo-spring.png ===================================
+DEBUG:[2022/01/14 20:59:45] LogInterceptor.java:46 - -------------------------------------------------------------------------------
+DEBUG:[2022/01/14 20:59:45] LogInterceptor.java:47 - modelAndView = null
+DEBUG:[2022/01/14 20:59:45] LogInterceptor.java:48 - -------------------------------------------------------------------------------
+DEBUG:[2022/01/14 20:59:45] LogInterceptor.java:60 - ________________________________________________________________________________
+DEBUG:[2022/01/14 20:59:45] LogInterceptor.java:46 - -------------------------------------------------------------------------------
+DEBUG:[2022/01/14 20:59:45] LogInterceptor.java:47 - modelAndView = null
+DEBUG:[2022/01/14 20:59:45] LogInterceptor.java:48 - -------------------------------------------------------------------------------
+DEBUG:[2022/01/14 20:59:45] LogInterceptor.java:60 - ________________________________________________________________________________
+DEBUG:[2022/01/14 20:59:47] LogInterceptor.java:31 - ============================== /spring/menu/menu.do ===================================
+DEBUG:[2022/01/14 20:59:47] LogInterceptor.java:46 - -------------------------------------------------------------------------------
+DEBUG:[2022/01/14 20:59:47] LogInterceptor.java:47 - modelAndView = ModelAndView [view="menu/menu"; model={}]
+DEBUG:[2022/01/14 20:59:47] LogInterceptor.java:48 - -------------------------------------------------------------------------------
+DEBUG:[2022/01/14 20:59:47] LogInterceptor.java:60 - ________________________________________________________________________________
+DEBUG:[2022/01/14 20:59:49] LogInterceptor.java:31 - ============================== /spring/menu/selectAllMenu.do ===================================
+DEBUG:[2022/01/14 20:59:49] MenuController.java:30 - location = http://localhost:10000/springboot/menus
+DEBUG:[2022/01/14 20:59:50] LogInterceptor.java:46 - -------------------------------------------------------------------------------
+DEBUG:[2022/01/14 20:59:50] LogInterceptor.java:47 - modelAndView = null
+DEBUG:[2022/01/14 20:59:50] LogInterceptor.java:48 - -------------------------------------------------------------------------------
+DEBUG:[2022/01/14 20:59:50] LogInterceptor.java:60 - ________________________________________________________________________________
+DEBUG:[2022/01/14 21:00:45] LogInterceptor.java:31 - ============================== /spring/menu/menu.do ===================================
+DEBUG:[2022/01/14 21:00:45] LogInterceptor.java:46 - -------------------------------------------------------------------------------
+DEBUG:[2022/01/14 21:00:45] LogInterceptor.java:47 - modelAndView = ModelAndView [view="menu/menu"; model={}]
+DEBUG:[2022/01/14 21:00:45] LogInterceptor.java:48 - -------------------------------------------------------------------------------
+DEBUG:[2022/01/14 21:00:46] LogInterceptor.java:60 - ________________________________________________________________________________

@@ -1,0 +1,16 @@
+package com.spring.board.member.model.dao;
+
+import org.springframework.stereotype.Repository;
+
+import com.spring.board.member.model.vo.Member;
+
+//@Repository
+public class MemberDaoImpl implements MemberDao {
+
+	@Override
+	public int insertMember(Member member) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

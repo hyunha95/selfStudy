@@ -1,0 +1,642 @@
+INFO :[2021/12/29 02:21:59] ContextLoader.java:270 - Root WebApplicationContext: initialization started
+INFO :[2021/12/29 02:22:02] ContextLoader.java:306 - Root WebApplicationContext initialized in 2202 ms
+INFO :[2021/12/29 02:22:02] FrameworkServlet.java:524 - Initializing Servlet 'appServlet'
+INFO :[2021/12/29 02:22:03] FrameworkServlet.java:546 - Completed initialization in 1536 ms
+DEBUG:[2021/12/29 02:22:18] LogInterceptor.java:33 - -------------------------------------------------------------------------------
+DEBUG:[2021/12/29 02:22:18] LogInterceptor.java:34 - modelAndView = ModelAndView [view="redirect:/"; model={}]
+DEBUG:[2021/12/29 02:22:18] LogInterceptor.java:35 - -------------------------------------------------------------------------------
+DEBUG:[2021/12/29 02:22:18] LogInterceptor.java:47 - ________________________________________________________________________________
+DEBUG:[2021/12/29 02:22:18] LogInterceptor.java:33 - -------------------------------------------------------------------------------
+DEBUG:[2021/12/29 02:22:18] LogInterceptor.java:34 - modelAndView = ModelAndView [view="forward:/index.jsp"; model={}]
+DEBUG:[2021/12/29 02:22:18] LogInterceptor.java:35 - -------------------------------------------------------------------------------
+DEBUG:[2021/12/29 02:22:19] LogInterceptor.java:47 - ________________________________________________________________________________
+DEBUG:[2021/12/29 02:22:21] LogInterceptor.java:33 - -------------------------------------------------------------------------------
+DEBUG:[2021/12/29 02:22:21] LogInterceptor.java:34 - modelAndView = ModelAndView [view="forward:/index.jsp"; model={}]
+DEBUG:[2021/12/29 02:22:21] LogInterceptor.java:35 - -------------------------------------------------------------------------------
+DEBUG:[2021/12/29 02:22:21] LogInterceptor.java:47 - ________________________________________________________________________________
+INFO :[2021/12/29 02:22:23] MemberController.java:52 - referer = http://localhost:9090/spring/
+DEBUG:[2021/12/29 02:22:23] LogInterceptor.java:33 - -------------------------------------------------------------------------------
+DEBUG:[2021/12/29 02:22:23] LogInterceptor.java:34 - modelAndView = ModelAndView [view="member/memberLogin"; model={next=http://localhost:9090/spring/, org.springframework.validation.BindingResult.next=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]
+DEBUG:[2021/12/29 02:22:23] LogInterceptor.java:35 - -------------------------------------------------------------------------------
+DEBUG:[2021/12/29 02:22:23] LogInterceptor.java:47 - ________________________________________________________________________________
+INFO :[2021/12/29 02:22:26] MemberController.java:70 - member = Member(id=honggd, password=$2a$10$MS5rvodKSZ8njxAurTBqsOlYyT8elbbe39.AhmhRf7K.gmNSWLdai, name=홍길동, gender=M, birthday=Thu Sep 09 00:00:00 KST 1999, email=honggd@naver.com, phone=01012341234, address=서울시 강동구 천호동 123-456, hobby=[운동, 등산, 독서], enrollDate=Mon Dec 27 20:45:54 KST 2021, enabled=true)
+INFO :[2021/12/29 02:22:26] MemberController.java:71 - encodedPassword = $2a$10$rUX8/bBjVnxwVSL5DrE6ou58CGWM6mzedcqaNUjJqL18lyXy6zZcq
+INFO :[2021/12/29 02:22:26] MemberController.java:81 - next = http://localhost:9090/spring/
+DEBUG:[2021/12/29 02:22:26] LogInterceptor.java:33 - -------------------------------------------------------------------------------
+DEBUG:[2021/12/29 02:22:26] LogInterceptor.java:34 - modelAndView = ModelAndView [view="redirect:http://localhost:9090/spring/"; model={}]
+DEBUG:[2021/12/29 02:22:26] LogInterceptor.java:35 - -------------------------------------------------------------------------------
+DEBUG:[2021/12/29 02:22:26] LogInterceptor.java:47 - ________________________________________________________________________________
+DEBUG:[2021/12/29 02:22:26] LogInterceptor.java:33 - -------------------------------------------------------------------------------
+DEBUG:[2021/12/29 02:22:26] LogInterceptor.java:34 - modelAndView = ModelAndView [view="forward:/index.jsp"; model={}]
+DEBUG:[2021/12/29 02:22:26] LogInterceptor.java:35 - -------------------------------------------------------------------------------
+DEBUG:[2021/12/29 02:22:26] LogInterceptor.java:47 - ________________________________________________________________________________
+INFO :[2021/12/29 12:29:23] ContextLoader.java:270 - Root WebApplicationContext: initialization started
+INFO :[2021/12/29 12:29:25] ContextLoader.java:306 - Root WebApplicationContext initialized in 2222 ms
+INFO :[2021/12/29 12:29:25] FrameworkServlet.java:524 - Initializing Servlet 'appServlet'
+INFO :[2021/12/29 12:29:26] FrameworkServlet.java:546 - Completed initialization in 1445 ms
+DEBUG:[2021/12/29 12:29:44] LogInterceptor.java:33 - -------------------------------------------------------------------------------
+DEBUG:[2021/12/29 12:29:44] LogInterceptor.java:34 - modelAndView = ModelAndView [view="forward:/index.jsp"; model={}]
+DEBUG:[2021/12/29 12:29:44] LogInterceptor.java:35 - -------------------------------------------------------------------------------
+DEBUG:[2021/12/29 12:29:44] LogInterceptor.java:47 - ________________________________________________________________________________
+DEBUG:[2021/12/29 12:29:44] LogInterceptor.java:33 - -------------------------------------------------------------------------------
+DEBUG:[2021/12/29 12:29:44] LogInterceptor.java:34 - modelAndView = null
+DEBUG:[2021/12/29 12:29:44] LogInterceptor.java:35 - -------------------------------------------------------------------------------
+DEBUG:[2021/12/29 12:29:44] LogInterceptor.java:47 - ________________________________________________________________________________
+DEBUG:[2021/12/29 12:29:44] LogInterceptor.java:33 - -------------------------------------------------------------------------------
+DEBUG:[2021/12/29 12:29:44] LogInterceptor.java:34 - modelAndView = null
+DEBUG:[2021/12/29 12:29:44] LogInterceptor.java:35 - -------------------------------------------------------------------------------
+DEBUG:[2021/12/29 12:29:44] LogInterceptor.java:47 - ________________________________________________________________________________
+INFO :[2021/12/29 12:29:54] DemoController.java:86 - /demo/devForm.do가 호출되었습니다.
+DEBUG:[2021/12/29 12:29:54] LogInterceptor.java:33 - -------------------------------------------------------------------------------
+DEBUG:[2021/12/29 12:29:54] LogInterceptor.java:34 - modelAndView = ModelAndView [view="demo/devForm"; model={}]
+DEBUG:[2021/12/29 12:29:54] LogInterceptor.java:35 - -------------------------------------------------------------------------------
+DEBUG:[2021/12/29 12:29:54] LogInterceptor.java:47 - ________________________________________________________________________________
+INFO :[2021/12/29 12:30:05] MemberController.java:52 - referer = http://localhost:9090/spring/demo/devForm.do
+DEBUG:[2021/12/29 12:30:05] LogInterceptor.java:33 - -------------------------------------------------------------------------------
+DEBUG:[2021/12/29 12:30:05] LogInterceptor.java:34 - modelAndView = ModelAndView [view="member/memberLogin"; model={next=http://localhost:9090/spring/demo/devForm.do, org.springframework.validation.BindingResult.next=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]
+DEBUG:[2021/12/29 12:30:05] LogInterceptor.java:35 - -------------------------------------------------------------------------------
+DEBUG:[2021/12/29 12:30:05] LogInterceptor.java:47 - ________________________________________________________________________________
+INFO :[2021/12/29 12:32:38] MemberController.java:52 - referer = http://localhost:9090/spring/demo/devForm.do
+DEBUG:[2021/12/29 12:32:38] LogInterceptor.java:33 - -------------------------------------------------------------------------------
+DEBUG:[2021/12/29 12:32:38] LogInterceptor.java:34 - modelAndView = ModelAndView [view="member/memberLogin"; model={next=http://localhost:9090/spring/demo/devForm.do, org.springframework.validation.BindingResult.next=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]
+DEBUG:[2021/12/29 12:32:38] LogInterceptor.java:35 - -------------------------------------------------------------------------------
+DEBUG:[2021/12/29 12:32:38] LogInterceptor.java:47 - ________________________________________________________________________________
+DEBUG:[2021/12/29 12:52:13] LogInterceptor.java:33 - -------------------------------------------------------------------------------
+DEBUG:[2021/12/29 12:52:13] LogInterceptor.java:34 - modelAndView = ModelAndView [view="forward:/index.jsp"; model={}]
+DEBUG:[2021/12/29 12:52:13] LogInterceptor.java:35 - -------------------------------------------------------------------------------
+DEBUG:[2021/12/29 12:52:13] LogInterceptor.java:47 - ________________________________________________________________________________
+INFO :[2021/12/29 16:58:37] ContextLoader.java:270 - Root WebApplicationContext: initialization started
+INFO :[2021/12/29 16:58:39] ContextLoader.java:306 - Root WebApplicationContext initialized in 2102 ms
+INFO :[2021/12/29 16:58:39] FrameworkServlet.java:524 - Initializing Servlet 'appServlet'
+INFO :[2021/12/29 16:58:41] FrameworkServlet.java:546 - Completed initialization in 1626 ms
+DEBUG:[2021/12/29 16:58:49] LogInterceptor.java:33 - -------------------------------------------------------------------------------
+DEBUG:[2021/12/29 16:58:49] LogInterceptor.java:34 - modelAndView = ModelAndView [view="forward:/index.jsp"; model={}]
+DEBUG:[2021/12/29 16:58:49] LogInterceptor.java:35 - -------------------------------------------------------------------------------
+DEBUG:[2021/12/29 16:58:50] LogInterceptor.java:47 - ________________________________________________________________________________
+DEBUG:[2021/12/29 16:58:52] LogInterceptor.java:33 - -------------------------------------------------------------------------------
+DEBUG:[2021/12/29 16:58:52] LogInterceptor.java:34 - modelAndView = ModelAndView [view="memo/memo"; model={}]
+DEBUG:[2021/12/29 16:58:52] LogInterceptor.java:35 - -------------------------------------------------------------------------------
+DEBUG:[2021/12/29 16:58:53] LogInterceptor.java:47 - ________________________________________________________________________________
+INFO :[2021/12/29 17:24:24] ContextLoader.java:270 - Root WebApplicationContext: initialization started
+INFO :[2021/12/29 17:24:26] ContextLoader.java:306 - Root WebApplicationContext initialized in 1923 ms
+INFO :[2021/12/29 17:24:26] FrameworkServlet.java:524 - Initializing Servlet 'appServlet'
+INFO :[2021/12/29 17:24:27] FrameworkServlet.java:546 - Completed initialization in 1346 ms
+INFO :[2021/12/29 17:24:43] ContextLoader.java:270 - Root WebApplicationContext: initialization started
+INFO :[2021/12/29 17:24:46] ContextLoader.java:306 - Root WebApplicationContext initialized in 2161 ms
+INFO :[2021/12/29 17:24:46] FrameworkServlet.java:524 - Initializing Servlet 'appServlet'
+INFO :[2021/12/29 17:24:47] FrameworkServlet.java:546 - Completed initialization in 1516 ms
+INFO :[2021/12/29 17:26:54] ContextLoader.java:270 - Root WebApplicationContext: initialization started
+INFO :[2021/12/29 17:26:56] ContextLoader.java:306 - Root WebApplicationContext initialized in 1993 ms
+INFO :[2021/12/29 17:26:56] FrameworkServlet.java:524 - Initializing Servlet 'appServlet'
+INFO :[2021/12/29 17:26:58] FrameworkServlet.java:546 - Completed initialization in 1391 ms
+INFO :[2021/12/29 17:27:02] MemoController.java:33 - list = [Memo(no=1, memo=안녕하세요, password=1234, regDate=Wed Dec 29 16:36:35 KST 2021), Memo(no=2, memo=파이널프로젝트 화이팅!, password=1234, regDate=Wed Dec 29 16:36:35 KST 2021), Memo(no=3, memo=여보세요~, password=1234, regDate=Wed Dec 29 16:36:35 KST 2021)]
+DEBUG:[2021/12/29 17:27:02] LogInterceptor.java:33 - -------------------------------------------------------------------------------
+DEBUG:[2021/12/29 17:27:02] LogInterceptor.java:34 - modelAndView = ModelAndView [view="memo/memo"; model={list=[Memo(no=1, memo=안녕하세요, password=1234, regDate=Wed Dec 29 16:36:35 KST 2021), Memo(no=2, memo=파이널프로젝트 화이팅!, password=1234, regDate=Wed Dec 29 16:36:35 KST 2021), Memo(no=3, memo=여보세요~, password=1234, regDate=Wed Dec 29 16:36:35 KST 2021)]}]
+DEBUG:[2021/12/29 17:27:02] LogInterceptor.java:35 - -------------------------------------------------------------------------------
+DEBUG:[2021/12/29 17:27:03] LogInterceptor.java:47 - ________________________________________________________________________________
+INFO :[2021/12/29 17:35:27] ContextLoader.java:270 - Root WebApplicationContext: initialization started
+INFO :[2021/12/29 17:35:29] ContextLoader.java:306 - Root WebApplicationContext initialized in 1921 ms
+INFO :[2021/12/29 17:35:29] FrameworkServlet.java:524 - Initializing Servlet 'appServlet'
+INFO :[2021/12/29 17:35:31] FrameworkServlet.java:546 - Completed initialization in 1341 ms
+ERROR:[2021/12/29 17:35:43] Slf4jSpyLogDelegator.java:120 - 1. PreparedStatement.execute() insert into
+			memo(no, meno, password)
+		values(seq_memo_no, '다 된거 맞냐?', '1234')
+java.sql.SQLSyntaxErrorException: ORA-00984: column not allowed here
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:628)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:562)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1145)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:726)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:291)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:492)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:148)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:1038)
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1507)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1287)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3735)
+	at oracle.jdbc.driver.OraclePreparedStatement.execute(OraclePreparedStatement.java:3933)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.execute(OraclePreparedStatementWrapper.java:1010)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at net.sf.log4jdbc.PreparedStatementSpy.execute(PreparedStatementSpy.java:418)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:46)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:198)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:185)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1427)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	at com.sun.proxy.$Proxy18.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:278)
+	at com.kh.spring.memo.model.dao.MemoDaoImpl.insertMemo(MemoDaoImpl.java:24)
+	at com.kh.spring.memo.model.service.MemoServiceImpl.insertMemo(MemoServiceImpl.java:24)
+	at com.kh.spring.memo.controller.MemoController.insertMemo(MemoController.java:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1427)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:908)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: Error : 984, Position : 49, Sql = insert into
+			memo(no, meno, password)
+		values(seq_memo_no, :1 , :2 ), OriginalSql = insert into
+			memo(no, meno, password)
+		values(seq_memo_no, ?, ?), Error Msg = ORA-00984: column not allowed here
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:632)
+	... 77 more
+ERROR:[2021/12/29 17:35:43] Slf4jSpyLogDelegator.java:139 - 1. PreparedStatement.execute() FAILED! insert into
+			memo(no, meno, password)
+		values(seq_memo_no, '다 된거 맞냐?', '1234') {FAILED after 18 msec}
+java.sql.SQLSyntaxErrorException: ORA-00984: column not allowed here
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:628)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:562)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1145)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:726)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:291)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:492)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:148)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:1038)
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1507)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1287)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3735)
+	at oracle.jdbc.driver.OraclePreparedStatement.execute(OraclePreparedStatement.java:3933)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.execute(OraclePreparedStatementWrapper.java:1010)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at net.sf.log4jdbc.PreparedStatementSpy.execute(PreparedStatementSpy.java:418)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:46)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:198)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:185)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1427)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	at com.sun.proxy.$Proxy18.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:278)
+	at com.kh.spring.memo.model.dao.MemoDaoImpl.insertMemo(MemoDaoImpl.java:24)
+	at com.kh.spring.memo.model.service.MemoServiceImpl.insertMemo(MemoServiceImpl.java:24)
+	at com.kh.spring.memo.controller.MemoController.insertMemo(MemoController.java:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1427)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:908)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: Error : 984, Position : 49, Sql = insert into
+			memo(no, meno, password)
+		values(seq_memo_no, :1 , :2 ), OriginalSql = insert into
+			memo(no, meno, password)
+		values(seq_memo_no, ?, ?), Error Msg = ORA-00984: column not allowed here
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:632)
+	... 77 more
+DEBUG:[2021/12/29 17:35:43] LogInterceptor.java:47 - ________________________________________________________________________________
+INFO :[2021/12/29 17:36:22] ContextLoader.java:270 - Root WebApplicationContext: initialization started
+INFO :[2021/12/29 17:36:24] ContextLoader.java:306 - Root WebApplicationContext initialized in 2038 ms
+INFO :[2021/12/29 17:36:24] FrameworkServlet.java:524 - Initializing Servlet 'appServlet'
+INFO :[2021/12/29 17:36:25] FrameworkServlet.java:546 - Completed initialization in 1652 ms
+INFO :[2021/12/29 17:36:29] MemoController.java:34 - list = [Memo(no=1, memo=안녕하세요, password=1234, regDate=Wed Dec 29 16:36:35 KST 2021), Memo(no=2, memo=파이널프로젝트 화이팅!, password=1234, regDate=Wed Dec 29 16:36:35 KST 2021), Memo(no=3, memo=여보세요~, password=1234, regDate=Wed Dec 29 16:36:35 KST 2021)]
+DEBUG:[2021/12/29 17:36:29] LogInterceptor.java:33 - -------------------------------------------------------------------------------
+DEBUG:[2021/12/29 17:36:29] LogInterceptor.java:34 - modelAndView = ModelAndView [view="memo/memo"; model={list=[Memo(no=1, memo=안녕하세요, password=1234, regDate=Wed Dec 29 16:36:35 KST 2021), Memo(no=2, memo=파이널프로젝트 화이팅!, password=1234, regDate=Wed Dec 29 16:36:35 KST 2021), Memo(no=3, memo=여보세요~, password=1234, regDate=Wed Dec 29 16:36:35 KST 2021)]}]
+DEBUG:[2021/12/29 17:36:29] LogInterceptor.java:35 - -------------------------------------------------------------------------------
+DEBUG:[2021/12/29 17:36:29] LogInterceptor.java:47 - ________________________________________________________________________________
+ERROR:[2021/12/29 17:36:34] Slf4jSpyLogDelegator.java:120 - 2. PreparedStatement.execute() insert into
+			memo(no, memo, password)
+		values(seq_memo_no, '다 된거 맞냐?', '1234')
+java.sql.SQLSyntaxErrorException: ORA-00984: column not allowed here
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:628)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:562)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1145)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:726)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:291)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:492)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:148)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:1038)
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1507)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1287)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3735)
+	at oracle.jdbc.driver.OraclePreparedStatement.execute(OraclePreparedStatement.java:3933)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.execute(OraclePreparedStatementWrapper.java:1010)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at net.sf.log4jdbc.PreparedStatementSpy.execute(PreparedStatementSpy.java:418)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:46)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:198)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:185)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1427)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	at com.sun.proxy.$Proxy18.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:278)
+	at com.kh.spring.memo.model.dao.MemoDaoImpl.insertMemo(MemoDaoImpl.java:24)
+	at com.kh.spring.memo.model.service.MemoServiceImpl.insertMemo(MemoServiceImpl.java:24)
+	at com.kh.spring.memo.controller.MemoController.insertMemo(MemoController.java:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1427)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:908)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: Error : 984, Position : 49, Sql = insert into
+			memo(no, memo, password)
+		values(seq_memo_no, :1 , :2 ), OriginalSql = insert into
+			memo(no, memo, password)
+		values(seq_memo_no, ?, ?), Error Msg = ORA-00984: column not allowed here
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:632)
+	... 77 more
+ERROR:[2021/12/29 17:36:34] Slf4jSpyLogDelegator.java:139 - 2. PreparedStatement.execute() FAILED! insert into
+			memo(no, memo, password)
+		values(seq_memo_no, '다 된거 맞냐?', '1234') {FAILED after 10 msec}
+java.sql.SQLSyntaxErrorException: ORA-00984: column not allowed here
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:628)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:562)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1145)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:726)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:291)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:492)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:148)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:1038)
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1507)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1287)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3735)
+	at oracle.jdbc.driver.OraclePreparedStatement.execute(OraclePreparedStatement.java:3933)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.execute(OraclePreparedStatementWrapper.java:1010)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at net.sf.log4jdbc.PreparedStatementSpy.execute(PreparedStatementSpy.java:418)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:46)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:198)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:185)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1427)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	at com.sun.proxy.$Proxy18.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:278)
+	at com.kh.spring.memo.model.dao.MemoDaoImpl.insertMemo(MemoDaoImpl.java:24)
+	at com.kh.spring.memo.model.service.MemoServiceImpl.insertMemo(MemoServiceImpl.java:24)
+	at com.kh.spring.memo.controller.MemoController.insertMemo(MemoController.java:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1427)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:908)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: Error : 984, Position : 49, Sql = insert into
+			memo(no, memo, password)
+		values(seq_memo_no, :1 , :2 ), OriginalSql = insert into
+			memo(no, memo, password)
+		values(seq_memo_no, ?, ?), Error Msg = ORA-00984: column not allowed here
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:632)
+	... 77 more
+DEBUG:[2021/12/29 17:36:34] LogInterceptor.java:47 - ________________________________________________________________________________
+INFO :[2021/12/29 17:37:48] ContextLoader.java:270 - Root WebApplicationContext: initialization started
+INFO :[2021/12/29 17:37:50] ContextLoader.java:306 - Root WebApplicationContext initialized in 2006 ms
+INFO :[2021/12/29 17:37:50] FrameworkServlet.java:524 - Initializing Servlet 'appServlet'
+INFO :[2021/12/29 17:37:51] FrameworkServlet.java:546 - Completed initialization in 1376 ms
+INFO :[2021/12/29 17:37:55] MemoController.java:34 - list = [Memo(no=1, memo=안녕하세요, password=1234, regDate=Wed Dec 29 16:36:35 KST 2021), Memo(no=2, memo=파이널프로젝트 화이팅!, password=1234, regDate=Wed Dec 29 16:36:35 KST 2021), Memo(no=3, memo=여보세요~, password=1234, regDate=Wed Dec 29 16:36:35 KST 2021)]
+DEBUG:[2021/12/29 17:37:55] LogInterceptor.java:33 - -------------------------------------------------------------------------------
+DEBUG:[2021/12/29 17:37:55] LogInterceptor.java:34 - modelAndView = ModelAndView [view="memo/memo"; model={list=[Memo(no=1, memo=안녕하세요, password=1234, regDate=Wed Dec 29 16:36:35 KST 2021), Memo(no=2, memo=파이널프로젝트 화이팅!, password=1234, regDate=Wed Dec 29 16:36:35 KST 2021), Memo(no=3, memo=여보세요~, password=1234, regDate=Wed Dec 29 16:36:35 KST 2021)]}]
+DEBUG:[2021/12/29 17:37:55] LogInterceptor.java:35 - -------------------------------------------------------------------------------
+DEBUG:[2021/12/29 17:37:55] LogInterceptor.java:47 - ________________________________________________________________________________
+DEBUG:[2021/12/29 17:37:58] LogInterceptor.java:33 - -------------------------------------------------------------------------------
+DEBUG:[2021/12/29 17:37:58] LogInterceptor.java:34 - modelAndView = ModelAndView [view="redirect:/memo/memo.do"; model={memo=Memo(no=0, memo=다 된거 맞냐?, password=1234, regDate=null), org.springframework.validation.BindingResult.memo=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]
+DEBUG:[2021/12/29 17:37:58] LogInterceptor.java:35 - -------------------------------------------------------------------------------
+DEBUG:[2021/12/29 17:37:58] LogInterceptor.java:47 - ________________________________________________________________________________
+INFO :[2021/12/29 17:37:58] MemoController.java:34 - list = [Memo(no=21, memo=다 된거 맞냐?, password=1234, regDate=Wed Dec 29 17:37:58 KST 2021), Memo(no=1, memo=안녕하세요, password=1234, regDate=Wed Dec 29 16:36:35 KST 2021), Memo(no=2, memo=파이널프로젝트 화이팅!, password=1234, regDate=Wed Dec 29 16:36:35 KST 2021), Memo(no=3, memo=여보세요~, password=1234, regDate=Wed Dec 29 16:36:35 KST 2021)]
+DEBUG:[2021/12/29 17:37:58] LogInterceptor.java:33 - -------------------------------------------------------------------------------
+DEBUG:[2021/12/29 17:37:58] LogInterceptor.java:34 - modelAndView = ModelAndView [view="memo/memo"; model={list=[Memo(no=21, memo=다 된거 맞냐?, password=1234, regDate=Wed Dec 29 17:37:58 KST 2021), Memo(no=1, memo=안녕하세요, password=1234, regDate=Wed Dec 29 16:36:35 KST 2021), Memo(no=2, memo=파이널프로젝트 화이팅!, password=1234, regDate=Wed Dec 29 16:36:35 KST 2021), Memo(no=3, memo=여보세요~, password=1234, regDate=Wed Dec 29 16:36:35 KST 2021)]}]
+DEBUG:[2021/12/29 17:37:58] LogInterceptor.java:35 - -------------------------------------------------------------------------------
+DEBUG:[2021/12/29 17:37:58] LogInterceptor.java:47 - ________________________________________________________________________________
+INFO :[2021/12/29 17:38:33] ContextLoader.java:270 - Root WebApplicationContext: initialization started
+INFO :[2021/12/29 17:38:35] ContextLoader.java:306 - Root WebApplicationContext initialized in 1997 ms
+INFO :[2021/12/29 17:38:35] FrameworkServlet.java:524 - Initializing Servlet 'appServlet'
+INFO :[2021/12/29 17:38:37] FrameworkServlet.java:546 - Completed initialization in 1485 ms
+INFO :[2021/12/29 17:38:38] MemoController.java:34 - list = [Memo(no=21, memo=다 된거 맞냐?, password=1234, regDate=Wed Dec 29 17:37:58 KST 2021), Memo(no=3, memo=여보세요~, password=1234, regDate=Wed Dec 29 16:36:35 KST 2021), Memo(no=2, memo=파이널프로젝트 화이팅!, password=1234, regDate=Wed Dec 29 16:36:35 KST 2021), Memo(no=1, memo=안녕하세요, password=1234, regDate=Wed Dec 29 16:36:35 KST 2021)]
+DEBUG:[2021/12/29 17:38:38] LogInterceptor.java:33 - -------------------------------------------------------------------------------
+DEBUG:[2021/12/29 17:38:38] LogInterceptor.java:34 - modelAndView = ModelAndView [view="memo/memo"; model={list=[Memo(no=21, memo=다 된거 맞냐?, password=1234, regDate=Wed Dec 29 17:37:58 KST 2021), Memo(no=3, memo=여보세요~, password=1234, regDate=Wed Dec 29 16:36:35 KST 2021), Memo(no=2, memo=파이널프로젝트 화이팅!, password=1234, regDate=Wed Dec 29 16:36:35 KST 2021), Memo(no=1, memo=안녕하세요, password=1234, regDate=Wed Dec 29 16:36:35 KST 2021)]}]
+DEBUG:[2021/12/29 17:38:38] LogInterceptor.java:35 - -------------------------------------------------------------------------------
+DEBUG:[2021/12/29 17:38:38] LogInterceptor.java:47 - ________________________________________________________________________________
+INFO :[2021/12/29 17:38:40] MemoController.java:34 - list = [Memo(no=21, memo=다 된거 맞냐?, password=1234, regDate=Wed Dec 29 17:37:58 KST 2021), Memo(no=3, memo=여보세요~, password=1234, regDate=Wed Dec 29 16:36:35 KST 2021), Memo(no=2, memo=파이널프로젝트 화이팅!, password=1234, regDate=Wed Dec 29 16:36:35 KST 2021), Memo(no=1, memo=안녕하세요, password=1234, regDate=Wed Dec 29 16:36:35 KST 2021)]
+DEBUG:[2021/12/29 17:38:40] LogInterceptor.java:33 - -------------------------------------------------------------------------------
+DEBUG:[2021/12/29 17:38:40] LogInterceptor.java:34 - modelAndView = ModelAndView [view="memo/memo"; model={list=[Memo(no=21, memo=다 된거 맞냐?, password=1234, regDate=Wed Dec 29 17:37:58 KST 2021), Memo(no=3, memo=여보세요~, password=1234, regDate=Wed Dec 29 16:36:35 KST 2021), Memo(no=2, memo=파이널프로젝트 화이팅!, password=1234, regDate=Wed Dec 29 16:36:35 KST 2021), Memo(no=1, memo=안녕하세요, password=1234, regDate=Wed Dec 29 16:36:35 KST 2021)]}]
+DEBUG:[2021/12/29 17:38:40] LogInterceptor.java:35 - -------------------------------------------------------------------------------
+DEBUG:[2021/12/29 17:38:40] LogInterceptor.java:47 - ________________________________________________________________________________
+DEBUG:[2021/12/29 17:38:47] LogInterceptor.java:33 - -------------------------------------------------------------------------------
+DEBUG:[2021/12/29 17:38:47] LogInterceptor.java:34 - modelAndView = ModelAndView [view="redirect:/memo/memo.do"; model={memo=Memo(no=0, memo=등록 성공?, password=1234, regDate=null), org.springframework.validation.BindingResult.memo=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]
+DEBUG:[2021/12/29 17:38:47] LogInterceptor.java:35 - -------------------------------------------------------------------------------
+DEBUG:[2021/12/29 17:38:47] LogInterceptor.java:47 - ________________________________________________________________________________
+INFO :[2021/12/29 17:38:47] MemoController.java:34 - list = [Memo(no=22, memo=등록 성공?, password=1234, regDate=Wed Dec 29 17:38:47 KST 2021), Memo(no=21, memo=다 된거 맞냐?, password=1234, regDate=Wed Dec 29 17:37:58 KST 2021), Memo(no=3, memo=여보세요~, password=1234, regDate=Wed Dec 29 16:36:35 KST 2021), Memo(no=2, memo=파이널프로젝트 화이팅!, password=1234, regDate=Wed Dec 29 16:36:35 KST 2021), Memo(no=1, memo=안녕하세요, password=1234, regDate=Wed Dec 29 16:36:35 KST 2021)]
+DEBUG:[2021/12/29 17:38:47] LogInterceptor.java:33 - -------------------------------------------------------------------------------
+DEBUG:[2021/12/29 17:38:47] LogInterceptor.java:34 - modelAndView = ModelAndView [view="memo/memo"; model={list=[Memo(no=22, memo=등록 성공?, password=1234, regDate=Wed Dec 29 17:38:47 KST 2021), Memo(no=21, memo=다 된거 맞냐?, password=1234, regDate=Wed Dec 29 17:37:58 KST 2021), Memo(no=3, memo=여보세요~, password=1234, regDate=Wed Dec 29 16:36:35 KST 2021), Memo(no=2, memo=파이널프로젝트 화이팅!, password=1234, regDate=Wed Dec 29 16:36:35 KST 2021), Memo(no=1, memo=안녕하세요, password=1234, regDate=Wed Dec 29 16:36:35 KST 2021)]}]
+DEBUG:[2021/12/29 17:38:47] LogInterceptor.java:35 - -------------------------------------------------------------------------------
+DEBUG:[2021/12/29 17:38:47] LogInterceptor.java:47 - ________________________________________________________________________________
+INFO :[2021/12/29 18:03:06] ContextLoader.java:270 - Root WebApplicationContext: initialization started
+INFO :[2021/12/29 18:03:08] ContextLoader.java:306 - Root WebApplicationContext initialized in 2180 ms
+INFO :[2021/12/29 18:03:08] FrameworkServlet.java:524 - Initializing Servlet 'appServlet'
+INFO :[2021/12/29 18:03:10] FrameworkServlet.java:546 - Completed initialization in 1595 ms
+INFO :[2021/12/29 18:03:40] ContextLoader.java:270 - Root WebApplicationContext: initialization started
+INFO :[2021/12/29 18:03:42] ContextLoader.java:306 - Root WebApplicationContext initialized in 2086 ms
+INFO :[2021/12/29 18:03:43] FrameworkServlet.java:524 - Initializing Servlet 'appServlet'
+INFO :[2021/12/29 18:03:44] FrameworkServlet.java:546 - Completed initialization in 1406 ms
+DEBUG:[2021/12/29 18:03:44] LogInterceptor.java:31 - ============================== /spring/ ===================================
+DEBUG:[2021/12/29 18:03:44] LogInterceptor.java:46 - -------------------------------------------------------------------------------
+DEBUG:[2021/12/29 18:03:44] LogInterceptor.java:47 - modelAndView = ModelAndView [view="forward:/index.jsp"; model={}]
+DEBUG:[2021/12/29 18:03:44] LogInterceptor.java:48 - -------------------------------------------------------------------------------
+DEBUG:[2021/12/29 18:03:44] LogInterceptor.java:60 - ________________________________________________________________________________
+DEBUG:[2021/12/29 18:03:49] LogInterceptor.java:31 - ============================== /spring/member/memberLogin.do ===================================
+INFO :[2021/12/29 18:03:49] MemberController.java:52 - referer = http://localhost:9090/spring/
+DEBUG:[2021/12/29 18:03:49] LogInterceptor.java:46 - -------------------------------------------------------------------------------
+DEBUG:[2021/12/29 18:03:49] LogInterceptor.java:47 - modelAndView = ModelAndView [view="member/memberLogin"; model={next=http://localhost:9090/spring/, org.springframework.validation.BindingResult.next=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]
+DEBUG:[2021/12/29 18:03:49] LogInterceptor.java:48 - -------------------------------------------------------------------------------
+DEBUG:[2021/12/29 18:03:49] LogInterceptor.java:60 - ________________________________________________________________________________
+DEBUG:[2021/12/29 18:03:57] LogInterceptor.java:31 - ============================== /spring/member/memberLogin.do ===================================
+INFO :[2021/12/29 18:03:59] MemberController.java:70 - member = Member(id=honggd, password=$2a$10$MS5rvodKSZ8njxAurTBqsOlYyT8elbbe39.AhmhRf7K.gmNSWLdai, name=홍길동, gender=M, birthday=Thu Sep 09 00:00:00 KST 1999, email=honggd@naver.com, phone=01012341234, address=서울시 강동구 천호동 123-456, hobby=[운동, 등산, 독서], enrollDate=Mon Dec 27 20:45:54 KST 2021, enabled=true)
+INFO :[2021/12/29 18:03:59] MemberController.java:71 - encodedPassword = $2a$10$TtjsWOearWpTVS6ZTb0l8.Y.cdgT1r70mGnW9OhBCVsynAVA67Uby
+INFO :[2021/12/29 18:03:59] MemberController.java:81 - next = http://localhost:9090/spring/
+DEBUG:[2021/12/29 18:03:59] LogInterceptor.java:46 - -------------------------------------------------------------------------------
+DEBUG:[2021/12/29 18:03:59] LogInterceptor.java:47 - modelAndView = ModelAndView [view="redirect:http://localhost:9090/spring/"; model={}]
+DEBUG:[2021/12/29 18:03:59] LogInterceptor.java:48 - -------------------------------------------------------------------------------
+DEBUG:[2021/12/29 18:03:59] LogInterceptor.java:60 - ________________________________________________________________________________
+DEBUG:[2021/12/29 18:03:59] LogInterceptor.java:31 - ============================== /spring/ ===================================
+DEBUG:[2021/12/29 18:03:59] LogInterceptor.java:46 - -------------------------------------------------------------------------------
+DEBUG:[2021/12/29 18:03:59] LogInterceptor.java:47 - modelAndView = ModelAndView [view="forward:/index.jsp"; model={}]
+DEBUG:[2021/12/29 18:03:59] LogInterceptor.java:48 - -------------------------------------------------------------------------------
+DEBUG:[2021/12/29 18:03:59] LogInterceptor.java:60 - ________________________________________________________________________________
+INFO :[2021/12/29 19:09:16] ContextLoader.java:270 - Root WebApplicationContext: initialization started
+INFO :[2021/12/29 19:09:18] ContextLoader.java:306 - Root WebApplicationContext initialized in 2027 ms
+INFO :[2021/12/29 19:09:18] FrameworkServlet.java:524 - Initializing Servlet 'appServlet'
+INFO :[2021/12/29 19:09:19] FrameworkServlet.java:546 - Completed initialization in 1428 ms
+DEBUG:[2021/12/29 19:19:22] LogInterceptor.java:31 - ============================== /spring/memo/memo.do ===================================
+INFO :[2021/12/29 19:19:24] MemoController.java:34 - list = [Memo(no=22, memo=등록 성공?, password=1234, regDate=Wed Dec 29 17:38:47 KST 2021), Memo(no=21, memo=다 된거 맞냐?, password=1234, regDate=Wed Dec 29 17:37:58 KST 2021), Memo(no=3, memo=여보세요~, password=1234, regDate=Wed Dec 29 16:36:35 KST 2021), Memo(no=2, memo=파이널프로젝트 화이팅!, password=1234, regDate=Wed Dec 29 16:36:35 KST 2021), Memo(no=1, memo=안녕하세요, password=1234, regDate=Wed Dec 29 16:36:35 KST 2021)]
+DEBUG:[2021/12/29 19:19:24] LogInterceptor.java:46 - -------------------------------------------------------------------------------
+DEBUG:[2021/12/29 19:19:24] LogInterceptor.java:47 - modelAndView = ModelAndView [view="memo/memo"; model={list=[Memo(no=22, memo=등록 성공?, password=1234, regDate=Wed Dec 29 17:38:47 KST 2021), Memo(no=21, memo=다 된거 맞냐?, password=1234, regDate=Wed Dec 29 17:37:58 KST 2021), Memo(no=3, memo=여보세요~, password=1234, regDate=Wed Dec 29 16:36:35 KST 2021), Memo(no=2, memo=파이널프로젝트 화이팅!, password=1234, regDate=Wed Dec 29 16:36:35 KST 2021), Memo(no=1, memo=안녕하세요, password=1234, regDate=Wed Dec 29 16:36:35 KST 2021)]}]
+DEBUG:[2021/12/29 19:19:24] LogInterceptor.java:48 - -------------------------------------------------------------------------------
+DEBUG:[2021/12/29 19:19:25] LogInterceptor.java:60 - ________________________________________________________________________________
+DEBUG:[2021/12/29 19:20:08] LogInterceptor.java:31 - ============================== /spring/memo/memo.do ===================================
+INFO :[2021/12/29 19:20:08] MemoController.java:34 - list = [Memo(no=22, memo=등록 성공?, password=1234, regDate=Wed Dec 29 17:38:47 KST 2021), Memo(no=21, memo=다 된거 맞냐?, password=1234, regDate=Wed Dec 29 17:37:58 KST 2021), Memo(no=3, memo=여보세요~, password=1234, regDate=Wed Dec 29 16:36:35 KST 2021), Memo(no=2, memo=파이널프로젝트 화이팅!, password=1234, regDate=Wed Dec 29 16:36:35 KST 2021), Memo(no=1, memo=안녕하세요, password=1234, regDate=Wed Dec 29 16:36:35 KST 2021)]
+DEBUG:[2021/12/29 19:20:08] LogInterceptor.java:46 - -------------------------------------------------------------------------------
+DEBUG:[2021/12/29 19:20:08] LogInterceptor.java:47 - modelAndView = ModelAndView [view="memo/memo"; model={list=[Memo(no=22, memo=등록 성공?, password=1234, regDate=Wed Dec 29 17:38:47 KST 2021), Memo(no=21, memo=다 된거 맞냐?, password=1234, regDate=Wed Dec 29 17:37:58 KST 2021), Memo(no=3, memo=여보세요~, password=1234, regDate=Wed Dec 29 16:36:35 KST 2021), Memo(no=2, memo=파이널프로젝트 화이팅!, password=1234, regDate=Wed Dec 29 16:36:35 KST 2021), Memo(no=1, memo=안녕하세요, password=1234, regDate=Wed Dec 29 16:36:35 KST 2021)]}]
+DEBUG:[2021/12/29 19:20:08] LogInterceptor.java:48 - -------------------------------------------------------------------------------
+DEBUG:[2021/12/29 19:20:08] LogInterceptor.java:60 - ________________________________________________________________________________
+INFO :[2021/12/29 19:26:13] ContextLoader.java:270 - Root WebApplicationContext: initialization started
+INFO :[2021/12/29 19:26:15] ContextLoader.java:306 - Root WebApplicationContext initialized in 2044 ms
+INFO :[2021/12/29 19:26:16] FrameworkServlet.java:524 - Initializing Servlet 'appServlet'
+INFO :[2021/12/29 19:26:17] FrameworkServlet.java:546 - Completed initialization in 1564 ms
+DEBUG:[2021/12/29 19:27:01] LogInterceptor.java:31 - ============================== /spring/memo/insertMemo.do ===================================
+DEBUG:[2021/12/29 19:27:01] MemoController.java:41 - memo = Memo(no=0, memo=메모메모메모, password=1234, regDate=null)
+DEBUG:[2021/12/29 19:27:02] LogInterceptor.java:46 - -------------------------------------------------------------------------------
+DEBUG:[2021/12/29 19:27:02] LogInterceptor.java:47 - modelAndView = ModelAndView [view="redirect:/memo/memo.do"; model={}]
+DEBUG:[2021/12/29 19:27:02] LogInterceptor.java:48 - -------------------------------------------------------------------------------
+DEBUG:[2021/12/29 19:27:02] LogInterceptor.java:60 - ________________________________________________________________________________
+DEBUG:[2021/12/29 19:27:02] LogInterceptor.java:31 - ============================== /spring/memo/memo.do ===================================
+DEBUG:[2021/12/29 19:27:02] LogInterceptor.java:46 - -------------------------------------------------------------------------------
+DEBUG:[2021/12/29 19:27:02] LogInterceptor.java:47 - modelAndView = ModelAndView [view="memo/memo"; model={msg=메모 등록 성공!, list=[Memo(no=41, memo=메모메모메모, password=1234, regDate=Wed Dec 29 19:27:02 KST 2021), Memo(no=22, memo=등록 성공?, password=1234, regDate=Wed Dec 29 17:38:47 KST 2021), Memo(no=21, memo=다 된거 맞냐?, password=1234, regDate=Wed Dec 29 17:37:58 KST 2021), Memo(no=3, memo=여보세요~, password=1234, regDate=Wed Dec 29 16:36:35 KST 2021), Memo(no=2, memo=파이널프로젝트 화이팅!, password=1234, regDate=Wed Dec 29 16:36:35 KST 2021), Memo(no=1, memo=안녕하세요, password=1234, regDate=Wed Dec 29 16:36:35 KST 2021)]}]
+DEBUG:[2021/12/29 19:27:02] LogInterceptor.java:48 - -------------------------------------------------------------------------------
+DEBUG:[2021/12/29 19:27:02] LogInterceptor.java:60 - ________________________________________________________________________________
+INFO :[2021/12/29 20:32:02] ContextLoader.java:270 - Root WebApplicationContext: initialization started
+INFO :[2021/12/29 20:32:04] ContextLoader.java:306 - Root WebApplicationContext initialized in 2021 ms
+INFO :[2021/12/29 20:32:05] FrameworkServlet.java:524 - Initializing Servlet 'appServlet'
+INFO :[2021/12/29 20:32:07] FrameworkServlet.java:546 - Completed initialization in 2468 ms
+DEBUG:[2021/12/29 20:32:22] LogInterceptor.java:31 - ============================== /spring/memo/memo.do ===================================
+DEBUG:[2021/12/29 20:32:22] LogAspect.java:18 - [Before] com.kh.spring.memo.controller.MemoController.memo
+DEBUG:[2021/12/29 20:32:22] LogAspect.java:18 - [Before] com.kh.spring.memo.model.service.MemoService.selectMemoList
+DEBUG:[2021/12/29 20:32:22] LogAspect.java:18 - [Before] com.kh.spring.memo.model.dao.MemoDao.selectMemoList
+DEBUG:[2021/12/29 20:32:24] LogAspect.java:24 - [after] com.kh.spring.memo.model.dao.MemoDao.selectMemoList
+DEBUG:[2021/12/29 20:32:24] LogAspect.java:24 - [after] com.kh.spring.memo.model.service.MemoService.selectMemoList
+DEBUG:[2021/12/29 20:32:24] LogAspect.java:24 - [after] com.kh.spring.memo.controller.MemoController.memo
+DEBUG:[2021/12/29 20:32:24] LogInterceptor.java:46 - -------------------------------------------------------------------------------
+DEBUG:[2021/12/29 20:32:24] LogInterceptor.java:47 - modelAndView = ModelAndView [view="memo/memo"; model={list=[Memo(no=41, memo=메모메모메모, password=1234, regDate=Wed Dec 29 19:27:02 KST 2021), Memo(no=22, memo=등록 성공?, password=1234, regDate=Wed Dec 29 17:38:47 KST 2021), Memo(no=21, memo=다 된거 맞냐?, password=1234, regDate=Wed Dec 29 17:37:58 KST 2021), Memo(no=3, memo=여보세요~, password=1234, regDate=Wed Dec 29 16:36:35 KST 2021), Memo(no=2, memo=파이널프로젝트 화이팅!, password=1234, regDate=Wed Dec 29 16:36:35 KST 2021), Memo(no=1, memo=안녕하세요, password=1234, regDate=Wed Dec 29 16:36:35 KST 2021)]}]
+DEBUG:[2021/12/29 20:32:24] LogInterceptor.java:48 - -------------------------------------------------------------------------------
+DEBUG:[2021/12/29 20:32:24] LogInterceptor.java:60 - ________________________________________________________________________________
+INFO :[2021/12/29 20:41:23] ContextLoader.java:270 - Root WebApplicationContext: initialization started
+INFO :[2021/12/29 20:41:25] ContextLoader.java:306 - Root WebApplicationContext initialized in 1995 ms
+INFO :[2021/12/29 20:41:25] FrameworkServlet.java:524 - Initializing Servlet 'appServlet'
+INFO :[2021/12/29 20:41:28] FrameworkServlet.java:546 - Completed initialization in 2385 ms
+DEBUG:[2021/12/29 20:41:43] LogInterceptor.java:31 - ============================== /spring/memo/memo.do ===================================
+DEBUG:[2021/12/29 20:41:43] LogAspect.java:18 - [Before] com.kh.spring.memo.controller.MemoController.memo
+DEBUG:[2021/12/29 20:41:43] MemoController.java:34 - 컨트롤러 주업무
+DEBUG:[2021/12/29 20:41:43] LogAspect.java:18 - [Before] com.kh.spring.memo.model.service.MemoService.selectMemoList
+DEBUG:[2021/12/29 20:41:43] MemoServiceImpl.java:22 - 서비스 주업무
+DEBUG:[2021/12/29 20:41:43] LogAspect.java:18 - [Before] com.kh.spring.memo.model.dao.MemoDao.selectMemoList
+DEBUG:[2021/12/29 20:41:43] MemoDaoImpl.java:22 - 서비스 주업무
+DEBUG:[2021/12/29 20:41:44] LogAspect.java:24 - [After] com.kh.spring.memo.model.dao.MemoDao.selectMemoList
+DEBUG:[2021/12/29 20:41:44] LogAspect.java:24 - [After] com.kh.spring.memo.model.service.MemoService.selectMemoList
+DEBUG:[2021/12/29 20:41:44] LogAspect.java:24 - [After] com.kh.spring.memo.controller.MemoController.memo
+DEBUG:[2021/12/29 20:41:44] LogInterceptor.java:46 - -------------------------------------------------------------------------------
+DEBUG:[2021/12/29 20:41:44] LogInterceptor.java:47 - modelAndView = ModelAndView [view="memo/memo"; model={list=[Memo(no=41, memo=메모메모메모, password=1234, regDate=Wed Dec 29 19:27:02 KST 2021), Memo(no=22, memo=등록 성공?, password=1234, regDate=Wed Dec 29 17:38:47 KST 2021), Memo(no=21, memo=다 된거 맞냐?, password=1234, regDate=Wed Dec 29 17:37:58 KST 2021), Memo(no=3, memo=여보세요~, password=1234, regDate=Wed Dec 29 16:36:35 KST 2021), Memo(no=2, memo=파이널프로젝트 화이팅!, password=1234, regDate=Wed Dec 29 16:36:35 KST 2021), Memo(no=1, memo=안녕하세요, password=1234, regDate=Wed Dec 29 16:36:35 KST 2021)]}]
+DEBUG:[2021/12/29 20:41:44] LogInterceptor.java:48 - -------------------------------------------------------------------------------
+DEBUG:[2021/12/29 20:41:44] LogInterceptor.java:60 - ________________________________________________________________________________
+INFO :[2021/12/29 21:03:31] ContextLoader.java:270 - Root WebApplicationContext: initialization started
+INFO :[2021/12/29 21:03:33] ContextLoader.java:306 - Root WebApplicationContext initialized in 1927 ms
+INFO :[2021/12/29 21:03:33] FrameworkServlet.java:524 - Initializing Servlet 'appServlet'
+INFO :[2021/12/29 21:03:35] FrameworkServlet.java:546 - Completed initialization in 2176 ms
+DEBUG:[2021/12/29 21:03:44] LogInterceptor.java:31 - ============================== /spring/memo/memo.do ===================================
+DEBUG:[2021/12/29 21:03:44] MemoController.java:34 - 컨트롤러 주업무
+DEBUG:[2021/12/29 21:03:44] MemoServiceImpl.java:22 - 서비스 주업무
+DEBUG:[2021/12/29 21:03:44] MemoDaoImpl.java:22 - Dao 주업무
+DEBUG:[2021/12/29 21:03:45] LogInterceptor.java:46 - -------------------------------------------------------------------------------
+DEBUG:[2021/12/29 21:03:45] LogInterceptor.java:47 - modelAndView = ModelAndView [view="memo/memo"; model={list=[Memo(no=41, memo=메모메모메모, password=1234, regDate=Wed Dec 29 19:27:02 KST 2021), Memo(no=22, memo=등록 성공?, password=1234, regDate=Wed Dec 29 17:38:47 KST 2021), Memo(no=21, memo=다 된거 맞냐?, password=1234, regDate=Wed Dec 29 17:37:58 KST 2021), Memo(no=3, memo=여보세요~, password=1234, regDate=Wed Dec 29 16:36:35 KST 2021), Memo(no=2, memo=파이널프로젝트 화이팅!, password=1234, regDate=Wed Dec 29 16:36:35 KST 2021), Memo(no=1, memo=안녕하세요, password=1234, regDate=Wed Dec 29 16:36:35 KST 2021)]}]
+DEBUG:[2021/12/29 21:03:45] LogInterceptor.java:48 - -------------------------------------------------------------------------------
+DEBUG:[2021/12/29 21:03:45] LogInterceptor.java:60 - ________________________________________________________________________________
+INFO :[2021/12/29 21:05:02] ContextLoader.java:270 - Root WebApplicationContext: initialization started
+INFO :[2021/12/29 21:05:04] ContextLoader.java:306 - Root WebApplicationContext initialized in 2002 ms
+INFO :[2021/12/29 21:05:04] FrameworkServlet.java:524 - Initializing Servlet 'appServlet'
+INFO :[2021/12/29 21:05:07] FrameworkServlet.java:546 - Completed initialization in 2174 ms
+DEBUG:[2021/12/29 21:05:11] LogInterceptor.java:31 - ============================== /spring/memo/memo.do ===================================
+DEBUG:[2021/12/29 21:05:12] MemoController.java:34 - 컨트롤러 주업무
+DEBUG:[2021/12/29 21:05:12] LogAspect.java:18 - [Before] com.kh.spring.memo.model.service.MemoService.selectMemoList
+DEBUG:[2021/12/29 21:05:12] MemoServiceImpl.java:22 - 서비스 주업무
+DEBUG:[2021/12/29 21:05:12] MemoDaoImpl.java:22 - Dao 주업무
+DEBUG:[2021/12/29 21:05:13] LogAspect.java:24 - [After] com.kh.spring.memo.model.service.MemoService.selectMemoList
+DEBUG:[2021/12/29 21:05:13] LogInterceptor.java:46 - -------------------------------------------------------------------------------
+DEBUG:[2021/12/29 21:05:13] LogInterceptor.java:47 - modelAndView = ModelAndView [view="memo/memo"; model={list=[Memo(no=41, memo=메모메모메모, password=1234, regDate=Wed Dec 29 19:27:02 KST 2021), Memo(no=22, memo=등록 성공?, password=1234, regDate=Wed Dec 29 17:38:47 KST 2021), Memo(no=21, memo=다 된거 맞냐?, password=1234, regDate=Wed Dec 29 17:37:58 KST 2021), Memo(no=3, memo=여보세요~, password=1234, regDate=Wed Dec 29 16:36:35 KST 2021), Memo(no=2, memo=파이널프로젝트 화이팅!, password=1234, regDate=Wed Dec 29 16:36:35 KST 2021), Memo(no=1, memo=안녕하세요, password=1234, regDate=Wed Dec 29 16:36:35 KST 2021)]}]
+DEBUG:[2021/12/29 21:05:13] LogInterceptor.java:48 - -------------------------------------------------------------------------------
+DEBUG:[2021/12/29 21:05:13] LogInterceptor.java:60 - ________________________________________________________________________________
+INFO :[2021/12/29 21:30:49] ContextLoader.java:270 - Root WebApplicationContext: initialization started
+INFO :[2021/12/29 21:30:51] ContextLoader.java:306 - Root WebApplicationContext initialized in 2197 ms
+INFO :[2021/12/29 21:30:51] FrameworkServlet.java:524 - Initializing Servlet 'appServlet'
+INFO :[2021/12/29 21:30:54] FrameworkServlet.java:546 - Completed initialization in 2234 ms

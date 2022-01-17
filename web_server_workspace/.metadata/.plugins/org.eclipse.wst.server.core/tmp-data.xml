@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<temp-directories>
+  <temp-directory age="0" key="hello_maven_server" path="tmp3" recycle="false"/>
+  <temp-directory age="0" key="practice" path="tmp2" recycle="false"/>
+  <temp-directory age="0" key="hello_web_server" path="tmp0" recycle="false"/>
+  <temp-directory age="0" key="hello_mvc_server" path="tmp1" recycle="false"/>
+  <temp-directory age="0" key="action_server" path="tmp7" recycle="false"/>
+  <temp-directory age="0" key="practice_mybatis_server" path="tmp5" recycle="false"/>
+  <temp-directory age="0" key="hello_mybatis_server" path="tmp6" recycle="false"/>
+  <temp-directory age="0" key="ajax_server" path="tmp4" recycle="false"/>
+</temp-directories>

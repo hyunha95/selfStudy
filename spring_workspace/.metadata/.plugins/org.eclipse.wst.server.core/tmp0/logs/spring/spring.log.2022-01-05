@@ -1,0 +1,49 @@
+INFO :[2022/01/05 03:09:19] ContextLoader.java:270 - Root WebApplicationContext: initialization started
+INFO :[2022/01/05 03:09:22] ContextLoader.java:306 - Root WebApplicationContext initialized in 2415 ms
+INFO :[2022/01/05 03:09:22] FrameworkServlet.java:524 - Initializing Servlet 'appServlet'
+INFO :[2022/01/05 03:09:25] FrameworkServlet.java:546 - Completed initialization in 3061 ms
+DEBUG:[2022/01/05 03:09:25] LogInterceptor.java:31 - ============================== /spring/board/boardDetail.do ===================================
+DEBUG:[2022/01/05 03:09:25] LogInterceptor.java:60 - ________________________________________________________________________________
+DEBUG:[2022/01/05 03:09:25] LogInterceptor.java:31 - ============================== /spring/member/memberLogin.do ===================================
+INFO :[2022/01/05 03:09:25] MemberController.java:139 - referer = http://localhost:9090/spring/board/boardList.do
+DEBUG:[2022/01/05 03:09:25] LogInterceptor.java:46 - -------------------------------------------------------------------------------
+DEBUG:[2022/01/05 03:09:25] LogInterceptor.java:47 - modelAndView = ModelAndView [view="member/memberLogin"; model={next=http://localhost:9090/spring/board/boardDetail.do?no=81, org.springframework.validation.BindingResult.next=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]
+DEBUG:[2022/01/05 03:09:25] LogInterceptor.java:48 - -------------------------------------------------------------------------------
+DEBUG:[2022/01/05 03:09:25] LogInterceptor.java:60 - ________________________________________________________________________________
+DEBUG:[2022/01/05 03:09:27] LogInterceptor.java:31 - ============================== /spring/member/memberLogin.do ===================================
+INFO :[2022/01/05 03:09:28] MemberController.java:157 - member = Member(id=honggd, password=$2a$10$MS5rvodKSZ8njxAurTBqsOlYyT8elbbe39.AhmhRf7K.gmNSWLdai, name=홍길동, gender=M, birthday=Thu Sep 09 00:00:00 KST 1999, email=honggd@naver.com, phone=01012341234, address=서울시 강동구 천호동 123-456, hobby=[운동, 등산, 독서], enrollDate=Mon Dec 27 20:45:54 KST 2021, enabled=true)
+INFO :[2022/01/05 03:09:28] MemberController.java:158 - encodedPassword = $2a$10$41bZlKzaf2RavjnW7okC0OMQjoxLF3GucP9oxKilnKtiO5v6gEZgG
+INFO :[2022/01/05 03:09:28] MemberController.java:168 - next = http://localhost:9090/spring/board/boardDetail.do?no=81
+DEBUG:[2022/01/05 03:09:28] LogInterceptor.java:46 - -------------------------------------------------------------------------------
+DEBUG:[2022/01/05 03:09:28] LogInterceptor.java:47 - modelAndView = ModelAndView [view="redirect:http://localhost:9090/spring/board/boardDetail.do?no=81"; model={}]
+DEBUG:[2022/01/05 03:09:28] LogInterceptor.java:48 - -------------------------------------------------------------------------------
+DEBUG:[2022/01/05 03:09:28] LogInterceptor.java:60 - ________________________________________________________________________________
+DEBUG:[2022/01/05 03:09:28] LogInterceptor.java:31 - ============================== /spring/board/boardDetail.do ===================================
+DEBUG:[2022/01/05 03:09:28] BoardController.java:103 - board = Board(super=BoardEntity(no=81, title=첨부파일 2개, memberId=honggd, content=ㅁㄴㅇㄹ, regDate=Fri Dec 31 18:08:27 KST 2021, readCount=0), attachCount=0, attachments=[Attachment(no=21, boardNo=0, originalFilename=hyunta.jpg, renamedFilename=20211231_180827945_165.jpg, uploadDate=Fri Dec 31 18:08:27 KST 2021, downloadCount=0, status=true), Attachment(no=22, boardNo=0, originalFilename=flower1.PNG, renamedFilename=20211231_180827947_192.PNG, uploadDate=Fri Dec 31 18:08:27 KST 2021, downloadCount=0, status=true)], member=Member(id=honggd, password=$2a$10$MS5rvodKSZ8njxAurTBqsOlYyT8elbbe39.AhmhRf7K.gmNSWLdai, name=홍길동, gender=M, birthday=Thu Sep 09 00:00:00 KST 1999, email=honggd@naver.com, phone=01012341234, address=서울시 강동구 천호동 123-456, hobby=[운동, 등산, 독서], enrollDate=Mon Dec 27 20:45:54 KST 2021, enabled=true))
+DEBUG:[2022/01/05 03:09:28] LogInterceptor.java:46 - -------------------------------------------------------------------------------
+DEBUG:[2022/01/05 03:09:28] LogInterceptor.java:47 - modelAndView = ModelAndView [view="board/boardDetail"; model={board=Board(super=BoardEntity(no=81, title=첨부파일 2개, memberId=honggd, content=ㅁㄴㅇㄹ, regDate=Fri Dec 31 18:08:27 KST 2021, readCount=0), attachCount=0, attachments=[Attachment(no=21, boardNo=0, originalFilename=hyunta.jpg, renamedFilename=20211231_180827945_165.jpg, uploadDate=Fri Dec 31 18:08:27 KST 2021, downloadCount=0, status=true), Attachment(no=22, boardNo=0, originalFilename=flower1.PNG, renamedFilename=20211231_180827947_192.PNG, uploadDate=Fri Dec 31 18:08:27 KST 2021, downloadCount=0, status=true)], member=Member(id=honggd, password=$2a$10$MS5rvodKSZ8njxAurTBqsOlYyT8elbbe39.AhmhRf7K.gmNSWLdai, name=홍길동, gender=M, birthday=Thu Sep 09 00:00:00 KST 1999, email=honggd@naver.com, phone=01012341234, address=서울시 강동구 천호동 123-456, hobby=[운동, 등산, 독서], enrollDate=Mon Dec 27 20:45:54 KST 2021, enabled=true)), org.springframework.validation.BindingResult.board=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]
+DEBUG:[2022/01/05 03:09:28] LogInterceptor.java:48 - -------------------------------------------------------------------------------
+DEBUG:[2022/01/05 03:09:28] LogInterceptor.java:60 - ________________________________________________________________________________
+DEBUG:[2022/01/05 03:09:32] LogInterceptor.java:31 - ============================== /spring/board/fileDownload.do ===================================
+DEBUG:[2022/01/05 03:09:32] BoardController.java:82 - attach = Attachment(no=21, boardNo=81, originalFilename=hyunta.jpg, renamedFilename=20211231_180827945_165.jpg, uploadDate=Fri Dec 31 18:08:27 KST 2021, downloadCount=0, status=true)
+DEBUG:[2022/01/05 03:09:32] BoardController.java:87 - downFile = C:\Workspaces\spring_workspace\hello-spring\src\main\webapp\resources\upload\board\20211231_180827945_165.jpg
+DEBUG:[2022/01/05 03:09:32] BoardController.java:89 - location = file:C:\Workspaces\spring_workspace\hello-spring\src\main\webapp\resources\upload\board\20211231_180827945_165.jpg
+DEBUG:[2022/01/05 03:09:32] LogInterceptor.java:46 - -------------------------------------------------------------------------------
+DEBUG:[2022/01/05 03:09:32] LogInterceptor.java:47 - modelAndView = null
+DEBUG:[2022/01/05 03:09:32] LogInterceptor.java:48 - -------------------------------------------------------------------------------
+DEBUG:[2022/01/05 03:09:32] LogInterceptor.java:60 - ________________________________________________________________________________
+DEBUG:[2022/01/05 03:33:41] LogInterceptor.java:31 - ============================== /spring/member/memberLogout.do ===================================
+DEBUG:[2022/01/05 03:33:41] LogInterceptor.java:46 - -------------------------------------------------------------------------------
+DEBUG:[2022/01/05 03:33:41] LogInterceptor.java:47 - modelAndView = ModelAndView [view="redirect:/"; model={}]
+DEBUG:[2022/01/05 03:33:41] LogInterceptor.java:48 - -------------------------------------------------------------------------------
+DEBUG:[2022/01/05 03:33:41] LogInterceptor.java:60 - ________________________________________________________________________________
+DEBUG:[2022/01/05 03:33:41] LogInterceptor.java:31 - ============================== /spring/ ===================================
+DEBUG:[2022/01/05 03:33:41] LogInterceptor.java:46 - -------------------------------------------------------------------------------
+DEBUG:[2022/01/05 03:33:41] LogInterceptor.java:47 - modelAndView = ModelAndView [view="forward:/index.jsp"; model={}]
+DEBUG:[2022/01/05 03:33:41] LogInterceptor.java:48 - -------------------------------------------------------------------------------
+DEBUG:[2022/01/05 03:33:41] LogInterceptor.java:60 - ________________________________________________________________________________
+DEBUG:[2022/01/05 03:33:42] LogInterceptor.java:31 - ============================== /spring/member/memberEnroll.do ===================================
+DEBUG:[2022/01/05 03:33:42] LogInterceptor.java:46 - -------------------------------------------------------------------------------
+DEBUG:[2022/01/05 03:33:42] LogInterceptor.java:47 - modelAndView = ModelAndView [view="member/memberEnroll"; model={}]
+DEBUG:[2022/01/05 03:33:42] LogInterceptor.java:48 - -------------------------------------------------------------------------------
+DEBUG:[2022/01/05 03:33:43] LogInterceptor.java:60 - ________________________________________________________________________________

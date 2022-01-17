@@ -1,0 +1,11 @@
+127.0.0.1 - - [02/Jan/2022:01:19:21 +0900] "GET / HTTP/1.1" 404 807
+0:0:0:0:0:0:0:1 - - [02/Jan/2022:01:19:29 +0900] "GET /practice/ HTTP/1.1" 200 3620
+0:0:0:0:0:0:0:1 - - [02/Jan/2022:01:19:29 +0900] "GET /practice/resources/images/logo-spring.png HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [02/Jan/2022:01:19:29 +0900] "GET /practice/resources/css/style.css HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [02/Jan/2022:01:19:30 +0900] "GET /practice/ HTTP/1.1" 200 3620
+0:0:0:0:0:0:0:1 - - [02/Jan/2022:01:19:31 +0900] "GET /practice/member/memberLogin.do HTTP/1.1" 200 2430
+0:0:0:0:0:0:0:1 - - [02/Jan/2022:01:19:38 +0900] "POST /practice/member/memberLogin.do HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [02/Jan/2022:01:19:38 +0900] "GET /practice/ HTTP/1.1" 200 3504
+0:0:0:0:0:0:0:1 - - [02/Jan/2022:01:19:44 +0900] "GET /practice/member/memberLogout.do HTTP/1.1" 404 721
+0:0:0:0:0:0:0:1 - - [02/Jan/2022:01:20:02 +0900] "GET /practice/board/boardList.do HTTP/1.1" 404 721
+0:0:0:0:0:0:0:1 - - [02/Jan/2022:01:20:05 +0900] "GET /practice/demo/devForm.do HTTP/1.1" 404 834

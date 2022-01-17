@@ -1,0 +1,13 @@
+127.0.0.1 - - [20/Dec/2021:18:13:12 +0900] "GET / HTTP/1.1" 404 807
+0:0:0:0:0:0:0:1 - - [20/Dec/2021:18:13:20 +0900] "GET /5t1b/ HTTP/1.1" 404 816
+0:0:0:0:0:0:0:1 - - [20/Dec/2021:18:13:23 +0900] "GET /mybatis/ HTTP/1.1" 200 242
+0:0:0:0:0:0:0:1 - - [20/Dec/2021:18:13:25 +0900] "GET /favicon.ico HTTP/1.1" 404 818
+0:0:0:0:0:0:0:1 - - [20/Dec/2021:18:13:28 +0900] "GET /mybatis/student/selectOne.do HTTP/1.1" 200 3809
+0:0:0:0:0:0:0:1 - - [20/Dec/2021:18:13:34 +0900] "GET /mybatis/student/selectOneStudent.do?no=41 HTTP/1.1" 200 4
+0:0:0:0:0:0:0:1 - - [20/Dec/2021:18:13:35 +0900] "GET /mybatis/student/selectOneStudent.do?no=42 HTTP/1.1" 200 88
+0:0:0:0:0:0:0:1 - - [20/Dec/2021:18:14:40 +0900] "POST /mybatis/student/studentUpdate.do HTTP/1.1" 200 41
+0:0:0:0:0:0:0:1 - - [20/Dec/2021:18:14:45 +0900] "GET /mybatis/student/selectOneStudent.do?no=42 HTTP/1.1" 200 85
+0:0:0:0:0:0:0:1 - - [20/Dec/2021:18:14:46 +0900] "GET /mybatis/student/selectOneStudent.do?no=42 HTTP/1.1" 200 85
+0:0:0:0:0:0:0:1 - - [20/Dec/2021:18:14:51 +0900] "POST /mybatis/student/studentDelete.do HTTP/1.1" 200 31
+0:0:0:0:0:0:0:1 - - [20/Dec/2021:18:14:53 +0900] "GET /mybatis/student/selectOneStudent.do?no=42 HTTP/1.1" 200 4
+0:0:0:0:0:0:0:1 - - [20/Dec/2021:18:14:55 +0900] "GET /mybatis/student/selectOneStudent.do?no=42 HTTP/1.1" 200 4

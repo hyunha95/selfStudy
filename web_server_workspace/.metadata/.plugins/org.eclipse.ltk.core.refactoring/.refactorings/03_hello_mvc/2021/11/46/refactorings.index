@@ -1,0 +1,24 @@
+1636366722159	Delete element
+1636370001392	Rename resource 'memberList.배포.jsp'
+1636393324398	Copy folder
+1636432126420	Rename resource 'updatePassword.배포.jsp'
+1636433307304	Rename type 'UupdatePasswordServlet'
+1636531644406	Rename resource 'boardList.배포.jsp'
+1636533207992	Rename type 'Board'
+1636540024592	Rename local variable 'result'
+1636542925793	Rename method 'selectAllBoardList'
+1636542939282	Rename method 'selectAllBoardList'
+1636543077388	Rename local variable 'filepath'
+1636543805139	Rename method 'selectTotalBoardListCount'
+1636543814104	Rename method 'selectTotalBoardListCount'
+1636613653607	Rename resource 'boardForm.배포.jsp'
+1636618048999	Rename method 'boardEnroll'
+1636618054632	Rename method 'boardEnroll'
+1636621536788	Rename field 'renameFilename'
+1636621711595	Rename local variable 'attach1'
+1636621878127	Rename local variable 'attach1'
+1636622044822	Rename local variable 'list'
+1636632320832	Rename resource 'boardView.배포.jsp'
+1636825946279	Delete element
+1636826174057	Delete element
+1636826186913	Rename resource 'boardView.배포.jsp'

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean class="com.kh.spring.tv.XiaomiRemocon" id="xiaomiRemocon"/>
+	<bean class="com.kh.spring.tv.BalmudaRemocon" id="balmudaRemocon"/>
+	
+	<bean id="lgTv" class="com.kh.spring.tv.LgTv">
+		<!-- <constructor-arg ref="xiaomiRemocon"></constructor-arg> -->
+		<!-- setter의 이름을 찾는다. -->
+		<property name="remocon" ref="xiaomiRemocon"></property>
+	</bean>
+	<bean id="samsungTv" class="com.kh.spring.tv.SamsungTv" lazy-init="true">
+		<!-- <constructor-arg ref="balmudaRemocon"></constructor-arg> -->
+		<property name="remocon" ref="balmudaRemocon"></property>
+	</bean>
+</beans>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Selector</title>
+
+</head>
+<body>
+    <h1>Pseudo selector</h1>
+    <div class="wrapper">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas architecto, illum iusto animi praesentium error aliquam ea ad eligendi totam rem? Optio ex incidunt explicabo dolorum nesciunt ab, culpa aut?</p>
+        <p>Quod quidem non illo id fuga voluptates nulla sint eos soluta quam provident saepe distinctio sit amet expedita, magni veritatis odit ipsa. Blanditiis asperiores, fuga ipsum cumque aperiam officia soluta!</p>
+        <p>Quia quasi, in nisi consectetur, fugit qui deserunt quas distinctio quam quod atque magnam mollitia quidem repellendus officiis! Aspernatur aliquam itaque, commodi delectus minima error deserunt sapiente! Veritatis, quae deserunt.</p>
+        <p>Consequatur ipsam tempora quisquam provident quidem quaerat aliquid magnam sint doloribus suscipit veritatis ipsa magni non animi error fugiat, laborum quas quam, quos omnis? Nesciunt odio aut delectus labore ut?</p>
+        <p>Minima aperiam quis facilis ut natus id quasi mollitia veniam error, repellat facere ipsam atque repellendus quaerat nam quo tempore aspernatur nemo, maiores modi quisquam fuga a aut soluta? Cumque?</p>
+    </div>
+    <style>
+    /* 
+    :pseudo-class (상태)
+    ::pseudo-element (요소 추가)
+    */
+    .wrapper p::first-letter {
+        font-size: 2em;
+    }
+    /* .wrapper p::first-line {
+        font-size : 1.5em;
+        text-decoration : underline;
+    } */
+    /* .wrapper p::before {
+        content: '😁';
+    } */
+    .wrapper p::after {
+        content:'👀';
+    }
+    .wrapper p::selection {
+        background-color: blueviolet;
+        color: #fff;
+    }
+    /* 부모컨테이너에서 카운터변수선언 및 초기화 */
+    .wrapper {
+        counter-reset: num;
+    }
+    .wrapper P::before {
+        content: counter(num) ". ";
+        counter-increment: num;
+
+    }
+    </style>
+</body>
+</html>

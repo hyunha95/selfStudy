@@ -1,0 +1,695 @@
+MemberMenu 내가 작성한 코드
+package com.kh.member.view;
+
+import java.sql.Date;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.GregorianCalendar;
+import java.util.List;
+import java.util.Scanner;
+
+import com.kh.member.controller.MemberController;
+import com.kh.member.model.vo.Member;
+
+public class MemberMenu {
+	
+	private Scanner sc = new Scanner(System.in);
+	private MemberController memberController = new MemberController();
+	
+	public void mainMenu() {
+		String menu = "***** 회원 관리 프로그램 *****\n"
+				+ "1. 회원 전체 조회\n"
+				+ "2. 회원 아이디 조회\n"
+				+ "3. 이름 검색\n"
+				+ "4. 회원 가입\n"
+				+ "5. 회원 정보 변경\n"
+				+ "6. 회원 탈퇴\n"
+				+ "0. 프로그램 종료\n"
+				+ "*******************************\n"
+				+ "선택 : ";
+		
+		while(true) {
+			System.out.println();
+			System.out.print(menu);
+			String choice = sc.next();
+			List<Member> list = null;
+			Member member = null;
+			int result = 0;
+			String id = null;
+			// 3번
+			String name = null;
+			
+			switch(choice) {
+			case "1" : 
+				list = memberController.selectAllMember();
+				printMemberList(list);
+				break;
+			case "2" : 
+				id = ("조회할 아이디 : ");
+				member = memberController.selectOneMember(id);
+				printMember(member);
+				break;
+			case "3" : 
+				//@실습문제 : 이름 검색 
+				//이름 일부만 입력해도 조회가 가능해야 한다.
+				name = inputMemberName();
+				list = memberController.selectMemberByName(name);
+				printMemberList(list);
+				break;
+			case "4" : 
+				//@실습문제 : 회원가입 시 아이디 중복이 되지 않도록 미리 검사할 것.
+				member = inputMember(memberController.selectAllMember());
+				System.out.println("member@menu = " + member);
+				result = memberController.insertMember(member); // 모든 dml요청은 정수값이 반환
+				System.out.println(result > 0 ? "> 회원 가입 성공!" : ">회원 가입 실패!");
+				break;
+			case "5" : 
+				//@실습문제 : 수정
+				//별도의 수정 서브메뉴를 통해 이름, 이메일,주소를 변경
+				//단 수정메뉴 진입시 변경할 아이디 조회후 조회된 회원이 있을 경우만 수정메뉴를 출력
+				//수정메뉴 출력 전에 해당회원의 정보를 1회 출력
+				updateMenu(checkId(memberController.selectAllMember()));
+				break;
+			case "6" : 
+				id = inputId("삭제할 아이디 입력 : ");
+				result = memberController.deleteMember(id);
+				System.out.println(result > 0 ? "> 회원 삭제 성공!" : ">회원 삭제 실패!");
+				break;
+			case "0" : return;
+			default: System.out.println("> 잘못 입력하셨습니다.");
+			}
+		}
+	}
+    /**
+	 * 검색할 이름 입력
+	 * @return
+	 */
+	private String inputMemberName() {
+		System.out.print("조회할 회원 이름 입력 : ");
+		return sc.next();
+	}
+
+
+	private String checkId(List<Member> list) {
+		String p_id;
+		String id = "";
+		outer:
+		while(true) {
+			System.out.print("변경할 아이디 입력 : ");
+			id = sc.next();
+			// 4. 아이디 중복검사
+			for(int i = 0; i < list.size(); i++) {
+				if(id.equals(list.get(i).getId())) {
+					System.out.println("변경가능한 아이디입니다.");
+					p_id = list.get(i).getId();
+					//수정메뉴 출력 전에 해당회원의 정보를 1회 출력
+					System.out.println("-----------------------------------------");
+					System.out.println("아이디 : " + list.get(i).getId());
+					System.out.println("이름 : " + list.get(i).getName());
+					System.out.println("성별 : " + list.get(i).getGender());
+					System.out.println("생일 : " + list.get(i).getBirthday());
+					System.out.println("이메일 : " + list.get(i).getEmail());
+					System.out.println("주소 : " + list.get(i).getAddress());
+					SimpleDateFormat sdf = new SimpleDateFormat("yy-MM-dd HH:mm");
+					System.out.println("등록일 : " + sdf.format(list.get(i).getRegDate()));
+					System.out.println("-----------------------------------------");
+					break outer;
+				}
+			}
+			System.out.println("존재하지 않는 아이디. 다시입력!");
+		}
+		return p_id;
+	}
+
+
+	private void updateMenu(String p_id) {
+		String menu = "------- 회원정보 수정메뉴 -------\n"
+					+ "1. 이름 변경\n"
+					+ "2. 이메일 변경\n"
+					+ "3. 주소 변경\n"
+					+ "0. 메인메뉴 돌아가기\n"
+					+ "-----------------------------\n"
+					+ "선택 : ";
+		while(true) {
+			System.out.println();
+			System.out.print(menu);
+			String choice = sc.next();
+			int result = 0;
+			
+			switch(choice) {
+			case "1" : 
+				String inputName = changeNameSelection();
+				result = memberController.changeName(p_id, inputName);
+				System.out.println(result > 0 ? "> 이름 변경 성공!" : "> 이름 변경 실패!");
+				break;
+			case "2" : 
+				String inputEmail = changeEmailSelection();
+				result = memberController.changeEmail(p_id, inputEmail);
+				System.out.println(result > 0 ? "> 이메일 변경 성공!" : "> 이메일 변경 실패!");
+				break;
+			case "3" : break;
+			case "0" : 
+				return;
+			default: System.out.println("> 잘못 입력하셨습니다.");
+			
+			}
+		}
+	}
+
+	private String changeEmailSelection() {
+		System.out.println("바꿀 이메일 입력 : ");
+		String inputEmail = sc.next();
+		return inputEmail;
+	}
+
+
+	private String changeNameSelection() {
+		System.out.print("바꿀 이름 입력 : ");
+		String inputName = sc.next();
+		return inputName;
+	}
+
+
+	/**
+	 * 회원객체 하나를 출력하는 메소드
+	 */
+	private void printMember(Member member) {
+		if(member == null) {
+			System.out.println("> 해당하는 회원이 없습니다.");
+		}
+		else {
+			System.out.println("-----------------------------------------");
+			System.out.println("아이디 : " + member.getId());
+			System.out.println("이름 : " + member.getName());
+			System.out.println("성별 : " + member.getGender());
+			System.out.println("생일 : " + member.getBirthday());
+			System.out.println("이메일 : " + member.getEmail());
+			System.out.println("주소 : " + member.getAddress());
+			SimpleDateFormat sdf = new SimpleDateFormat("yy-MM-dd HH:mm");
+			System.out.println("등록일 : " + sdf.format(member.getRegDate()));
+			System.out.println("-----------------------------------------");
+		}
+	}
+
+	/**
+	 * 복수개의 Member객체를 출력하는 메소드
+	 */
+	private void printMemberList(List<Member> list) {
+		if(list.isEmpty()) {
+			System.out.println("> 조회된 행이 없습니다.");
+		}
+		else {
+			System.out.println("--------------------------------------------------------------------------------------------");
+			System.out.println("id	name	gender   birthday		email		address				reg_date");
+			System.out.println("--------------------------------------------------------------------------------------------");
+			for(Member member : list) {
+				System.out.println(member);
+			}
+			System.out.println("--------------------------------------------------------------------------------------------");
+		}
+	}
+
+	/**
+	 * 사용자 입력한 아이디를 전달
+	 */
+	private String inputId(String msg) {
+		System.out.print(msg);
+		return sc.next();
+	}
+
+	/**
+	 * 사용자 입력 정보를 Member객체로 반환
+	 */
+	private Member inputMember(List<Member> list) {
+		System.out.println("> 새 회원정보를 입력하세요.");
+		String id = "";
+		outer:
+		while(true) {
+			System.out.print("아이디 : ");
+			id = sc.next();
+			// 4. 아이디 중복검사
+			for(int i = 0; i < list.size(); i++) {
+				if(id.equals(list.get(i).getId())) {
+					System.out.println("중복된 아이디입니다. 다시입력하세요.");
+					continue outer;
+				}
+			}
+			break;
+		}
+		
+		System.out.print("이름 : ");
+		String name = sc.next();
+		
+		System.out.print("성별(M/F) : ");
+		String gender = String.valueOf(sc.next().toUpperCase().charAt(0));
+
+		// 사용자 입력값 -> java.util.Calendar ->java.sql.Date
+		System.out.print("생년월일(예: 19900909) : ");
+		String temp = sc.next();
+		int year = Integer.valueOf(temp.substring(0, 4));
+		int month = Integer.valueOf(temp.substring(4, 6)) - 1; // 0 ~ 11월
+		int date = Integer.valueOf(temp.substring(6, 8));
+		Calendar cal = new GregorianCalendar(year, month, date);
+		Date birthday = new Date(cal.getTimeInMillis());
+		
+		System.out.print("이메일 : ");
+		String email = sc.next();
+		
+		sc.nextLine(); // 버퍼에 남은 개행문자 제거!
+		System.out.print("주소 : ");
+		String address = sc.nextLine();
+		
+		return new Member(id, name, gender, birthday, email, address, null);
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+MemberDao 내가 작성한 코드
+package com.kh.member.model.dao;
+
+import java.sql.Connection;
+import java.sql.Date;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Timestamp;
+import java.util.ArrayList;
+import java.util.List;
+
+import com.kh.member.model.vo.Member;
+
+/**
+ * Data Access Object Class
+ * Database에 접근, 쿼리실행 및 결과를 담당하는 클래스
+ * 
+ * jdbc api 사용
+ * - 구현체 ojdbc8.jar 필수
+ * 
+ * DML : Connection, PreparedStatement 사용, 결과값 int
+ * DQL : Connection, PreparedStatement 사용, 겱과값 ResultSet
+ * 
+ */
+public class MemberDao {
+	
+	private String driverClass = "oracle.jdbc.OracleDriver";
+	private String url = "jdbc:oracle:thin:@localhost:1521:xe"; // 접속프로토콜@url:port:sid
+	private String user = "student";
+	private String password = "student";
+
+	public int insertMember(Member member) {
+		Connection conn = null;
+		PreparedStatement pstmt = null;
+		String sql = "insert into member values(?, ?, ?, ?, ?, ?, default)";
+		int result = 0;
+		
+		try {
+			// 1. driver class 등록(프로그램 실행시 1회)
+			// 클래스객체등록
+			Class.forName(driverClass);
+			
+			// 2. Connection객체 생성(url, user, password) & auto-commit설정
+			conn = DriverManager.getConnection(url, user, password);
+			conn.setAutoCommit(false);
+			
+			// 3. PreparedStatement객체 생성(미완성쿼리 & 값대입)
+			pstmt = conn.prepareStatement(sql);
+			pstmt.setString(1, member.getId());
+			pstmt.setString(2, member.getName());
+			pstmt.setString(3, member.getGender());
+			pstmt.setDate(4, member.getBirthday());
+			pstmt.setString(5, member.getEmail());
+			pstmt.setString(6, member.getAddress());
+			
+			// 4. 쿼리실행(DML : executeUpdate) & 결과값(int) 처리
+			result = pstmt.executeUpdate(); // insert, update, delete할때 이거 사용
+			
+			// 5. 트랜잭션 처리
+			if(result > 0) conn.commit();
+			else conn.rollback(); // 제대로 저장되지 않으면 전으로 돌리기
+			
+		} catch (ClassNotFoundException | SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} finally {
+			// 6. 자원반납 : 생성 역순 반납
+			try {
+				pstmt.close();
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+			try {
+				conn.close();
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+		}
+		return result;
+	}
+
+	public int deleteMember(String id) {
+		Connection conn = null;
+		PreparedStatement pstmt = null;
+		String sql = "delete from member where id = ?";
+		int result = 0;
+		
+		try {
+			// 1. driver class 등록(프로그램 실행시 1회)
+			Class.forName(driverClass);
+			
+			// 2. Connection객체 생성(url, user, password) & auto-commit설정
+			conn = DriverManager.getConnection(url, user, password);
+			conn.setAutoCommit(false);
+			
+			// 3. PreparedStatement객체 생성(미완성쿼리 & 값대입)
+			pstmt = conn.prepareStatement(sql);
+			pstmt.setString(1, id);
+			
+			// 4. 쿼리실행(DML : executeUpdate) & 결과값(int) 처리
+			result = pstmt.executeUpdate();
+			
+			// 5. 트랜잭션 처리
+			if(result > 0) conn.commit();
+			else conn.rollback(); 
+			
+		} catch (ClassNotFoundException | SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} finally {
+			// 6. 자원반납 : 생성 역순 반납
+			try {
+				pstmt.close();
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+			try {
+				conn.close();
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+		}
+		return result;
+	}
+
+	public List<Member> selectAllMember() {
+		Connection conn = null;
+		PreparedStatement pstmt = null;
+		ResultSet rset = null;
+		String sql = "select * from member order by reg_date";
+		List<Member> list = new ArrayList<>(); // 결과집합 0행인 경우도 null이 아닌 빈 list객체가 반환
+
+		try {
+			// 1. driverClass등록 : 클래스객체 생성
+			Class.forName(driverClass);
+			
+			// 2. Connection객체생성
+			conn = DriverManager.getConnection(url, user, password);
+			// 3. PreparedStatement객체 생성(미완성 쿼리전달 & 값대입)
+			pstmt = conn.prepareStatement(sql);
+			
+			// 4. 쿼리실행 (ResultSet객체 반환)
+			// 결과집합이 0행이어도 rset이 null이 아니다.
+			rset = pstmt.executeQuery();
+			
+			// 5. ResultSet객체 -> List<Member> 변환
+			// rset에 한행씩 접근해서 Member객체변환 -> list추가
+			while(rset.next()) {
+				// 한행(record) -> Member객체
+				String id = rset.getString("id"); // 현재행의 id컬럼(문자형)
+				String name = rset.getString("name");
+				String gender = rset.getString("gender");
+				Date birthday = rset.getDate("birthday");
+				String email = rset.getString("email");
+				String address = rset.getString("address");
+				Timestamp regDate = rset.getTimestamp("reg_Date");
+				Member member = new Member(id, name, gender, birthday, email, address, regDate);
+				list.add(member);
+			}
+			
+		} catch (ClassNotFoundException | SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} finally {
+			// 6. 자원반납 (생성역순 : ResultSet -> PreparedStatement -> Connection)
+			try {
+				rset.close();
+			} catch (Exception e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			try {
+				pstmt.close();
+			} catch (Exception e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			try {
+				conn.close();
+			} catch (Exception e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+//		System.out.println("list@dao = " + list);
+		return list;
+	}
+
+	public Member selectOneMember(String id) {
+		String sql = "select * from member where id = ?";
+		Connection conn = null;
+		PreparedStatement pstmt = null;
+		ResultSet rset = null;
+		Member member = null; // 조회된 결과가 없으면 null을 리턴
+		
+		try {
+			// 1. driverClass등록
+			Class.forName(driverClass);
+			// 2. Connection객체생성
+			conn = DriverManager.getConnection(url, user, password);
+			// 3. PreparedStatement 객체 생성
+			pstmt = conn.prepareStatement(sql);
+			pstmt.setString(1, id);
+			// 4. 쿼리실행
+			rset = pstmt.executeQuery();
+			// 5. ResultSet -> Member변환
+			if(rset.next()) {
+				member = new Member();
+				member.setId(rset.getString(1));
+				member.setName(rset.getString(2));
+				member.setGender(rset.getString(3));
+				member.setBirthday(rset.getDate(4));
+				member.setEmail(rset.getString(5));
+				member.setAddress(rset.getString(6));
+				member.setRegDate(rset.getTimestamp(7));
+			}
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} finally {
+			// 6. 자원반납
+			try {
+				rset.close();
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+			try {
+				pstmt.close();
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+			try {
+				conn.close();
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		}
+		return member;
+	}
+
+	public List<Member> selectMemberByName(String name) {
+		Connection conn = null;
+		PreparedStatement pstmt = null;
+		ResultSet rset = null;
+		
+		List<Member> list = new ArrayList<>();
+		String sql = "select * from member where name like ?"; // '%길동%'
+		
+		
+		try {
+			// 1. jdbc driver클래스 등록
+			Class.forName(driverClass);
+			
+			// 2. Connection객체 생성
+			conn = DriverManager.getConnection(url, user, password);
+			
+			// 3. PreparedStatement객체 생성
+			pstmt = conn.prepareStatement(sql);
+			pstmt.setString(1, "%" + name + "%");
+			
+			// 4. 쿼리 실행, 결과 처리(ResultSet)
+			// 0행이상의 결과행을 가지고 있다.
+			rset = pstmt.executeQuery();
+			
+			// 5. ResultSet -> 자바객체(List<Member>)
+			// rset.next():boolean 다음행 존재여부. 포인터를 다음행으로 이동
+			while(rset.next()) {
+				// 한행이 vo객체 하나와 매칭된다.
+				String id = rset.getString("id");
+				name = rset.getString("name");
+				String gender = rset.getString("gender");
+				Date birthday = rset.getDate("birthday");
+				String email = rset.getString("email");
+				String address = rset.getString("address");
+				Timestamp regDate = rset.getTimestamp("reg_date");
+				Member member = new Member(id, name, gender, birthday, email, address, regDate);
+				
+				//list에 vo추가
+				list.add(member);
+			}
+
+		} catch (ClassNotFoundException | SQLException e) {
+			e.printStackTrace();
+		} finally {
+			// 6. 자원반납 : 생성 역순
+			try {
+				rset.close();
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+			try {
+				pstmt.close();
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+			try {
+				conn.close();
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+			
+		}
+		
+		return list;
+	}
+
+	public int changeName(String p_id, String inputName) {
+		Connection conn = null;
+		PreparedStatement pstmt = null;
+		String sql = "update member set name = ? where id = ?";
+		int result = 0;
+		
+		//1. driver class 등록(프로그램 실행시 1회)
+		//클래스객체등록
+		try {
+			Class.forName(driverClass);
+			//2. Connection 객체 생성
+			conn = DriverManager.getConnection(url, user, password);
+			conn.setAutoCommit(false);
+			//3. PreparedStatement 객체 생성
+			pstmt = conn.prepareStatement(sql);
+			pstmt.setString(1, inputName);
+			pstmt.setString(2, p_id);
+			//4. 쿼리실행
+			result = pstmt.executeUpdate();
+			//5. 트랜잭션 처리
+			if(result > 0) conn.commit();
+			else conn.rollback();
+			
+		} catch (ClassNotFoundException | SQLException e) {
+			e.printStackTrace();
+		}
+		//6. 자원반납
+		try {
+			pstmt.close();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		try {
+			conn.close();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return result;
+	}
+
+	public int changeEmail(String p_id, String inputEmail) {
+		Connection conn = null;
+		PreparedStatement pstmt = null;
+		String sql = "update member set email = ? where id = ?";
+		int result = 0;
+		
+		try {
+			// 1. driver class 등록(프로그램 실행시 1회)
+			// 클래스객체등록
+			Class.forName(driverClass);
+			
+			// 2. Connection객체 생성(url, user, password) & auto-commit설정
+			conn = DriverManager.getConnection(url, user, password);
+			conn.setAutoCommit(false);
+			
+			// 3. PreparedStatement객체 생성(미완성쿼리 & 값대입)
+			pstmt = conn.prepareStatement(sql);
+			pstmt.setString(1, inputEmail);
+			pstmt.setString(2, p_id);
+
+			
+			// 4. 쿼리실행(DML : executeUpdate) & 결과값(int) 처리
+			result = pstmt.executeUpdate(); // insert, update, delete할때 이거 사용
+			
+			// 5. 트랜잭션 처리
+			if(result > 0) conn.commit();
+			else conn.rollback(); // 제대로 저장되지 않으면 전으로 돌리기
+			
+		} catch (ClassNotFoundException | SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} finally {
+			// 6. 자원반납 : 생성 역순 반납
+			try {
+				pstmt.close();
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+			try {
+				conn.close();
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+		}
+		return result;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

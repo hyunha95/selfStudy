@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>jquery selector</title>
+	<script src="../04_jquery/js/jquery-3.6.0.js"></script>
+</head>
+<body>
+	<h1 id="myh1" class="odd">jquery selector</h1>
+    <h2 id="myh2" class="even">jquery selector</h2>
+    <h3 id="myh3" class="odd">jquery selector</h3>
+    <h4 id="myh4" class="even">jquery selector</h4>
+    <h5 id="myh5" class="odd">jquery selector</h5>
+    <h6 id="myh6" class="even">jquery selector</h6>
+
+	<div class="wrapper">
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut natus error, deserunt animi ipsam cum sit laudantium voluptatum cupiditate corporis aliquid maiores vel quidem enim eligendi, illo eos cumque inventore.</p>
+		<p>Ex illo maxime voluptas qui exercitationem accusamus asperiores, laboriosam ut molestiae distinctio cum aliquam voluptate, deserunt vitae excepturi! Voluptas adipisci eum odit quod laudantium voluptates reprehenderit, accusantium asperiores delectus odio.</p>
+		<p>Officiis amet voluptatum quisquam quaerat sapiente eligendi necessitatibus! Labore excepturi accusamus quasi? Optio, praesentium. Ea aperiam quidem exercitationem, ut repellendus voluptatum suscipit architecto quod alias fugit obcaecati quibusdam perferendis possimus.</p>
+		<p>Dolore maxime, perspiciatis ducimus quisquam veniam dolores dicta harum suscipit voluptatibus numquam voluptatum fuga optio rem nemo facere, inventore commodi. Id porro vel qui atque sit fugit, blanditiis soluta consequatur.</p>
+	</div>
+	<script>
+	(() => {
+		$(".wrapper p:first").css("color", "blue");
+		$(".wrapper p:last").css("color", "lightsalmon");
+		$(".wrapper p:even").css("font-size", "1.5em");
+		$(".wrapper p:odd").css("font-size", ".5em");
+	})();
+
+	(() => {
+        // 아이디선택자
+        $("#myh1").css("color", "hotpink");
+        console.log($("#myh1")); // #myh1 태그객체를 감싼 jquery객체
+
+        // 클래스선택자
+        $(".even").css("background-color", "yellow");
+        // console.log($(".even"));
+    })();
+	
+
+	// 태그선택자 //
+	$("h5").css({
+		"text-decoration" : "underline",
+		"color" : "springgreen"
+	})
+	</script>
+
+	<fieldset>
+		<legend>checkbox 처리</legend>
+		<input type="checkbox" name="hobby" id="game" value="game">
+		<label for="game">게임</label>
+		<input type="checkbox" name="hobby" id="movie" value="movie">
+		<label for="movie">영화</label>
+		<input type="checkbox" name="hobby" id="music" value="music">
+		<label for="music">음악</label>
+
+		<input type="checkbox" id="hobbyCheckAll">
+		<label for="hobbyCheckAll">전체선택/하제</label>
+
+		<br>
+		<input type="button" value="확인" id="btn-hobby">
+		<input type="button" value="선택값 확인" id="btn-hobby-checked">
+	</fieldset>
+	<script>
+	// document.querySelector("#btn-hobby").onclick = () => {};
+    $("#btn-hobby").click((e) => {
+        const $hobbies = $("[name=hobby]"); //jquery 객체와 js객체를 구분하기 위해서 $를 붙인다.
+        console.log($hobbies);
+
+		$hobbies.each(())
+
+    });
+	</script>
+</body>
+</html>

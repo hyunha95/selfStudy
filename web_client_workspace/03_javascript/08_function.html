@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function</title>
+</head>
+<body>
+    <h1>function</h1>
+    <script>
+    test1();
+    /**
+     * 함수선언식 Function Declaration
+     * hoisting 처리.
+     * 
+     * hoisting이란? 함수선언식, var키워드를 통해 선언된 변수를 미리 끌어올려 처리하는 것.
+     */
+    function test1(){
+        console.log("test1!!");
+    }
+
+    //test2(); // Uncaught ReferenceError: Cannot access 'test2' before initialization
+    /**
+     * 함수표현식 Function Expression
+     * hoisting 처리 안됨.
+     * 
+     * 함수를 값 처럼 변수 test2에 대입!
+     * 우항 : 익명함수(이름을 정해줘도 상관없지만 무시된다.)
+     */
+    const test2 = function foo(){
+        console.log("test2!!");
+    };
+    test2();
+    // foo(); // Uncaught ReferenceError: foo is not defined
+
+    /**
+     * 화살표 함수 Arrow Function
+     * 
+     * - 매개변수가 하나만 존재하는 경우, 소괄호 생략할 수 있다.
+     * - 함수몸통에 return절만 존재하는 경우, {return} 생략가능하다.
+     * - 함수몸통에 실행코드가 한줄만 존재하는 경우, {} 생략가능하다.
+     * 
+     * - 화살표함수는 무조건 익명함수이다.
+     * - 화살표함수는 생성자함수로 사용할 수 없다.
+     * - 화살표함수의 this는 부모scope의 this를 가져와 사용한다.
+     * - 이벤트핸들러로 사용한 화살표함수의 this는 이벤트 발생객체가 아니다.
+     */
+    const test3 = a => {
+        console.log("test3!!");
+    };
+    test3();
+
+    const test4 = (a,b) => a + b;
+    console.log(test4(2,3));
+
+    const test5 = (c) => console.log(c);
+    test5('Hello world');
+    
+    /**
+     * 즉시 실행 함수 IIFE
+     * Immediately Invoked Function Expression
+     * - 선언과 호출을 동시에 처리
+     * - 변수를 지역scope처리해서 값을 보호할 수 있다.
+     * 
+     * (function(){})();
+     * (function(){}());
+     */
+    (() => {
+       let k = 77; // 외부접근할 수 없는 지역변수
+       console.log(k);
+    })();
+
+
+    (function(){
+        console.log(123);
+    })();
+    (function(){
+        console.log(456);
+    }());
+    // 화살표함수를 쓸때는 소괄호를 밖에 써야한다.
+    ((n) => {
+        console.log(n);
+    })(78);
+    ((a) => console.log(a))(90);
+    </script>
+
+    <h2>매개변수 | 매개인자</h2>
+    <button onclick="test6(10,20,30); test6(); test6(this);">실행</button>
+    <script>
+    /**
+     * 매개변수 parameter 함수선언부에 정의된 변수(공간)
+     * 매개인자 argument 함수호출부에서 전달하는 값
+     * 
+     * 매개인자와 매개변수 개수가 일치하지 않아도 된다.
+     * - 해당하는 매개변수가 없다면, 매개인자는 버려진다.
+     * - 해당하는 매개인자의 없다면, undefined 처리된다.
+     */
+    function test6(a){
+        console.log(a);
+
+         // arguments : 전달된 매개인자를 유사배열의 형태로 제공하는 숨은 참조변수
+         console.log(arguments);
+    }
+    </script>
+
+    <h2>리턴</h2>
+    <button onclick="console.log('리턴 : ', test7());">실행</button>
+    <script>
+    /**
+     * 리턴 : 함수실행 후 호출부로 돌아오는 행위
+     * 리턴값 : 리턴시 하나의 값을 가지고 리턴할 수 있다.
+     *      - 리턴값을 명시하지 않으면 undefined를 리턴.
+     */
+    const test7 = () => {
+        return 3;
+    };
+    </script>
+
+    <h2>함수 고급</h2>
+    <button onclick="test8(sayHello);">매개인수로 함수 전달</button>
+    <button onclick="test9()(111);">함수 리턴하기</button>
+    <button onclick="test10();">함수 생성</button>
+    <script>
+    const test10 = () => {
+        //안녕, 철수
+        //잘가, 영희
+        const hello = makeFunction("안녕");
+        const bye = makeFunction("잘가");
+
+        hello('철수'); // 안녕, 철수
+        bye("영희"); // 잘가, 영희
+    };
+
+    const makeFunction = (greeting) => {
+        return (name) => {
+            console.log(`${greeting} ${name}`);
+        };
+    };
+
+
+    const test9 = () => {
+        return (a) => console.log(a);
+    };
+
+    function sayHello (n) {
+        console.log(`Hello${n}`);
+    }
+    /**
+     * 자바스크립트의 함수는 값으로 취급된다.
+     *  - 매개인수
+     *  - 리턴값
+     */
+    const test8 = (f) => {
+        console.log(f, typeof f);
+        for(let i = 0; i < 10; i++)
+        f(i + 1);
+    };
+    </script>
+
+    211007
+    <h2>closure</h2>
+    <h3>free variable</h3>
+    <button onclick="test11('철수');">실행</button>
+    <button onclick="test12();">closure</button>
+    <script>
+    //4 closure
+    function foo(){
+    const num = 100;
+    return () => {
+        console.log(`num = ${num}`);
+     };
+    };
+    /**
+     * closure 
+     * 참조하는 자유변수를 가지고 외부로부터 닫힌 함수
+     */
+    const test12 = () => {
+        const num = 200;
+        const too = foo(); // 자유변수 num을 가지고 있다.
+        console.log(too, typeof too);
+        console.dir(too);
+        too();
+    };
+    const weather = '오늘은 비가 온다~'; // global variable
+    /**
+     * 자유변수
+     * - 지역 scope에 선언되지 않은 변수
+     * - 자유변수는 전역변수일수도 아닐수도 있다.
+     */
+    const test11 = (name) => { // parameter -> local variable
+        const greeting = '안녕';
+        const say = `${greeting}, ${name}! ${weather}~`;
+        
+        const foo = () => {
+            console.log(say);
+        };
+        foo();
+    };
+    </script>
+
+    <button onclick="test13();">전역변수 카운터</button>
+    <button onclick="test14();">클로져 카운터</button>
+    <h1 id="g_counter">0</h1>
+    <h1 id="c_counter">0</h1>
+    <script>
+    let n = 0;
+    const test13 = () => {
+        n++;
+        g_counter.innerHTML = n;
+    };
+
+    const makeCounter = () => {
+        let m = 0;
+        return () => {
+            m++;
+            c_counter.innerHTML = m;
+        };
+    };
+    const test14 = makeCounter();
+    </script>
+
+    <fieldset>
+        <legend>가산기</legend>
+        <h1 id="sum">0</h1>
+        <input type="number" id="userNum">
+        <button onclick="test15();">더하기</button>
+    </fieldset>
+    <script>
+    const makeAdder = () => {
+        let s = 0;
+        return () => {
+            s += Number(userNum.value);
+            sum.innerHTML = s;
+            userNum.value = ''; //초기화
+        };
+    };
+    const test15 = makeAdder();
+    </script>
+    
+    <button onclick="test16(3);">x3</button>
+    <button onclick="test17(5);">x5</button>
+    <h1 id="x3">1</h1>
+    <h1 id="x5">1</h1>
+    <script>
+    const multiply = (elem) => {
+        return (m) => {
+            elem.innerHTML = Number(elem.innerHTML) * m;
+        };
+    };
+    const test16 = multiply(x3);
+    const test17 = multiply(x5);
+    </script>
+    <fieldset>
+      <legend>text추가하기</legend>
+      <input type="text" id="userText">
+      <button onclick="test18(userText);">mark</button>
+      <button onclick="test19(userText);">ins</button>
+    </fieldset>
+    <div class="box"></div>
+    <script>
+    /**
+     * @실습문제
+     * #userText의 사용자입력값을 mark태그, ins태그로 .box에 추가하는 closure함수를 작성하세요.
+     */
+    const addText = (tag) => {
+        const box = document.querySelector(".box")
+        return (input) => {
+            const elem = document.createElement(tag); // 새로 생성된 태그. dom추가되기전.
+            elem.innerHTML = input.value;
+            //console.log(elem);
+            box.append(elem, " "); // box의 마지막 자식태그로 dom에 등록
+            input.value = '';
+        };
+    };
+    const test18 = addText('mark');
+    const test19 = addText('ins');
+    </script>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>

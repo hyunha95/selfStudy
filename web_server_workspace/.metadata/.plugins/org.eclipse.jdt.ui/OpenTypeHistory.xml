@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<typeInfoHistroy>
+    <typeInfo handle="=02_hello_web/C:\/dev\/apache-tomcat-9.0.54\/lib\/jasper.jar=/owner.project.facets=/jst.web=/=/javadoc_location=/https:\/\/tomcat.apache.org\/tomcat-9.0-doc\/api\/=/&lt;org.apache.jasper.runtime(HttpJspBase.class[HttpJspBase" modifiers="1057" timestamp="1632819110000"/>
+    <typeInfo handle="=hello-mybatis/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.kh.student.model.service{IStudentService.java[IStudentService" modifiers="513" timestamp="1640074536148"/>
+    <typeInfo handle="=hello-mybatis/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.kh.student.model.dao{IStudentDao.java[IStudentDao" modifiers="513" timestamp="1640074617309"/>
+    <typeInfo handle="=03_hello_mvc/C:\/dev\/apache-tomcat-9.0.54\/lib\/servlet-api.jar=/owner.project.facets=/jst.web=/=/javadoc_location=/https:\/\/javaee.github.io\/javaee-spec\/javadocs\/=/&lt;javax.servlet.http(HttpSessionListener.class[HttpSessionListener" modifiers="1537" timestamp="1632819110000"/>
+    <typeInfo handle="=practice-mybatis/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.kh.student.model.service{IStudentService.java[IStudentService" modifiers="513" timestamp="1639819068960"/>
+    <typeInfo handle="=practice-mybatis/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.kh.student.model.dao{IStudentDao.java[IStudentDao" modifiers="513" timestamp="1639819316458"/>
+    <typeInfo handle="=03_hello_mvc/C:\/Program Files\/Java\/jdk-11\/lib\/jrt-fs.jar`java.base=/module=/true=/=/javadoc_location=/https:\/\/docs.oracle.com\/en\/java\/javase\/11\/docs\/api\/=/&lt;java.io(Serializable.class[Serializable" modifiers="1537" timestamp="1534990684000"/>
+    <typeInfo handle="=hello-mybatis/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.kh.emp.model.service{EmpService.java[EmpService" modifiers="513" timestamp="1640173781915"/>
+    <typeInfo handle="=hello-mybatis/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.kh.emp.model.dao{EmpDao.java[EmpDao" modifiers="513" timestamp="1640174615808"/>
+    <typeInfo handle="=practice-mybatis/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.kh.emp.model.service{EmpService.java[EmpService" modifiers="513" timestamp="1640184427615"/>
+    <typeInfo handle="=practice-mybatis/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.kh.emp.model.dao{EmpDao.java[EmpDao" modifiers="513" timestamp="1640184269961"/>
+</typeInfoHistroy>

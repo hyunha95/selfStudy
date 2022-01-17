@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+label{
+    display:inline-block;
+    width: 110px;
+    text-align: left;
+}
+#female{
+    margin-left: 100px;
+}
+fieldset{
+    margin-bottom: 1rem;
+}
+</style>
+</head>
+<body>
+    <form action="" method="POST">
+        <fieldset>
+            <legend>가입 정보</legend>
+            <label for="id">아이디 : </label>
+            <input type="text" name="id" id="id" required>
+            <br>
+            <label for="password">비밀번호 : </label>
+            <input type="text" name="password" id="password" required>
+            <br>
+            <label for="passwordCheck">비밀번호확인 : </label>
+            <input type="text" name="passwordCheck" id="passwordCheck" required>
+            <br>
+            <label for="name">이름 : </label>
+            <input type="text" name="name" id="name">
+            <br>
+            <label for="">성별 : </label>
+                <input type="radio" name="gender" id="male" value="m">남</input>
+                <input type="radio" name="gender" id="female" value="w" checked>여</input>
+            <br>
+            <label for="email">이메일 : </label>
+            <input type="text" name="email" id="email">
+    
+        </fieldset>
+    <input type="submit" value="회원가입">
+    </form>
+</body>
+</html>

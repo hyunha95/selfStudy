@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.3.xsd">
+	
+	<!-- Root Context: defines shared resources visible to all other web components -->
+	
+	<!-- Namespaces탭에서 context를 체크한다. -->
+	<context:property-placeholder location="classpath:/datasource.properties"/>
+	
+	<!-- #6.1. datasource빈 & mybatis빈 등록 -->
+	<bean class="org.apache.commons.dbcp.BasicDataSource" id="realDataSource" destroy-method="close">
+		<property name="driverClassName" value="${datasource.driverClassName}"/>
+		<property name="url" value="${datasource.url}"/>
+		<property name="username" value="${datasource.username}"/>
+		<property name="password" value="${datasource.password}"/>
+	</bean>	
+	<!-- #9.1 log4jdbc ProxyDataSource빈 설정 -->
+    <bean id="dataSource" class="net.sf.log4jdbc.Log4jdbcProxyDataSource">  
+        <constructor-arg ref="realDataSource" />
+        <property name="logFormatter">
+            <bean class="net.sf.log4jdbc.tools.Log4JdbcCustomFormatter">    
+                <property name="loggingType" value="MULTI_LINE" />
+                <property name="sqlPrefix" value="[SQL] " />
+            </bean>
+        </property>
+    </bean>
+
+	<bean id="sqlSessionFactoryBean" class="org.mybatis.spring.SqlSessionFactoryBean">
+		<property name="dataSource" ref="dataSource"/>
+		<property name="configLocation" value="classpath:mybatis-config.xml"/>
+		<property name="mapperLocations" value="classpath*:mapper/**/*-mapper.xml"/>
+	</bean>
+	<!-- SqlSession인터페이스의 구현클래스 빈 -->
+	<bean id="sqlSessionTemplate" class="org.mybatis.spring.SqlSessionTemplate">
+		<constructor-arg ref="sqlSessionFactoryBean"/>
+	</bean>
+	
+	<!-- #12.1. 트랜잭션 매니저 빈 등록 -->
+	<bean class="org.springframework.jdbc.datasource.DataSourceTransactionManager" id="transactionManager">
+		<property name="dataSource" ref="dataSource"/>
+	</bean>
+	<!-- @Transactional 어노테이션이 붙은 메소드에 대해서 트랜잭션 처리 -->
+	<tx:annotation-driven transaction-manager="transactionManager"/>
+	
+	
+	
+</beans>

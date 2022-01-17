@@ -1,0 +1,46 @@
+
+@실습문제 : 눈코딩
+다음코드를 실행전 출력결과를 예상해보고, 실행해보세요
+
+<script>
+//1
+let z = 50; // 전역변수
+(() => {
+    let z = 55; // 지역변수
+    z += 45;
+    console.log(`z = ${z}`); // 100
+})();              
+console.log(`z = ${z}`);   //50
+
+//2
+let y = 99;
+(() => {
+    let x = 100;
+    let y = 9; // 지역변수 y
+    z = 1; // 전연변수 z
+    console.log(`x + y + z = ${x + y + z}`); // 110 100 + 9 + 1
+})();
+console.log(`y + z = ${y + z}`); // 100
+console.log(`x + y + z = ${x + y + z}`); // Uncaught ReferenceError: x is not defined
+
+//3
+//전역 for문의 var로 선언된 내부변수 i
+for (var i = 1; i <= 10; i++) {
+    console.log(i); // 1~10까지 출력
+}
+(() => {
+    console.log(`i = ${i}`); // 1
+})();
+
+//4 closure
+function foo(){
+    const num = 100;
+    return () => {
+        console.log(`num = ${num}`);
+    }
+}
+const num = 200;
+const too = foo();
+too();
+
+</script>

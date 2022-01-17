@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<servers>
+  <server auto-publish-setting="2" auto-publish-time="1" configuration-id="/Servers/hello_web_server-config" deployDir="wtpwebapps" hostname="localhost" id="hello_web_server" name="hello_web_server" runtime-id="Apache Tomcat v9.0 - SRE" serveModulesWithoutPublish="true" server-type="org.eclipse.jst.server.tomcat.90" server-type-id="org.eclipse.jst.server.tomcat.90" start-timeout="45" stop-timeout="15" testEnvironment="true" timestamp="2">
+    <list key="modules" value0="02_hello_web::org.eclipse.jst.jee.server:02_hello_web::jst.web::4.0"/>
+  </server>
+  <server auto-publish-setting="2" auto-publish-time="1" configuration-id="/Servers/hello_mvc_server-config" deployDir="wtpwebapps" hostname="localhost" id="hello_mvc_server" name="hello_mvc_server" runtime-id="Apache Tomcat v9.0 - SRE" serveModulesWithoutPublish="true" server-type="org.eclipse.jst.server.tomcat.90" server-type-id="org.eclipse.jst.server.tomcat.90" start-timeout="90" stop-timeout="15" testEnvironment="true" timestamp="3">
+    <list key="modules" value0="03_hello_mvc::org.eclipse.jst.jee.server:03_hello_mvc::jst.web::4.0"/>
+  </server>
+  <server auto-publish-setting="2" auto-publish-time="1" configuration-id="/Servers/practice-config" deployDir="wtpwebapps" hostname="localhost" id="practice" name="practice" runtime-id="Apache Tomcat v9.0 - SRE" serveModulesWithoutPublish="true" server-type="org.eclipse.jst.server.tomcat.90" server-type-id="org.eclipse.jst.server.tomcat.90" start-timeout="45" stop-timeout="15" testEnvironment="true" timestamp="2">
+    <list key="modules" value0="03_practice::org.eclipse.jst.jee.server:03_practice::jst.web::4.0"/>
+  </server>
+  <server auto-publish-setting="2" auto-publish-time="1" configuration-id="/Servers/ajax_server-config" deployDir="wtpwebapps" hostname="localhost" id="ajax_server" name="ajax_server" runtime-id="Apache Tomcat v9.0 - SRE" serveModulesWithoutPublish="true" server-type="org.eclipse.jst.server.tomcat.90" server-type-id="org.eclipse.jst.server.tomcat.90" start-timeout="45" stop-timeout="15" testEnvironment="true" timestamp="2">
+    <list key="modules" value0="04_ajax::org.eclipse.jst.jee.server:04_ajax::jst.web::4.0"/>
+  </server>
+  <server auto-publish-setting="2" auto-publish-time="1" configuration-id="/Servers/action_server-config" deployDir="wtpwebapps" hostname="localhost" id="action_server" name="action_server" runtime-id="Apache Tomcat v9.0 - SRE" serveModulesWithoutPublish="true" server-type="org.eclipse.jst.server.tomcat.90" server-type-id="org.eclipse.jst.server.tomcat.90" start-timeout="45" stop-timeout="15" testEnvironment="true" timestamp="2">
+    <list key="modules" value0="05_action::org.eclipse.jst.jee.server:05_action::jst.web::4.0"/>
+  </server>
+  <server auto-publish-setting="2" auto-publish-time="1" configuration-id="/Servers/hello_maven_server-config" deployDir="wtpwebapps" hostname="localhost" id="hello_maven_server" name="hello_maven_server" runtime-id="Apache Tomcat v9.0 - SRE" serveModulesWithoutPublish="true" server-type="org.eclipse.jst.server.tomcat.90" server-type-id="org.eclipse.jst.server.tomcat.90" start-timeout="45" stop-timeout="15" testEnvironment="true" timestamp="3">
+    <list key="modules" value0="hello-maven::org.eclipse.jst.j2ee.server:hello-maven::jst.web::2.3" value1="practice-maven::org.eclipse.jst.j2ee.server:practice-maven::jst.web::2.3"/>
+  </server>
+  <server auto-publish-setting="2" auto-publish-time="1" configuration-id="/Servers/hello_mybatis_server-config" deployDir="wtpwebapps" hostname="localhost" id="hello_mybatis_server" name="hello_mybatis_server" runtime-id="Apache Tomcat v9.0 - SRE" serveModulesWithoutPublish="true" server-type="org.eclipse.jst.server.tomcat.90" server-type-id="org.eclipse.jst.server.tomcat.90" start-timeout="45" stop-timeout="15" testEnvironment="true" timestamp="3">
+    <list key="modules" value0="hello-mybatis::org.eclipse.jst.jee.server:hello-mybatis::jst.web::4.0" value1="practice-mybatis::org.eclipse.jst.jee.server:practice-mybatis::jst.web::4.0"/>
+  </server>
+  <server auto-publish-setting="2" auto-publish-time="1" configuration-id="/Servers/practice_mybatis_server-config" deployDir="wtpwebapps" hostname="localhost" id="practice_mybatis_server" name="practice_mybatis_server" runtime-id="Apache Tomcat v9.0 - SRE" serveModulesWithoutPublish="true" server-type="org.eclipse.jst.server.tomcat.90" server-type-id="org.eclipse.jst.server.tomcat.90" start-timeout="45" stop-timeout="15" testEnvironment="true" timestamp="2">
+    <list key="modules" value0="practice-mybatis::org.eclipse.jst.jee.server:practice-mybatis::jst.web::4.0"/>
+  </server>
+</servers>

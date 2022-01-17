@@ -1,0 +1,7 @@
+127.0.0.1 - - [01/Dec/2021:01:02:54 +0900] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [01/Dec/2021:01:03:10 +0900] "GET /mvc/ HTTP/1.1" 200 2509
+0:0:0:0:0:0:0:1 - - [01/Dec/2021:01:03:10 +0900] "GET /mvc/js/jquery-3.6.0.js HTTP/1.1" 200 288580
+0:0:0:0:0:0:0:1 - - [01/Dec/2021:01:03:10 +0900] "GET /mvc/css/style.css HTTP/1.1" 200 3066
+0:0:0:0:0:0:0:1 - - [01/Dec/2021:01:03:11 +0900] "GET /mvc/images/Java-Servlets-JSP.png HTTP/1.1" 200 36466
+0:0:0:0:0:0:0:1 - - [01/Dec/2021:01:05:07 +0900] "GET /5t1b/resources/vendor/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 404 874
+0:0:0:0:0:0:0:1 - - [01/Dec/2021:01:05:08 +0900] "GET /5t1b/resources/vendor/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 404 874

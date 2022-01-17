@@ -1,0 +1,9 @@
+127.0.0.1 - - [05/Jan/2022:03:09:25 +0900] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [05/Jan/2022:03:09:25 +0900] "GET /spring/board/boardDetail.do?no=81 HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [05/Jan/2022:03:09:25 +0900] "GET /spring/member/memberLogin.do HTTP/1.1" 200 2611
+0:0:0:0:0:0:0:1 - - [05/Jan/2022:03:09:28 +0900] "POST /spring/member/memberLogin.do HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [05/Jan/2022:03:09:28 +0900] "GET /spring/board/boardDetail.do?no=81 HTTP/1.1" 200 4828
+0:0:0:0:0:0:0:1 - - [05/Jan/2022:03:09:32 +0900] "GET /spring/board/fileDownload.do?no=21 HTTP/1.1" 200 26357
+0:0:0:0:0:0:0:1 - - [05/Jan/2022:03:33:41 +0900] "GET /spring/member/memberLogout.do HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [05/Jan/2022:03:33:41 +0900] "GET /spring/ HTTP/1.1" 200 3726
+0:0:0:0:0:0:0:1 - - [05/Jan/2022:03:33:43 +0900] "GET /spring/member/memberEnroll.do HTTP/1.1" 200 8457

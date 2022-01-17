@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="student">
+	<!-- 쿼리에 전달할 값에 대한 표현식 #{속성} : getter로 부터 가져온 이름 -->
+	<!-- 
+		mybatis 자동형변환
+		 - int/long : number
+		 - String : char/varchar2  
+		 - j.u.Date : date(시분초유지)/timestamp
+		자동형변환 안되는 경우는 TypeHandler를 별도로 사용해야 한다.
+	-->
+	<insert id="insertStudent" parameterType="student">
+		insert into 
+		    student(no, name, tel)
+		values(
+		    seq_student_no.nextval,
+		    #{name},
+		    #{tel}
+		)
+	</insert>
+	
+	<insert id="insertStudentMap" parameterType="map">
+		insert into 
+		    student(no, name, tel)
+		values(
+		    seq_student_no.nextval,
+		    #{name},
+		    #{tel}
+		)
+	</insert>
+	
+	<!-- select(DQL)태그에서 resultType/resultMap 필수속성을 작성해야 한다. -->
+	<select id="selectStudentTotalCount" resultType="_int">
+		select 
+			count(*)
+		from
+			student
+	</select>
+	
+	<select id="selectOneStudent" resultMap="studentVoMap">
+		select
+			no, name, tel, reg_date
+		from
+			student
+		where
+			no = #{no}
+	</select>
+	<!-- 
+		resultMap :
+			컬럼명과 vo필드명이 일치하지않는 경우, mybatis의 자동형변환을 이용할 수 없는 경우
+			컬럼단위로 처리할 수 있다. 
+	 -->
+	<resultMap type="student" id="studentVoMap">
+		<!-- pk컬럼 전용 -->
+		<id column="no" property="no" jdbcType="INTEGER" javaType="int"/>
+		<!-- pk컬럼이 아닌 컬럼 -->
+		<result column="name" property="name" jdbcType="VARCHAR" javaType="string"/>	
+		<result column="tel" property="tel" jdbcType="VARCHAR" javaType="string"/>	
+		<result column="reg_date" property="regDate" jdbcType="DATE" javaType="java.sql.Date"/>	
+	</resultMap>
+	
+	<!-- map키값 재지정 방법1 : ""를 감싸서 별칭을 사용한다. -->
+	<select id="selectOneStudentMap" resultMap="studentMap">
+		select
+			*
+		from
+			student
+		where
+			no = #{no}
+	</select>
+	<resultMap type="map" id="studentMap">
+		<id column="no" property="no"/>
+		<result column="name" property="name"/>
+		<result column="tel" property="tel"/>
+		<result column="reg_date" property="regDate" javaType="java.sql.Date"/>
+	</resultMap>
+	
+	<!-- resultType은 하나의 레코드가 변환될 타입으로 list를 적지않는 것에 주의한다. -->
+	<select id="selectStudentList" resultType="student">
+		select
+			*
+		from
+			student
+		order by
+			no desc
+	</select>
+	
+	<select id="selectStudentMapList" resultMap="studentMap">
+		select
+			*
+		from
+			student
+		order by
+			no desc
+	</select>
+	
+	<update id="updateStudent">
+		update
+			student
+		set
+			name = #{name},
+			tel = #{tel}
+		where 
+			no = #{no}
+	</update>
+	
+	<delete id="deleteStudent">
+		delete from 
+			student 
+		where 
+			no = #{no}
+	</delete>
+	
+	
+</mapper>
+

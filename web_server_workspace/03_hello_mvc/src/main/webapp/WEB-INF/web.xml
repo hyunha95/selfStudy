@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee" 
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" 
+	id="WebApp_ID" 
+	version="4.0">
+  <display-name>03_hello_mvc</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <session-config>
+  	<session-timeout>30</session-timeout> <!-- 분 단위 -->
+  </session-config>
+  
+  <listener>
+  	<listener-class>com.kh.mvc.common.listener.SessionCounterListener</listener-class>
+  </listener>
+  
+  <filter>
+  	<filter-name>LogFilter</filter-name>
+  	<filter-class>com.kh.mvc.common.filter.LogFilter</filter-class>
+  </filter>
+  
+  <filter-mapping>
+  	<filter-name>LogFilter</filter-name>
+  	<url-pattern>/*</url-pattern> <!-- 모든 url을 요청했을 때 이 필터를 쓸거다 -->
+  </filter-mapping>
+  
+  
+
+
+ <error-page>
+	<exception-type>java.lang.Exception</exception-type>
+	<location>/WEB-INF/views/common/error.jsp</location>  	
+  </error-page>
+  
+  <error-page>
+  	<error-code>404</error-code>
+  	<location>/WEB-INF/views/common/404.jsp</location>
+  </error-page>
+
+  
+  
+  
+  
+  
+</web-app>

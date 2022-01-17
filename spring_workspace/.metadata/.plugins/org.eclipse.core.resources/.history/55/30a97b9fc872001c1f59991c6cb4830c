@@ -1,0 +1,57 @@
+package com.kh._enum;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+
+public class EnumMain {
+
+	public static void main(String[] args) {
+		EnumMain main = new EnumMain();
+//		main.test0();
+		main.test1();
+
+	}
+
+	/**
+	 * enum
+	 *  - namespace를 가진 상수
+	 *  - compile time에 타입체크가 가능하다.
+	 */
+	private void test1() {
+		Member honggd = new Member("honggd", Gender.M, Role.M);
+		Member sinsa = new Member("sinsa", Gender.F, Role.A);
+		
+		System.out.println(honggd);
+		System.out.println(sinsa);
+	}
+
+//	private void test0() {
+//		Member honggd = new Member("honggd", Member.GENDER_MALE, Member.ROLE_MEMBER);
+//		Member sinsa = new Member("sinsa", Member.GENDER_FEMALE, Member.ROLE_ADMIN);
+//		
+//		System.out.println(honggd);
+//		System.out.println(sinsa);
+//	}
+
+}
+
+enum Gender {
+	M, F;
+}
+enum Role {
+	M, A;
+}
+
+@Data
+@AllArgsConstructor
+class Member {
+	
+//	public static final String GENDER_MALE = "M";
+//	public static final String GENDER_FEMALE = "F";
+//	public static final String ROLE_MEMBER = "M";
+//	public static final String ROLE_ADMIN = "A";
+	
+	private String id;
+	private Gender gender; // M, F
+	private Role role;   // M, A
+}

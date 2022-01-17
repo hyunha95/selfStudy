@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans xmlns="http://www.springframework.org/schema/mvc"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:beans="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/mvc https://www.springframework.org/schema/mvc/spring-mvc.xsd
+		http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
+
+	<!-- DispatcherServlet Context: defines this servlet's request-processing infrastructure -->
+	
+	<!-- mvc관련 bean(@Controller, @Service, @Repository) 활성화 -->
+	<!-- Enables the Spring MVC @Controller programming model -->
+	<annotation-driven />
+
+	<!-- 정적파일에 대한 매핑처리 -->
+	<!-- Handles HTTP GET requests for /resources/** by efficiently serving up static resources in the ${webappRoot}/resources directory -->
+	<resources mapping="/resources/**" location="/resources/" />
+
+	<!-- controller가 리턴한 viewName을 가지고, 접두/접미사를 붙여서 view단을 찾아주는 빈 -->
+	<!-- Resolves views selected for rendering by @Controllers to .jsp resources in the /WEB-INF/views directory -->
+	<beans:bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<beans:property name="prefix" value="/WEB-INF/views/" />
+		<beans:property name="suffix" value=".jsp" />
+	</beans:bean>
+	
+	<!-- basepackage 하위의 클래스를 대상으로 annotation활성화 : @Component, @Autowired -->
+	<context:component-scan base-package="com.kh.spring" />
+	
+	<!-- #8. interceptor 등록 -->
+	<interceptors>
+		<interceptor>
+			<mapping path="/**"/>
+			<beans:bean class="com.kh.spring.common.interceptor.LogInterceptor" id="LogInterceptor"/>
+		</interceptor>
+		<interceptor>
+			<mapping path="/demo/**"/>
+			<mapping path="/board/**"/>
+			<exclude-mapping path="/board/boardList.do"/>
+			<exclude-mapping path="/demo/devForm.do"/>
+			<exclude-mapping path="/demo/dev1.do"/>
+			<exclude-mapping path="/demo/dev2.do"/>
+			<exclude-mapping path="/demo/dev3.do"/>
+			<beans:bean class="com.kh.spring.common.interceptor.LoginCheckInterceptor" id="loginCheckInterceptor"/>
+		</interceptor>
+	</interceptors>
+	
+	<!-- #11.1 파일업로드 처리용 빈등록 -->
+	<beans:bean class="org.springframework.web.multipart.commons.CommonsMultipartResolver" id="multipartResolver">
+		<!-- 한 요청당 최대업로드 크기 : 50mb(50 * 1024 * 1024) -->
+		<beans:property name="maxUploadSize" value="52428800"></beans:property>
+		<!-- 파일 하나당 최대크기 : 10mb(10 * 1024 * 1024) -->
+		<beans:property name="maxUploadSizePerFile" value="10485760"></beans:property>
+	</beans:bean>
+	
+	<!-- #13.1 jsonView 빈 등록 & BeanNameViewResolver등록 -->
+	<beans:bean id="jsonView" class="net.sf.json.spring.web.servlet.view.JsonView">
+		<beans:property name="contentType" value="application/json;charset=utf-8"/>
+	</beans:bean>
+	
+	<!-- InternalResourceViewResolver보다 우선순위가 높으므로, 리턴한 viewName과 일치하는 bean을 먼저 조회 -->
+	<beans:bean id="viewResolver" class="org.springframework.web.servlet.view.BeanNameViewResolver">
+		<beans:property name="order" value="1"/>
+	</beans:bean>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</beans:beans>

@@ -1,0 +1,147 @@
+INFO :[2021/12/28 19:15:58] ContextLoader.java:270 - Root WebApplicationContext: initialization started
+INFO :[2021/12/28 19:16:00] ContextLoader.java:306 - Root WebApplicationContext initialized in 1897 ms
+INFO :[2021/12/28 19:16:00] FrameworkServlet.java:524 - Initializing Servlet 'appServlet'
+INFO :[2021/12/28 19:16:02] FrameworkServlet.java:546 - Completed initialization in 1513 ms
+INFO :[2021/12/28 19:18:54] ContextLoader.java:270 - Root WebApplicationContext: initialization started
+INFO :[2021/12/28 19:18:56] ContextLoader.java:306 - Root WebApplicationContext initialized in 1917 ms
+INFO :[2021/12/28 19:18:56] FrameworkServlet.java:524 - Initializing Servlet 'appServlet'
+INFO :[2021/12/28 19:18:57] FrameworkServlet.java:546 - Completed initialization in 1401 ms
+INFO :[2021/12/28 19:19:12] ContextLoader.java:270 - Root WebApplicationContext: initialization started
+INFO :[2021/12/28 19:19:14] ContextLoader.java:306 - Root WebApplicationContext initialized in 1916 ms
+INFO :[2021/12/28 19:19:14] FrameworkServlet.java:524 - Initializing Servlet 'appServlet'
+INFO :[2021/12/28 19:19:15] FrameworkServlet.java:546 - Completed initialization in 1520 ms
+INFO :[2021/12/28 19:41:39] ContextLoader.java:270 - Root WebApplicationContext: initialization started
+INFO :[2021/12/28 19:41:41] ContextLoader.java:306 - Root WebApplicationContext initialized in 1984 ms
+INFO :[2021/12/28 19:41:41] FrameworkServlet.java:524 - Initializing Servlet 'appServlet'
+INFO :[2021/12/28 19:41:42] FrameworkServlet.java:546 - Completed initialization in 1565 ms
+DEBUG:[2021/12/28 19:42:03] LogInterceptor.java:33 - -------------------------------------------------------------------------------
+DEBUG:[2021/12/28 19:42:03] LogInterceptor.java:34 - modelAndView = ModelAndView [view="redirect:/"; model={}]
+DEBUG:[2021/12/28 19:42:03] LogInterceptor.java:35 - -------------------------------------------------------------------------------
+DEBUG:[2021/12/28 19:42:03] LogInterceptor.java:47 - ________________________________________________________________________________
+DEBUG:[2021/12/28 19:42:03] LogInterceptor.java:33 - -------------------------------------------------------------------------------
+DEBUG:[2021/12/28 19:42:03] LogInterceptor.java:34 - modelAndView = ModelAndView [view="forward:/index.jsp"; model={}]
+DEBUG:[2021/12/28 19:42:03] LogInterceptor.java:35 - -------------------------------------------------------------------------------
+DEBUG:[2021/12/28 19:42:03] LogInterceptor.java:47 - ________________________________________________________________________________
+INFO :[2021/12/28 19:42:10] MemberController.java:50 - referer = http://localhost:9090/spring/
+DEBUG:[2021/12/28 19:42:10] LogInterceptor.java:33 - -------------------------------------------------------------------------------
+DEBUG:[2021/12/28 19:42:10] LogInterceptor.java:34 - modelAndView = ModelAndView [view="member/memberLogin"; model={next=http://localhost:9090/spring/, org.springframework.validation.BindingResult.next=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]
+DEBUG:[2021/12/28 19:42:10] LogInterceptor.java:35 - -------------------------------------------------------------------------------
+DEBUG:[2021/12/28 19:42:10] LogInterceptor.java:47 - ________________________________________________________________________________
+INFO :[2021/12/28 19:42:15] MemberController.java:67 - member = Member(id=honggd, password=$2a$10$MS5rvodKSZ8njxAurTBqsOlYyT8elbbe39.AhmhRf7K.gmNSWLdai, name=홍길동, gender=M, birthday=Thu Sep 09 00:00:00 KST 1999, email=honggd@naver.com, phone=01012341234, address=서울시 강동구 천호동 123-456, hobby=[운동, 등산, 독서], enrollDate=Mon Dec 27 20:45:54 KST 2021, enabled=true)
+INFO :[2021/12/28 19:42:15] MemberController.java:68 - encodedPassword = $2a$10$0ftDCuP1nbae2HURS9GcKOC1Zec.yQ/2mK099DifMNM9eT5OlCjnq
+INFO :[2021/12/28 19:42:15] MemberController.java:78 - next = http://localhost:9090/spring/
+DEBUG:[2021/12/28 19:42:15] LogInterceptor.java:33 - -------------------------------------------------------------------------------
+DEBUG:[2021/12/28 19:42:15] LogInterceptor.java:34 - modelAndView = ModelAndView [view="redirect:http://localhost:9090/spring/"; model={}]
+DEBUG:[2021/12/28 19:42:15] LogInterceptor.java:35 - -------------------------------------------------------------------------------
+DEBUG:[2021/12/28 19:42:15] LogInterceptor.java:47 - ________________________________________________________________________________
+DEBUG:[2021/12/28 19:42:15] LogInterceptor.java:33 - -------------------------------------------------------------------------------
+DEBUG:[2021/12/28 19:42:15] LogInterceptor.java:34 - modelAndView = ModelAndView [view="forward:/index.jsp"; model={}]
+DEBUG:[2021/12/28 19:42:15] LogInterceptor.java:35 - -------------------------------------------------------------------------------
+DEBUG:[2021/12/28 19:42:15] LogInterceptor.java:47 - ________________________________________________________________________________
+INFO :[2021/12/28 20:04:39] ContextLoader.java:270 - Root WebApplicationContext: initialization started
+INFO :[2021/12/28 20:04:41] ContextLoader.java:306 - Root WebApplicationContext initialized in 2047 ms
+INFO :[2021/12/28 20:04:41] FrameworkServlet.java:524 - Initializing Servlet 'appServlet'
+INFO :[2021/12/28 20:04:42] FrameworkServlet.java:546 - Completed initialization in 1452 ms
+DEBUG:[2021/12/28 20:04:46] LogInterceptor.java:33 - -------------------------------------------------------------------------------
+DEBUG:[2021/12/28 20:04:46] LogInterceptor.java:34 - modelAndView = ModelAndView [view="redirect:/"; model={next=http://localhost:9090/spring/, loginMember=Member(id=honggd, password=$2a$10$MS5rvodKSZ8njxAurTBqsOlYyT8elbbe39.AhmhRf7K.gmNSWLdai, name=홍길동, gender=M, birthday=Thu Sep 09 00:00:00 KST 1999, email=honggd@naver.com, phone=01012341234, address=서울시 강동구 천호동 123-456, hobby=[운동, 등산, 독서], enrollDate=Mon Dec 27 20:45:54 KST 2021, enabled=true), org.springframework.validation.BindingResult.next=org.springframework.validation.BeanPropertyBindingResult: 0 errors, org.springframework.validation.BindingResult.loginMember=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]
+DEBUG:[2021/12/28 20:04:46] LogInterceptor.java:35 - -------------------------------------------------------------------------------
+DEBUG:[2021/12/28 20:04:46] LogInterceptor.java:47 - ________________________________________________________________________________
+DEBUG:[2021/12/28 20:04:46] LogInterceptor.java:33 - -------------------------------------------------------------------------------
+DEBUG:[2021/12/28 20:04:46] LogInterceptor.java:34 - modelAndView = ModelAndView [view="forward:/index.jsp"; model={}]
+DEBUG:[2021/12/28 20:04:46] LogInterceptor.java:35 - -------------------------------------------------------------------------------
+DEBUG:[2021/12/28 20:04:46] LogInterceptor.java:47 - ________________________________________________________________________________
+DEBUG:[2021/12/28 20:08:48] LogInterceptor.java:33 - -------------------------------------------------------------------------------
+DEBUG:[2021/12/28 20:08:48] LogInterceptor.java:34 - modelAndView = ModelAndView [view="forward:/index.jsp"; model={}]
+DEBUG:[2021/12/28 20:08:48] LogInterceptor.java:35 - -------------------------------------------------------------------------------
+DEBUG:[2021/12/28 20:08:48] LogInterceptor.java:47 - ________________________________________________________________________________
+INFO :[2021/12/28 20:08:53] MemberController.java:51 - referer = http://localhost:9090/spring/
+DEBUG:[2021/12/28 20:08:53] LogInterceptor.java:33 - -------------------------------------------------------------------------------
+DEBUG:[2021/12/28 20:08:53] LogInterceptor.java:34 - modelAndView = ModelAndView [view="member/memberLogin"; model={next=http://localhost:9090/spring/, org.springframework.validation.BindingResult.next=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]
+DEBUG:[2021/12/28 20:08:53] LogInterceptor.java:35 - -------------------------------------------------------------------------------
+DEBUG:[2021/12/28 20:08:53] LogInterceptor.java:47 - ________________________________________________________________________________
+DEBUG:[2021/12/28 20:08:55] LogInterceptor.java:47 - ________________________________________________________________________________
+INFO :[2021/12/28 20:09:46] ContextLoader.java:270 - Root WebApplicationContext: initialization started
+INFO :[2021/12/28 20:09:48] ContextLoader.java:306 - Root WebApplicationContext initialized in 1888 ms
+INFO :[2021/12/28 20:09:48] FrameworkServlet.java:524 - Initializing Servlet 'appServlet'
+INFO :[2021/12/28 20:09:49] FrameworkServlet.java:546 - Completed initialization in 1371 ms
+DEBUG:[2021/12/28 20:09:55] LogInterceptor.java:33 - -------------------------------------------------------------------------------
+DEBUG:[2021/12/28 20:09:55] LogInterceptor.java:34 - modelAndView = ModelAndView [view="forward:/index.jsp"; model={}]
+DEBUG:[2021/12/28 20:09:55] LogInterceptor.java:35 - -------------------------------------------------------------------------------
+DEBUG:[2021/12/28 20:09:55] LogInterceptor.java:47 - ________________________________________________________________________________
+INFO :[2021/12/28 20:09:57] MemberController.java:51 - referer = http://localhost:9090/spring/
+DEBUG:[2021/12/28 20:09:57] LogInterceptor.java:33 - -------------------------------------------------------------------------------
+DEBUG:[2021/12/28 20:09:57] LogInterceptor.java:34 - modelAndView = ModelAndView [view="member/memberLogin"; model={next=http://localhost:9090/spring/, org.springframework.validation.BindingResult.next=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]
+DEBUG:[2021/12/28 20:09:57] LogInterceptor.java:35 - -------------------------------------------------------------------------------
+DEBUG:[2021/12/28 20:09:57] LogInterceptor.java:47 - ________________________________________________________________________________
+INFO :[2021/12/28 20:09:59] MemberController.java:68 - member = Member(id=honggd, password=$2a$10$MS5rvodKSZ8njxAurTBqsOlYyT8elbbe39.AhmhRf7K.gmNSWLdai, name=홍길동, gender=M, birthday=Thu Sep 09 00:00:00 KST 1999, email=honggd@naver.com, phone=01012341234, address=서울시 강동구 천호동 123-456, hobby=[운동, 등산, 독서], enrollDate=Mon Dec 27 20:45:54 KST 2021, enabled=true)
+INFO :[2021/12/28 20:09:59] MemberController.java:69 - encodedPassword = $2a$10$YwcvnVmftuCFiUC/gTGzo.vxeuVhR3MI78ORP2XfUwaExhztIza/i
+INFO :[2021/12/28 20:10:00] MemberController.java:79 - next = http://localhost:9090/spring/
+DEBUG:[2021/12/28 20:10:00] LogInterceptor.java:33 - -------------------------------------------------------------------------------
+DEBUG:[2021/12/28 20:10:00] LogInterceptor.java:34 - modelAndView = ModelAndView [view="redirect:http://localhost:9090/spring/"; model={}]
+DEBUG:[2021/12/28 20:10:00] LogInterceptor.java:35 - -------------------------------------------------------------------------------
+DEBUG:[2021/12/28 20:10:00] LogInterceptor.java:47 - ________________________________________________________________________________
+DEBUG:[2021/12/28 20:10:00] LogInterceptor.java:33 - -------------------------------------------------------------------------------
+DEBUG:[2021/12/28 20:10:00] LogInterceptor.java:34 - modelAndView = ModelAndView [view="forward:/index.jsp"; model={}]
+DEBUG:[2021/12/28 20:10:00] LogInterceptor.java:35 - -------------------------------------------------------------------------------
+DEBUG:[2021/12/28 20:10:00] LogInterceptor.java:47 - ________________________________________________________________________________
+INFO :[2021/12/28 20:20:27] ContextLoader.java:270 - Root WebApplicationContext: initialization started
+INFO :[2021/12/28 20:20:29] ContextLoader.java:306 - Root WebApplicationContext initialized in 2019 ms
+INFO :[2021/12/28 20:20:29] FrameworkServlet.java:524 - Initializing Servlet 'appServlet'
+INFO :[2021/12/28 20:20:31] FrameworkServlet.java:546 - Completed initialization in 1560 ms
+DEBUG:[2021/12/28 20:20:34] LogInterceptor.java:33 - -------------------------------------------------------------------------------
+DEBUG:[2021/12/28 20:20:34] LogInterceptor.java:34 - modelAndView = ModelAndView [view="forward:/index.jsp"; model={}]
+DEBUG:[2021/12/28 20:20:34] LogInterceptor.java:35 - -------------------------------------------------------------------------------
+DEBUG:[2021/12/28 20:20:35] LogInterceptor.java:47 - ________________________________________________________________________________
+INFO :[2021/12/28 20:20:46] DemoController.java:166 - list = [Dev(no=21, name=신사임당, career=3, email=sinsa@naver.com, gender=F, lang=[Java, Javascript, Python]), Dev(no=2, name=신사임당, career=3, email=sinsa@naver.com, gender=F, lang=[  Java ,  Javascript ,  Python ])]
+INFO :[2021/12/28 20:20:46] DemoController.java:170 - 12345678
+DEBUG:[2021/12/28 20:20:46] LogInterceptor.java:33 - -------------------------------------------------------------------------------
+DEBUG:[2021/12/28 20:20:46] LogInterceptor.java:34 - modelAndView = ModelAndView [view="demo/devList"; model={list=[Dev(no=21, name=신사임당, career=3, email=sinsa@naver.com, gender=F, lang=[Java, Javascript, Python]), Dev(no=2, name=신사임당, career=3, email=sinsa@naver.com, gender=F, lang=[  Java ,  Javascript ,  Python ])]}]
+DEBUG:[2021/12/28 20:20:46] LogInterceptor.java:35 - -------------------------------------------------------------------------------
+DEBUG:[2021/12/28 20:20:46] LogInterceptor.java:47 - ________________________________________________________________________________
+INFO :[2021/12/28 20:20:50] DemoController.java:166 - list = [Dev(no=21, name=신사임당, career=3, email=sinsa@naver.com, gender=F, lang=[Java, Javascript, Python]), Dev(no=2, name=신사임당, career=3, email=sinsa@naver.com, gender=F, lang=[  Java ,  Javascript ,  Python ])]
+INFO :[2021/12/28 20:20:50] DemoController.java:170 - 12345678
+DEBUG:[2021/12/28 20:20:50] LogInterceptor.java:33 - -------------------------------------------------------------------------------
+DEBUG:[2021/12/28 20:20:50] LogInterceptor.java:34 - modelAndView = ModelAndView [view="demo/devList"; model={list=[Dev(no=21, name=신사임당, career=3, email=sinsa@naver.com, gender=F, lang=[Java, Javascript, Python]), Dev(no=2, name=신사임당, career=3, email=sinsa@naver.com, gender=F, lang=[  Java ,  Javascript ,  Python ])]}]
+DEBUG:[2021/12/28 20:20:50] LogInterceptor.java:35 - -------------------------------------------------------------------------------
+DEBUG:[2021/12/28 20:20:50] LogInterceptor.java:47 - ________________________________________________________________________________
+DEBUG:[2021/12/28 20:21:06] LogInterceptor.java:33 - -------------------------------------------------------------------------------
+DEBUG:[2021/12/28 20:21:06] LogInterceptor.java:34 - modelAndView = ModelAndView [view="redirect:/"; model={}]
+DEBUG:[2021/12/28 20:21:06] LogInterceptor.java:35 - -------------------------------------------------------------------------------
+DEBUG:[2021/12/28 20:21:06] LogInterceptor.java:47 - ________________________________________________________________________________
+DEBUG:[2021/12/28 20:21:06] LogInterceptor.java:33 - -------------------------------------------------------------------------------
+DEBUG:[2021/12/28 20:21:06] LogInterceptor.java:34 - modelAndView = ModelAndView [view="forward:/index.jsp"; model={}]
+DEBUG:[2021/12/28 20:21:06] LogInterceptor.java:35 - -------------------------------------------------------------------------------
+DEBUG:[2021/12/28 20:21:06] LogInterceptor.java:47 - ________________________________________________________________________________
+DEBUG:[2021/12/28 20:21:07] LogInterceptor.java:47 - ________________________________________________________________________________
+INFO :[2021/12/28 20:22:03] ContextLoader.java:270 - Root WebApplicationContext: initialization started
+INFO :[2021/12/28 20:22:05] ContextLoader.java:306 - Root WebApplicationContext initialized in 1916 ms
+INFO :[2021/12/28 20:22:05] FrameworkServlet.java:524 - Initializing Servlet 'appServlet'
+INFO :[2021/12/28 20:22:07] FrameworkServlet.java:546 - Completed initialization in 1432 ms
+DEBUG:[2021/12/28 20:22:08] LogInterceptor.java:47 - ________________________________________________________________________________
+DEBUG:[2021/12/28 20:22:08] LogInterceptor.java:33 - -------------------------------------------------------------------------------
+DEBUG:[2021/12/28 20:22:08] LogInterceptor.java:34 - modelAndView = ModelAndView [view="forward:/index.jsp"; model={}]
+DEBUG:[2021/12/28 20:22:08] LogInterceptor.java:35 - -------------------------------------------------------------------------------
+DEBUG:[2021/12/28 20:22:08] LogInterceptor.java:47 - ________________________________________________________________________________
+INFO :[2021/12/28 20:34:23] ContextLoader.java:270 - Root WebApplicationContext: initialization started
+INFO :[2021/12/28 20:34:25] ContextLoader.java:306 - Root WebApplicationContext initialized in 1911 ms
+INFO :[2021/12/28 20:34:25] FrameworkServlet.java:524 - Initializing Servlet 'appServlet'
+INFO :[2021/12/28 20:34:26] FrameworkServlet.java:546 - Completed initialization in 1479 ms
+DEBUG:[2021/12/28 20:34:36] LogInterceptor.java:47 - ________________________________________________________________________________
+INFO :[2021/12/28 20:34:36] MemberController.java:52 - referer = http://localhost:9090/spring/
+DEBUG:[2021/12/28 20:34:36] LogInterceptor.java:33 - -------------------------------------------------------------------------------
+DEBUG:[2021/12/28 20:34:36] LogInterceptor.java:34 - modelAndView = ModelAndView [view="member/memberLogin"; model={next=http://localhost:9090/spring/demo/devList.do, org.springframework.validation.BindingResult.next=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]
+DEBUG:[2021/12/28 20:34:36] LogInterceptor.java:35 - -------------------------------------------------------------------------------
+DEBUG:[2021/12/28 20:34:37] LogInterceptor.java:47 - ________________________________________________________________________________
+INFO :[2021/12/28 20:34:42] MemberController.java:70 - member = Member(id=honggd, password=$2a$10$MS5rvodKSZ8njxAurTBqsOlYyT8elbbe39.AhmhRf7K.gmNSWLdai, name=홍길동, gender=M, birthday=Thu Sep 09 00:00:00 KST 1999, email=honggd@naver.com, phone=01012341234, address=서울시 강동구 천호동 123-456, hobby=[운동, 등산, 독서], enrollDate=Mon Dec 27 20:45:54 KST 2021, enabled=true)
+INFO :[2021/12/28 20:34:42] MemberController.java:71 - encodedPassword = $2a$10$tGqVVuJYWn5rIkLN8nAtIuD4B6eUPY68XAcB7zH31oX6uh00Clfsi
+INFO :[2021/12/28 20:34:42] MemberController.java:81 - next = http://localhost:9090/spring/demo/devList.do
+DEBUG:[2021/12/28 20:34:42] LogInterceptor.java:33 - -------------------------------------------------------------------------------
+DEBUG:[2021/12/28 20:34:42] LogInterceptor.java:34 - modelAndView = ModelAndView [view="redirect:http://localhost:9090/spring/demo/devList.do"; model={}]
+DEBUG:[2021/12/28 20:34:42] LogInterceptor.java:35 - -------------------------------------------------------------------------------
+DEBUG:[2021/12/28 20:34:42] LogInterceptor.java:47 - ________________________________________________________________________________
+INFO :[2021/12/28 20:34:42] DemoController.java:166 - list = [Dev(no=21, name=신사임당, career=3, email=sinsa@naver.com, gender=F, lang=[Java, Javascript, Python]), Dev(no=2, name=신사임당, career=3, email=sinsa@naver.com, gender=F, lang=[  Java ,  Javascript ,  Python ])]
+INFO :[2021/12/28 20:34:42] DemoController.java:170 - 12345678
+DEBUG:[2021/12/28 20:34:42] LogInterceptor.java:33 - -------------------------------------------------------------------------------
+DEBUG:[2021/12/28 20:34:42] LogInterceptor.java:34 - modelAndView = ModelAndView [view="demo/devList"; model={list=[Dev(no=21, name=신사임당, career=3, email=sinsa@naver.com, gender=F, lang=[Java, Javascript, Python]), Dev(no=2, name=신사임당, career=3, email=sinsa@naver.com, gender=F, lang=[  Java ,  Javascript ,  Python ])]}]
+DEBUG:[2021/12/28 20:34:42] LogInterceptor.java:35 - -------------------------------------------------------------------------------
+DEBUG:[2021/12/28 20:34:42] LogInterceptor.java:47 - ________________________________________________________________________________

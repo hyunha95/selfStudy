@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<servers>
+  <server auto-publish-setting="2" auto-publish-time="1" configuration-id="/Servers/hello-spring-server-config" deployDir="wtpwebapps" hostname="localhost" id="hello-spring-server" name="hello-spring-server" runtime-id="Apache Tomcat v9.0" serveModulesWithoutPublish="true" server-type="org.eclipse.jst.server.tomcat.90" server-type-id="org.eclipse.jst.server.tomcat.90" start-timeout="45" stop-timeout="15" testEnvironment="true" timestamp="3">
+    <list key="modules" value0="hello-spring::org.eclipse.jst.jee.server:hello-spring::jst.web::2.5"/>
+  </server>
+  <server auto-publish-setting="2" auto-publish-time="1" configuration-id="/Servers/practice-spring-server-config" deployDir="wtpwebapps" hostname="localhost" id="practice-spring-server" name="practice-spring-server" runtime-id="Apache Tomcat v9.0" serveModulesWithoutPublish="true" server-type="org.eclipse.jst.server.tomcat.90" server-type-id="org.eclipse.jst.server.tomcat.90" start-timeout="45" stop-timeout="15" testEnvironment="true" timestamp="2">
+    <list key="modules" value0="practice-spring::org.eclipse.jst.jee.server:practice-spring::jst.web::2.5"/>
+  </server>
+  <server auto-publish-setting="2" auto-publish-time="1" configuration-id="/Servers/spring-security-server-config" deployDir="wtpwebapps" hostname="localhost" id="spring-security-server" name="spring-security-server" runtime-id="Apache Tomcat v9.0" serveModulesWithoutPublish="true" server-type="org.eclipse.jst.server.tomcat.90" server-type-id="org.eclipse.jst.server.tomcat.90" start-timeout="45" stop-timeout="15" testEnvironment="true" timestamp="2">
+    <list key="modules" value0="spring-security::org.eclipse.jst.jee.server:spring-security::jst.web::4.0"/>
+  </server>
+  <server auto-publish-setting="2" auto-publish-time="1" configuration-id="/Servers/bookit-server-config" deployDir="wtpwebapps" hostname="localhost" id="bookit-server" name="bookit-server" runtime-id="Apache Tomcat v9.0" serveModulesWithoutPublish="true" server-type="org.eclipse.jst.server.tomcat.90" server-type-id="org.eclipse.jst.server.tomcat.90" start-timeout="45" stop-timeout="15" testEnvironment="true" timestamp="2">
+    <list key="modules" value0="bookit::org.eclipse.jst.jee.server:bookit::jst.web::4.0"/>
+  </server>
+  <server auto-publish-setting="2" auto-publish-time="1" configuration-id="/Servers/spring-board-server-config" deployDir="wtpwebapps" hostname="localhost" id="spring-board-server" name="spring-board-server" runtime-id="Apache Tomcat v9.0" serveModulesWithoutPublish="true" server-type="org.eclipse.jst.server.tomcat.90" server-type-id="org.eclipse.jst.server.tomcat.90" start-timeout="45" stop-timeout="15" testEnvironment="true" timestamp="2">
+    <list key="modules" value0="spring-board::org.eclipse.jst.jee.server:spring-board::jst.web::2.5"/>
+  </server>
+</servers>

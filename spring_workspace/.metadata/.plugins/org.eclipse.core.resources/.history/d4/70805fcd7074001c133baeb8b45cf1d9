@@ -1,0 +1,3 @@
+#datasource.properties
+datasource.driverClass = oracle.jdbc.OracleDriver
+datasource.url = jdbc:oracle:thin:@project_high?TNS_ADMIN=\C:\dev\Wallet_project

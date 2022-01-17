@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>data attr</title>
+</head>
+<body>
+    <h1>data attr</h1>
+    <!-- 
+        다 소문자로 작성하고 꺼내 쓸때는 카멜케이싱 사용.
+        값은 숫자를 넣어도 문자로 인식함
+    -->
+    <!-- 태그의 data 속성을 통해 값을 저장할 수 있다. -->
+    <p id="myp" data-length="1800" data-index-number="1234" data-writerName="홍길동"> 
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, ex accusantium sit dicta facilis iure repellendus placeat porro, similique perspiciatis cupiditate totam obcaecati blanditiis nobis laboriosam id incidunt nihil. Commodi.
+    </p>
+    <button id="btn1">실행</button>
+    <button id="btn2">실행</button>
+    <script>
+    // console.log(myp.dataset);
+    
+    /**
+     * setter
+     */
+    btn2.onclick = (e) => {
+        myp.dataset.length = 2000;
+        myp.dataset.indexNumber = 5678;
+        myp.dataset.chocolate = "abc";
+    };
+
+    /**
+     * getter
+     */
+    btn1.onclick = (e) => {
+        console.log(myp.dataset);
+        console.log(myp.dataset.length);
+        console.log(myp.dataset.indexNumber);
+        console.log(myp.dataset.writername);
+    }
+    </script>
+
+
+</body>
+</html>

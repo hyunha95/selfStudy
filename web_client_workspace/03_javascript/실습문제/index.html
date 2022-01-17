@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>211001 NCS Test</title>
+    <style>
+        label {
+            font-weight: bold;
+            margin-left: 15px;
+        }
+        label+textarea {
+            vertical-align: middle;
+        }
+        fieldset :nth-child(4) label {
+            margin-left: 0px;
+        }
+        fieldset div {
+            margin-bottom: 5px;
+        }
+        fieldset div:last-child {
+            margin-top: 25px;
+        }
+        #title, #content {
+            margin-left: 17px;
+        }
+        /* 작성하기 버튼 위치조정 */
+        fieldset div:last-child  {
+            padding-left: 130px;
+        }
+
+        hr {
+            margin: 25px 0px;
+        }
+        table {
+            border: 1px solid black;
+            margin: auto;
+            width:100%;
+        }
+        td, th {
+            border: 1px solid black;
+        }
+        thead, tfoot {
+            background-color: #f8a381;
+            color: #fff;
+        }
+        tbody {
+            background-color: #fcfcdd;
+        }
+    </style>
+
+</head>
+<body>
+    <form action="insert.no" method="POST">
+        <fieldset>
+            <legend>공지사항 작성하기</legend>
+            <div>
+                <label for="title">제목</label>
+                <input type="text" name="title" id="title" placeholder="제목을 입력하시오.">
+            </div>
+            <div>
+                <label for="content">내용</label>
+                <textarea name="content" id="content" cols="30" rows="10" placeholder="내용을 입력하시오."></textarea>
+            </div>
+            <div>
+                <label for="file">첨부파일</label>
+                <input type="file" name="uploadFile" id="file">
+            </div>
+            <div>
+                <input type="submit" value="작성하기">
+            </div>
+        </fieldset>
+    </form>
+    <hr>
+
+    <!-- 7행6열 -->
+    <table id = "myTable">
+        <thead>
+            <tr>
+                <th>번호</th>
+                <th colspan="2" id="customWidth">제목</th>
+                <th>작성자</th>
+                <th>작성일</th>
+                <th>조회수</th>
+            </tr>
+        </thead>
+        <tr>
+            <td>9</td>
+            <td style="width: 60%;">공지사항 제목 9</td>
+            <td style="width:70px;"><button>바로가기</button></td>
+            <td>user01</td>
+            <td>2021-03-29</td>
+            <td>34</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>공지사항 제목 6</td>
+            <td><button>바로가기</button></td>
+            <td>answ445</td>
+            <td>21-03-12</td>
+            <td>67</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>공지사항 제목 3</td>
+            <td><button>바로가기</button></td>
+            <td>testg12</td>
+            <td>21-01-02</td>
+            <td>98</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>공지사항 제목 2</td>
+            <td><button>바로가기</button></td>
+            <td>palwe3</td>
+            <td>2021-01-02</td>
+            <td>85</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>공지사항 제목 1</td>
+            <td><button>바로가기</button></td>
+            <td>xml23</td>
+            <td>2020-12-24</td>
+            <td>124</td>
+        </tr>
+        <tbody>
+
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="4">전체공지사항 갯수</th>
+                <th colspan="2" id="output"></th>
+            </tr>
+        </tfoot>
+    </table>
+    <script>
+        let table = document.getElementById('myTable');
+        let tbodyRowCount = table.tBodies[0].rows.length;
+
+        document.getElementById("output").innerHTML = tbodyRowCount + "개";
+    </script>
+</body>
+</html>

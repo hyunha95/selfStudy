@@ -1,0 +1,4 @@
+INFO :[2022/01/09 16:41:54] ContextLoader.java:270 - Root WebApplicationContext: initialization started
+INFO :[2022/01/09 16:41:56] ContextLoader.java:306 - Root WebApplicationContext initialized in 2674 ms
+INFO :[2022/01/09 16:41:57] FrameworkServlet.java:524 - Initializing Servlet 'appServlet'
+INFO :[2022/01/09 16:42:00] FrameworkServlet.java:546 - Completed initialization in 3253 ms

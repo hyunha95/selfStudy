@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box model</title>
+</head>
+<body>
+    <h1>box model</h1>
+    <!-- 
+        content - padding - border - margin
+    -->
+    <div class="box">
+        안녕
+    </div>
+    <style>
+    .box {
+        width: 100px;
+        height: 100px;
+        background-color: orangered;
+        margin: 30px auto; /* 마진겹침현상 margin collapse */
+        border: 5px solid #000;
+        padding: 5px; /* top right bottom left. 생략하면 맞은편의 값을 사용한다.*/
+    }
+
+    </style>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>

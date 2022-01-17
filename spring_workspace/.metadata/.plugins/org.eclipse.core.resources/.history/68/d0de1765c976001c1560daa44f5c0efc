@@ -1,0 +1,5 @@
+package com.spring.security.model.dao;
+
+public interface SecurityDao {
+
+}

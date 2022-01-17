@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="bookit"/>
+<aop-project name="hello-spring"/>
+<aop-project name="practice-spring"/>
+<aop-project name="hello-springboot"/>
+<aop-project name="spring-board"/>
+<aop-project name="practic-spring-context"/>
+<aop-project name="spring-context"/>
+<aop-project name="spring-security"/>
+</aop-reference-model>

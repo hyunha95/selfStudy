@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>filter</title>
+    <script src="js/jquery-3.6.0.js"></script>
+</head>
+<body>
+    <h1>filter</h1>
+    <div class="wrapper">
+        <p id="p1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem esse consectetur aspernatur ipsam beatae doloribus aliquid, nemo, maiores minima autem ad libero voluptatum omnis assumenda, praesentium et nam repudiandae voluptas!</p>
+        <p id="p2">Similique doloremque fugiat laborum enim exercitationem! Hic velit tempora, quos inventore a labore eveniet voluptatem, ut nisi ratione ipsum. Sapiente, culpa. Dolor aspernatur exercitationem velit? Eligendi consequuntur magni eaque hic!</p>
+        <p id="p3">Non consectetur consequuntur sapiente nemo quam libero ipsa cupiditate nihil nostrum eaque, ea in ipsam atque dolorum tempore sit suscipit distinctio eveniet, saepe, dicta hic nesciunt. Eos iure repudiandae veniam.</p>
+        <p id="p4">Voluptatibus commodi porro molestias deserunt ea atque velit maiores, expedita dolor hic saepe dolorem sed suscipit ipsum fuga minus aut numquam facilis quibusdam cum ducimus voluptates non. Minima, repellat rerum.</p>
+        <p id="p5">Quasi atque laborum, natus totam voluptas alias fugit maxime culpa. Optio fugiat autem ab iure laborum veritatis earum fuga eligendi voluptas animi libero atque, impedit provident placeat quisquam repellendus! Voluptatum.</p>
+    </div>
+    <script>
+    const $plist = $(".wrapper p");
+    console.log($plist);
+
+    // jquery메소드의 반환값이 jquery객체이므로 method chaining이 가능핟.
+    // $plist
+    //     .css("text-decoration", "underline")
+    //     .filter(":even") // #p1 #p3 #p5
+    //     .css("color", "hotpink")
+    //     .filter(":last") // #p
+    //     .css("font-size", "2em")
+    //     .end() // #p1 #p3 #p5 // 현재 선턱도니 요소의 이전 요소를 선택하는 메소드
+    //     .css("background-color", "lightgray");
+
+    $plist.first().css("color", "red");
+    $plist.last().css("color", "springgreen");
+    $plist.eq(2).css("color", "violet");
+    $plist.not("#p1").css("text-decoration", "line-through");
+
+    // $plist[2].css("color", "navy");
+    console.log($plist[2]); // js object
+    console.log($plist.eq(2)[0]); // js object
+    console.log($plist.get(2)); // js object
+    console.log($plist.get()); // [p#p1, p#p2, p#p3, p#p4, p#p5]
+    </script>
+
+
+
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>

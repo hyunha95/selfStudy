@@ -1,0 +1,10 @@
+127.0.0.1 - - [23/Dec/2021:00:25:42 +0900] "GET / HTTP/1.1" 404 807
+0:0:0:0:0:0:0:1 - - [23/Dec/2021:00:25:53 +0900] "GET /practice-mybatis/ HTTP/1.1" 200 531
+0:0:0:0:0:0:0:1 - - [23/Dec/2021:00:25:54 +0900] "GET /practice-mybatis/ HTTP/1.1" 200 531
+0:0:0:0:0:0:0:1 - - [23/Dec/2021:00:25:55 +0900] "GET /practice-mybatis/emp/empSearch1.do HTTP/1.1" 500 4204
+0:0:0:0:0:0:0:1 - - [23/Dec/2021:00:25:57 +0900] "GET /practice-mybatis/emp/empSearch1.do HTTP/1.1" 404 721
+0:0:0:0:0:0:0:1 - - [23/Dec/2021:00:27:59 +0900] "GET /practice-mybatis/emp/empSearch1.do HTTP/1.1" 404 721
+0:0:0:0:0:0:0:1 - - [23/Dec/2021:00:29:06 +0900] "GET /practice-mybatis/emp/search1.do HTTP/1.1" 404 721
+0:0:0:0:0:0:0:1 - - [23/Dec/2021:00:29:09 +0900] "GET /practice-mybatis/emp/search1.do HTTP/1.1" 404 721
+0:0:0:0:0:0:0:1 - - [23/Dec/2021:00:29:13 +0900] "GET /practice-mybatis/student/selectOne.do HTTP/1.1" 404 721
+0:0:0:0:0:0:0:1 - - [23/Dec/2021:00:29:14 +0900] "GET /practice-mybatis/student/studentEnroll.do HTTP/1.1" 404 721

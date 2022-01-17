@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>실습문제_객체</title>
+</head>
+<body>
+    <h3>@실습문제</h3>
+	<img src="실습문제_객체_성적테이블.png">
+	<img src="실습문제_객체_1_콘솔출력.png"> 
+    <p>
+        1. 위 성적자료를 바탕으로 학생객체를 생성해서 콘솔에 출력하세요. <br>
+        각 객체에 총합을 구하는 속성 getSum메소드, 평균을 구하는 속성 getAvg메소드(소수점첫째자리까지), 학생정보를 출력하는 속성 info을 추가하고,
+        콘솔에 info메소드를 이용해 다음과 같이 출력하세요.
+    </p>
+    <button onclick="test1();">실행</button>
+    <button onclick="test2();">Frontend과목점수</button>
+   <script>
+    const scores = [
+        new Student("김동현", 90, 56, 56, 44, 34),
+        new Student("홍길동", 45, 76, 34, 33, 56),
+        new Student("유관순", 76, 34, 54, 56, 22)
+    ];
+    /**
+     * Student객체에 프론트단 점수의 총점 평균을 구하는 
+     * getClientLangSum, getClientLangAvg 메소드를 추가하고
+     * 결과를 출력하세요.
+     */
+     const test2 = () => {
+        scores.forEach((stdt, i) => {
+            console.log(`${stdt.name} : 클라이언트언어 총점 ${stdt.getClientLangSum()}점, 평점 ${stdt.getClientLangAvg()}점`);
+        });
+    };
+
+    const test1 = () => {
+
+        for(let i in scores){
+            let{name, java, oracle, html5, css3, javascript, getSum, getAvg} = scores[i];
+            getSum = getSum.bind(scores[i]);
+            getAvg = getAvg.bind(scores[i]);
+            console.log(name, java, oracle, html5, css3, javascript, getSum(), getAvg());
+        }
+    }
+
+    function Student(name, java, oracle, html5, css3, javascript){
+        this.name = name;
+        this.java = java;
+        this.oracle = oracle;
+        this.html5 = html5;
+        this.css3 = css3;
+        this.javascript = javascript;
+    }
+    Student.prototype.getSum = function(){
+        return this.java + this.oracle + this.html5 + this.css3 + this.javascript;
+    };
+    Student.prototype.getAvg = function(){
+        return Math.round(this.getSum() / 5 * 10) / 10;
+    };
+    Student.prototype.getClientLangSum = function(){
+        return this.html5 + this.css3 + this.javascript;
+    };
+    Student.prototype.getClientLangAvg = function(){
+        return Math.floor(this.getClientLangSum() / 3 * 10) / 10;
+    };
+   </script>
+</body>
+</html>

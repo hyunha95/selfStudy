@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<temp-directories>
+  <temp-directory age="0" key="bookit-server" path="tmp3" recycle="false"/>
+  <temp-directory age="0" key="spring-board-server" path="tmp4" recycle="false"/>
+  <temp-directory age="0" key="hello-spring-server" path="tmp0" recycle="false"/>
+  <temp-directory age="0" key="practice-spring-server" path="tmp1" recycle="false"/>
+  <temp-directory age="0" key="spring-security-server" path="tmp2" recycle="false"/>
+</temp-directories>

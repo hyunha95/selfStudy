@@ -1,0 +1,17 @@
+<classpath>
+  <container id="03_practice!org.eclipse.jst.j2ee.internal.web.container">
+    <entry id="C:/Workspaces/web_server_workspace/03_practice/src/main/webapp/WEB-INF/lib/cos.jar">
+      <source-attachment-path>C:/dev/cos-20.08.zip</source-attachment-path>
+    </entry>
+  </container>
+  <container id="05_action!org.eclipse.jst.j2ee.internal.web.container">
+    <entry id="C:/Workspaces/web_server_workspace/05_action/src/main/webapp/WEB-INF/lib/taglibs-standard-impl-1.2.5.jar">
+      <source-attachment-path>C:/dev/taglibs-standard-1.2.5-source-release.zip</source-attachment-path>
+    </entry>
+  </container>
+  <container id="03_hello_mvc!org.eclipse.jst.j2ee.internal.web.container">
+    <entry id="C:/Workspaces/web_server_workspace/03_hello_mvc/src/main/webapp/WEB-INF/lib/cos.jar">
+      <source-attachment-path>C:/dev/cos-20.08.zip</source-attachment-path>
+    </entry>
+  </container>
+</classpath>

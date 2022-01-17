@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean class="com.kh.spring.tv.XiaomiRemocon" id="xiaomiRemocon"></bean>
+	<bean class="com.kh.spring.tv.BalmudaRemocon" id="balmudaRemocon"></bean>
+
+
+	<!-- 
+		scope설정을 통해 context에서 관리할 bean개수를 설정 
+		- singleton 하나만 생성
+		- prototype getBean마다 생성
+		- request request마다 생성
+		- session session마다 생성
+		
+		lazy-init="default" 프로그램 시작 시 객체 생성 후 관리 
+		lazy-init="true" 호출 시 객체 생성
+	-->
+	<!-- 아이디는 소문자로 시작하는 클래스명 -->
+	<bean class="com.kh.spring.tv.LgTv" id="lgTv" scope="prototype">
+		<!-- <constructor-arg ref="xiaomiRemocon"></constructor-arg> -->
+		<property name="remocon" ref="xiaomiRemocon"/>
+	</bean>
+	<bean class="com.kh.spring.tv.SamsungTv" id="samsungTv" scope="singleton" lazy-init="true">
+		<!-- <constructor-arg ref="balumudaRemocon"></constructor-arg> -->
+		<property name="remocon" ref="balmudaRemocon"></property>
+	</bean>
+
+
+</beans>

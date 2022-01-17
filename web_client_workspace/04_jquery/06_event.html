@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event</title>
+    <script src="js/jquery-3.6.0.js"></script>
+    <style>
+    .outer {
+        width: 200px;
+        height: 200px;
+        background-color: orange;
+        padding: 50px;
+        margin: 20px auto;
+    }
+    .inner {
+        width: 100%;
+        height: 100%;
+        background-color: tomato;
+    }
+    </style>
+</head>
+<body>
+    <h1>event</h1>
+
+    <h2>mouseover - mouseout | mouseenter - mouseleave</h2>
+    <div class="outer">
+        <div class="inner"></div>
+    </div>
+    <script>
+    /**
+     * 부모요소에 handler 처리해도 자식요소까지 handling된다.
+     */
+    // $(".outer")
+    //     .mouseover(({target}) => {
+    //         console.log(("mouseover!", target));
+
+    //     })
+    //     .mouseout(({target}) => {
+    //         console.log("mouseout!", target);
+    //     });
+
+    /**
+     * 자식요소 진입시에는 핸들링하지 않는다.
+     * 
+     * hover(mouseenter-handler, mouseleave-handler)
+     */
+    // $(".outer")
+    //     .mouseenter(({target}) => {
+    //         console.log("mouseenter!", target);
+
+    //     })
+    //     .mouseleave(({target}) => {
+    //         console.log("mouseleave!", target);
+    //     });
+    $(".outer")
+        .hover(() => {
+            console.log("mouseenter!");
+        }, () => {
+            console.log("mouseleave!");
+        });
+    </script>
+
+    <h1 id="myh1">class제어하기</h1>
+    <style>
+    .reverse {
+        background-color: #000;
+        color: #fff;
+    }
+    </style>
+    <script>
+    $(myh1).hover((e) => {
+        // mouseenter
+        $(e.target).addClass("reverse");
+    }, (e) => {
+        // mouseleave
+        $(e.target).removeClass("reverse");
+    });
+    </script>
+
+    <h2>key event</h2>
+    <form action="javascript:alert('저장했습니다!');" name="memoFrm">
+        <fieldset>
+            <legend>twitter</legend>
+            <p><span id="counter">0</span>/30</p>
+            <textarea name="memo" id="memo" cols="30" rows="10"></textarea>
+            <button>저장</button>
+        </fieldset>
+    </form>
+    <script>
+    $(memo).keyup(({target}) => {
+        const $target = $(target);
+        let len = $target.val().length;
+        console.log(len);
+        const $counter = $(counter);
+        $counter
+            .html(len)
+            .css("color", len > 30 ? "red" : "black");
+    });
+
+    $(document.memoFrm).submit((e) => {
+        const len = $(memo).val().length;
+        if(len == 0 || len > 30)
+            // return false;
+            e.preventDefault(); // event별 기본작업진행을 중지.
+    });
+    </script>
+
+    <h2>on | off</h2>
+    <button id="btn1">on | off</button>
+    <div class="wrapper">
+        <h1>안녕</h1>
+        <h2>잘가</h2>
+    </div>
+    <script>
+    /**
+     * 자식요소 중 h1 선택자인 태그의 클릭이벤트를 부모요소에 핸들링한다.
+     * (event bubbling)
+     */
+    $(".wrapper").on("click", "h1", (e) => {
+        console.log(e.target);
+        // const $h1 = $("<h1></h1>");
+        // $h1.html("<mark>안녕</mark>");
+        const $h1 = $("<h1><mark>안녕</mark></h1>");
+
+        $(".wrapper").append($h1);
+    });
+
+   // const h1ClickHandler = () => {
+    //     // 동적으로 태그 객체 생성
+    //     const $h1 = $("<h1></h1>");
+    //     $h1.html("<mark>안녕</mark>");
+    //     $(".wrapper").append($h1);
+    //     $h1.click(h1ClickHandler);
+    // };
+    
+    // $(".wrapper h1").on("click", h1ClickHandler);
+
+    $(btn1).on('click mouseover touchstart', (e) => {
+        const {type} = e;
+        switch(type){
+            case "click" : 
+                console.log("clickkkkkkk!"); 
+                $(e.target).off("click");
+                break;
+            case "mouseover" : console.log("mouseooooooooooooooooover!"); break;
+            case "touchstart" : console.log("touchhhhhhhhhhhhhhh!"); break; // 모바일 디바이스 용
+        }
+        
+    });
+    </script>
+    
+    <h2>trigger</h2>
+    <h1 class="trigger">0</h1>
+    <button id="btn-trigger">+</button>
+    <style>
+    .trigger{
+        text-align: center;
+        cursor: pointer;
+        color:tomato;
+    }
+    </style>
+    <script>
+    $("#btn-trigger").click((e) => {
+        // .trigger click event handler 호출!
+        $(".trigger").trigger("click");
+    });
+
+    (() => {
+        let cnt = 0;
+        $(".trigger").on("click", (e) => {
+            console.log(cnt, e.target);
+            $(e.target).html(++cnt);
+        });
+    })();
+    </script>
+
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>

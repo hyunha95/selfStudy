@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inheritance</title>
+</head>
+<body>
+    <h1>inheritance</h1>
+    <button onclick="test1();">상속</button>
+    <button onclick="test2();">Prototype동적변경</button>
+    <script>
+    const test2 = () => {
+        Book.prototype.getAd = function(){
+            return `화제의 신간 ${(this.title)}이 출간되었습니다.`;
+        };
+    };
+    /**
+     * 
+     */
+    const test1 = () => {
+        const books = [
+            new Book("매트릭스", 35000, 0.15),
+            new Book("오라클", 30000, 0.2),
+            new Book("네오의 하루", 20000),
+            new Book("So Smith~", 15000, 0.3)
+        ];
+        console.log(books);
+
+        books.forEach((book, i)  => {
+            console.log(book.getSalePrice());
+            console.log(book.toString()); // 매트릭스 가격 : 29750원(정가: 35000원)
+            console.log(book.getAd());
+        });
+    };
+
+    class Book {
+        constructor(title, price, discountRate){
+            this.title = title;
+            this.price = price;
+            this.discountRate = discountRate;
+        };
+
+        toString(){
+            return `${this.title} 가격: ${this.getSalePrice()}원(정가:${this.price})`;
+        };
+        getSalePrice(){
+            return this.discountRate ? this.price - (this.price * this.discountRate) : this.price;
+        }
+    }
+    // function Book(title, price, discountRate){
+    //     this.title = title;
+    //     this.price = price;
+    //     this.discountRate = discountRate;
+    // }
+
+    // Book.prototype.toString = function(){
+    //     return `${this.title} 가격: ${this.getSalePrice()}원(정가:${this.price})`;
+    // }
+    
+    // Book.prototype.getSalePrice = function(){
+    //     return this.discountRate ? this.price - (this.price * this.discountRate) : this.price;
+    // };
+    </script>
+</body>
+</html>

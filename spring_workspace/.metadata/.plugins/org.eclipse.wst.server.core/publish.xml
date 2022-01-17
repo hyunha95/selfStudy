@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<publish-info>
+  <server id="practice-spring-server" path="publish1.dat"/>
+  <server id="bookit-server" path="publish3.dat"/>
+  <server id="spring-board-server" path="publish4.dat"/>
+  <server id="spring-security-server" path="publish2.dat"/>
+  <server id="hello-spring-server" path="publish0.dat"/>
+</publish-info>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>text</title>
+</head>
+<body>
+    <h1>text</h1>
+    <div class="wrapper">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid beatae odit fuga inventore rerum culpa et ipsam vitae dignissimos iure minus aut necessitatibus sequi optio commodi, sint iste, natus doloremque!</p>
+        <p>Odit repellat possimus cupiditate neque rerum expedita doloribus nostrum dolore eveniet enim consectetur tempore impedit, ea quos maxime omnis ut perspiciatis tenetur. Minus quaerat in veniam, neque sapiente maiores consequatur!</p>
+        <p>Dolore debitis est repellat voluptate enim illo doloribus illum, at corrupti ut iure exercitationem dicta maiores odio iste sapiente doloremque dolorum asperiores quaerat, veritatis dignissimos sunt! Delectus magnam perferendis ducimus!</p>
+        <p>Adipisci minus vel, dolores aliquid, recusandae, quaerat cumque sint asperiores esse quia dignissimos consequatur. Illum laboriosam nostrum hic, accusantium beatae blanditiis officiis reiciendis tenetur molestiae similique facilis amet at quos.</p>
+        <p>Iusto, reprehenderit quasi eum facilis, sint exercitationem fugit natus perspiciatis, omnis reiciendis doloribus error illum eligendi distinctio unde et ut quos. Voluptatem veniam commodi ex rem, inventore delectus ad maiores.</p>
+    </div>
+    <style>
+    .wrapper p:first-child {
+        color: blueviolet;
+        color: #fab; /* #ffaabb */
+        color: rgb(255, 100, 200);
+        color: rgb(255 100 200 / 61%);
+        color: rgba(97, 83, 92, 0.6);
+    }
+    .wrapper p:first-child:hover {
+        color : rgb(47,36,44,1);
+    }
+    
+    .wrapper p:nth-child(2) {
+        text-decoration:underline;
+    }
+    
+    .wrapper p:nth-child(3) {
+        /* x-offset y-offset blur color */
+        text-shadow: 8px 7px 4px gray;
+    }
+
+    </style>
+
+    <div id="bg">
+        <span id="text-shadow1" class="shadow">HTML5</span>
+        <span id="text-shadow2" class="shadow">HTML5</span>
+        <span id="text-shadow3" class="shadow">HTML5</span>
+        <span id="text-shadow4" class="shadow">HTML5</span>
+    </div>
+    <img src="./01_실습문제-textshadow.png" alt="textshadow">
+    <style>
+        div#bg {
+            background-color: #000;
+            margin: 30px;
+            padding: 50px;
+        }
+        .shadow {
+            font-size:100px;
+            line-height:100px;
+            font-weight:bold;
+            color:white;
+        }
+        #text-shadow1 {
+            color:#ff4500;
+            text-shadow: 5px 5px 0px #ffa500;
+        }
+        #text-shadow2 {
+            text-shadow: 0px 1px 20px whitesmoke;
+            
+        }
+        #text-shadow3 {
+            text-shadow: 1px 1px 20px #6f0;
+        }
+        #text-shadow4 {
+            color: #000;
+            text-shadow: 0px 0px 4px #ccc,
+                         0px -5px 4px #ff3,
+                         2px -10px 6px #fd3,
+                         -2px -15px 11px #f80,
+                         2px -19px 18px #f20;
+        }
+    </style>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>

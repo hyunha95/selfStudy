@@ -1,0 +1,35 @@
+DEBUG:[2022/01/17 01:12:09] CustomSuccessHandler.java:20 - 로그인 성공했습니다.!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+DEBUG:[2022/01/17 01:12:09] CustomSuccessHandler.java:21 - authentication = org.springframework.security.authentication.UsernamePasswordAuthenticationToken@fffffc7e: Principal: Member(super=MemberEntity(id=shua, password=$2a$10$a84eHlD7iNOgE3exH25c6eoyDZtztiE8yBK.XEWlxE/8m.eYjY07m, name=노슈어, gender=M, birthday=Wed Jan 19 00:00:00 KST 2022, email=shua@naver.com, phone=01099998888, address=서울시 개집, enrollDate=Sun Jan 16 19:52:08 KST 2022, enabled=true), authorities=[ROLE_USER]); Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@0: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: 317D4D316D5BB2A8C707E9F732AD0082; Granted Authorities: ROLE_USER
+WARN :[2022/01/17 01:12:20] DispatcherServlet.java:1248 - No mapping for GET /board/member/memberLogout.do
+INFO :[2022/01/17 01:17:58] ContextLoader.java:270 - Root WebApplicationContext: initialization started
+INFO :[2022/01/17 01:18:01] ContextLoader.java:306 - Root WebApplicationContext initialized in 2825 ms
+INFO :[2022/01/17 01:18:01] FrameworkServlet.java:524 - Initializing Servlet 'appServlet'
+INFO :[2022/01/17 01:18:02] FrameworkServlet.java:546 - Completed initialization in 1033 ms
+WARN :[2022/01/17 01:19:08] DispatcherServlet.java:1248 - No mapping for GET /board/member/memberLogout.do
+DEBUG:[2022/01/17 01:20:15] CustomSuccessHandler.java:20 - 로그인 성공했습니다.!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+DEBUG:[2022/01/17 01:20:15] CustomSuccessHandler.java:21 - authentication = org.springframework.security.authentication.UsernamePasswordAuthenticationToken@fffe9ab6: Principal: Member(super=MemberEntity(id=shua, password=$2a$10$a84eHlD7iNOgE3exH25c6eoyDZtztiE8yBK.XEWlxE/8m.eYjY07m, name=노슈어, gender=M, birthday=Wed Jan 19 00:00:00 KST 2022, email=shua@naver.com, phone=01099998888, address=서울시 개집, enrollDate=Sun Jan 16 19:52:08 KST 2022, enabled=true), authorities=[ROLE_USER]); Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@166c8: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: 4A78FB703F5EE660073262879F79B5A5; Granted Authorities: ROLE_USER
+WARN :[2022/01/17 01:33:16] DispatcherServlet.java:1248 - No mapping for GET /board/board/boardList.do
+WARN :[2022/01/17 01:34:57] DispatcherServlet.java:1248 - No mapping for GET /board/board/boardList.do
+INFO :[2022/01/17 02:28:34] ContextLoader.java:270 - Root WebApplicationContext: initialization started
+INFO :[2022/01/17 02:28:37] ContextLoader.java:306 - Root WebApplicationContext initialized in 3215 ms
+INFO :[2022/01/17 02:28:37] FrameworkServlet.java:524 - Initializing Servlet 'appServlet'
+INFO :[2022/01/17 02:28:38] FrameworkServlet.java:546 - Completed initialization in 1091 ms
+INFO :[2022/01/17 02:29:49] ContextLoader.java:270 - Root WebApplicationContext: initialization started
+INFO :[2022/01/17 02:29:52] ContextLoader.java:306 - Root WebApplicationContext initialized in 2999 ms
+INFO :[2022/01/17 02:29:52] FrameworkServlet.java:524 - Initializing Servlet 'appServlet'
+INFO :[2022/01/17 02:29:53] FrameworkServlet.java:546 - Completed initialization in 1088 ms
+WARN :[2022/01/17 02:29:57] DispatcherServlet.java:1248 - No mapping for GET /board/board/boardList.do
+INFO :[2022/01/17 02:52:35] ContextLoader.java:270 - Root WebApplicationContext: initialization started
+INFO :[2022/01/17 02:52:38] ContextLoader.java:306 - Root WebApplicationContext initialized in 2923 ms
+INFO :[2022/01/17 02:52:38] FrameworkServlet.java:524 - Initializing Servlet 'appServlet'
+INFO :[2022/01/17 02:52:39] FrameworkServlet.java:546 - Completed initialization in 1138 ms
+WARN :[2022/01/17 02:56:13] DispatcherServlet.java:1248 - No mapping for GET /board/assets/favicon.ico
+WARN :[2022/01/17 02:58:08] DispatcherServlet.java:1248 - No mapping for GET /board/board/assets/favicon.ico
+INFO :[2022/01/17 03:03:29] ContextLoader.java:270 - Root WebApplicationContext: initialization started
+INFO :[2022/01/17 03:03:32] ContextLoader.java:306 - Root WebApplicationContext initialized in 3104 ms
+INFO :[2022/01/17 03:03:32] FrameworkServlet.java:524 - Initializing Servlet 'appServlet'
+INFO :[2022/01/17 03:03:33] FrameworkServlet.java:546 - Completed initialization in 1050 ms
+INFO :[2022/01/17 19:23:47] ContextLoader.java:270 - Root WebApplicationContext: initialization started
+INFO :[2022/01/17 19:23:50] ContextLoader.java:306 - Root WebApplicationContext initialized in 3172 ms
+INFO :[2022/01/17 19:23:50] FrameworkServlet.java:524 - Initializing Servlet 'appServlet'
+INFO :[2022/01/17 19:23:51] FrameworkServlet.java:546 - Completed initialization in 1149 ms

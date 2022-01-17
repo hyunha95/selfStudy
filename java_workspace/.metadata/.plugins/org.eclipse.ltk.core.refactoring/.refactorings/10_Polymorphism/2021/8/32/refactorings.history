@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename field &apos;WINGS&apos; in &apos;kh.java.polymorphism.animal.Flyable&apos; to &apos;LEN_OF_WINGS&apos;&#x0D;&#x0A;- Original project: &apos;10_Polymorphism&apos;&#x0D;&#x0A;- Original element: &apos;kh.java.polymorphism.animal.Flyable.WINGS&apos;&#x0D;&#x0A;- Renamed element: &apos;kh.java.polymorphism.animal.Flyable.LEN_OF_WINGS&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" delegate="false" deprecate="false" description="Rename field &apos;WINGS&apos;" flags="589830" getter="false" id="org.eclipse.jdt.ui.rename.field" input="/src&lt;kh.java.polymorphism.animal{Flyable.java[Flyable^WINGS" name="LEN_OF_WINGS" references="true" setter="false" stamp="1628067506953" textual="false" version="1.0"/>
+</session>

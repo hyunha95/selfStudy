@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>score.xml</comment>
+<entry key="1">1, 홍길동, 80, 90, 85</entry>
+<entry key="12">12, 김철수, 70, 75, 83</entry>
+<entry key="23">23, 이순신, 100, 100, 100</entry>
+<entry key="5">5, 박문수, 78, 85, 85</entry>
+<entry key="27">27, 최영, 95, 85, 90</entry>
+</properties>

@@ -1,0 +1,38 @@
+[
+  {
+    "name": "김기사",
+    "number": "01012345678",
+    "point": 5367,
+    "password": "1234"
+  },
+  {
+    "name": "박선생",
+    "number": "01011112222",
+    "point": 220,
+    "password": "1111"
+  },
+  {
+    "name": "uuu",
+    "number": "01077777777",
+    "point": 495,
+    "password": "7777"
+  },
+  {
+    "name": "홍길동",
+    "number": "01055556666",
+    "point": 500,
+    "password": "1111"
+  },
+  {
+    "name": "lsy",
+    "number": "01055557777",
+    "point": 400,
+    "password": "5555"
+  },
+  {
+    "name": "노현하",
+    "number": "01012123434",
+    "point": 75,
+    "password": "1234"
+  }
+]

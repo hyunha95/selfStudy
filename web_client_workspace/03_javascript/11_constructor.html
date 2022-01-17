@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>constructor</title>
+</head>
+<body>
+    <h1>constructor</h1>
+    <button onclick="test1();">객체배열</button>
+    <button onclick="test2();">생성자함수</button>
+    <script>
+    const test2 = () => {
+        const pets = [
+            new Pet('구리구리', '푸들', 3),
+            new Pet('둘리', '말티즈', 6),
+            new Pet('사랑이', '코카스파이엘', 13)
+        ];
+        console.log(pets);
+
+        for(let i in pets){
+            // losing this 현상
+            //bark를 그냥 함수처럼 이용하려다 보니까 현재객체를 가리키는 this를 잊어버림
+            // this binding처리
+            let {name, breed, weight, bark} = pets[i];
+            bark = bark.bind(pets[i]); // 바인딩처리(가리키는 객체 알려줌)
+            console.log(name, breed, weight, bark());
+        }
+    };
+
+    /**
+     * 생성자함수는 new연산자와 함께 호출되는 함수
+     * 일반함수와 구분하기 위해 대문자로 시작.
+     * this용법4 : 생성자함수안의 this는 현재객체를 가리킨다.
+     */ 
+    function Pet(name, breed, weight){
+        this.name = name;
+        this.breed = breed;
+        this.weight = weight;
+        // this.bark = function(){
+        //     // console.log(this.weight);
+        //     return this.weight > 10 ? "멍멍" : "왈왈";
+        // };
+    }
+
+    211011
+    /**
+     * Javascript는 prototype을 이용해서 객체모델을 제공한다.
+     * 해당 생성자함수의 prototype속성을 이용해 객체에 접근. 속성을 추가할 수 있다.
+     * 이 추가된 속성은 모든 자식객체에서 사용가능하다.
+     */
+    Pet.prototype.bark = function(){
+        // console.log(this.weight);
+        return this.weight > 10 ? "멍멍" : "왈왈";
+    };
+    211011
+
+    /**
+     * 객체를 배열에 담아 제어하기 
+     */
+    const test1 = () => {
+        const pets = [
+            {
+                name : '구리구리',
+                breed : '푸들',
+                weight : 3
+            },
+            {
+                name : '둘리',
+                breed : '말티즈',
+                weight : 6
+            },
+            {
+                name : '사랑이',
+                breed : '코카스파이엘',
+                weight : 13
+            }
+        ];
+
+        pets.forEach((pet) => {
+            // 메소드추가
+            pet.bark = () => {
+                return pet.weight > 10 ? '멍멍' : '왈왈';
+            }
+            const {name, breed, weight, bark} = pet;
+            console.log(`이름 : ${name}, 견종:${breed}, 몸무게:${weight}kg, 소리:${bark()}`);
+        });
+
+    };
+    </script>
+
+
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>

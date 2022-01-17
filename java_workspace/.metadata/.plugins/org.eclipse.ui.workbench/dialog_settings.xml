@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="ImportExportAction">
+		<item key="ImportExportPage.STORE_SELECTED_IMPORT_WIZARD_ID" value="org.eclipse.ui.wizards.import.ExternalProject"/>
+		<item key="ImportExportPage.STORE_SELECTED_EXPORT_WIZARD_ID" value="org.eclipse.ui.wizards.export.ZipFile"/>
+		<list key="ImportExportPage.STORE_EXPANDED_IMPORT_CATEGORIES">
+			<item value="org.eclipse.ui.Basic"/>
+		</list>
+		<list key="ImportExportPage.STORE_EXPANDED_EXPORT_CATEGORIES">
+			<item value="org.eclipse.ui.Basic"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.preferences.keysPreferencePage">
+		<item key="actionSetFilter" value="true"/>
+		<item key="internalFilter" value="true"/>
+		<item key="uncategorizedFilter" value="true"/>
+	</section>
+	<section name="NewWizardAction">
+		<item key="NewWizardSelectionPage.STORE_SELECTED_ID" value="org.eclipse.jdt.ui.wizards.NewClassCreationWizard"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="org.eclipse.jdt.ui.java"/>
+			<item value="org.eclipse.jpt.jaxb"/>
+			<item value="com.objectaid.uml.new"/>
+		</list>
+	</section>
+	<section name="ZipFileExportWizard">
+		<item key="WizardZipFileResourceExportPage1.STORE_CREATE_STRUCTURE_ID" value="true"/>
+		<item key="WizardZipFileResourceExportPage1.STORE_COMPRESS_CONTENTS_ID" value="true"/>
+		<list key="WizardZipFileResourceExportPage1.STORE_DESTINATION_NAMES_ID">
+			<item value="C:\Users\현하\OneDrive\바탕 화면\kh정보교육원\프로젝트 파일\javaTest2_hyunha.zip"/>
+			<item value="C:\Users\현하\OneDrive\바탕 화면\kh정보교육원\프로젝트 파일\13_IO.zip"/>
+			<item value="C:\Users\현하\OneDrive\바탕 화면\kh정보교육원\프로젝트 파일\12_ExceptionHandling.zip"/>
+			<item value="C:\Users\현하\OneDrive\바탕 화면\kh정보교육원\프로젝트 파일\11_JDK_API.zip"/>
+			<item value="C:\Users\현하\OneDrive\바탕 화면\kh정보교육원\프로젝트 파일\10_Polymorphism.zip"/>
+			<item value="C:\Users\현하\OneDrive\바탕 화면\kh정보교육원\프로젝트 파일\09_Inherit.zip"/>
+			<item value="C:\Users\현하\OneDrive\바탕 화면\kh정보교육원\프로젝트 파일\08_ObjectArray.zip"/>
+			<item value="C:\Users\현하\OneDrive\바탕 화면\kh정보교육원\프로젝트 파일\07_OOP.zip"/>
+			<item value="C:\Users\현하\OneDrive\바탕 화면\kh정보교육원\프로젝트 파일\04_Statements.zip"/>
+			<item value="C:\Users\현하\OneDrive\바탕 화면\kh정보교육원\프로젝트 파일\03_Operator.zip"/>
+			<item value="C:\Users\현하\OneDrive\바탕 화면\kh정보교육원\프로젝트 파일\02_Variable.zip"/>
+			<item value="C:\Users\현하\OneDrive\바탕 화면\kh정보교육원\프로젝트 파일\01_HelloWorld.zip"/>
+			<item value="C:\Users\현하\OneDrive\바탕 화면\kh정보교육원\프로젝트 파일\javaTest1_hyunha.zip"/>
+			<item value="C:\Users\현하\OneDrive\바탕 화면\kh정보교육원\프로젝트 파일\06_NestedLoop_2DimetionalArray.zip"/>
+			<item value="C:\Users\현하\OneDrive\바탕 화면\kh정보교육원\프로젝트 파일\05_Array.zip"/>
+			<item value="C:\Users\현하\OneDrive\바탕 화면\kh정보교육원\프로젝트 파일\06_NestedLoop_2DimentionalArray.zip"/>
+		</list>
+	</section>
+</section>

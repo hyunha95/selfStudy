@@ -1,0 +1,7 @@
+127.0.0.1 - - [17/Jan/2022:03:01:58 +0900] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [17/Jan/2022:03:01:59 +0900] "GET /spring/ HTTP/1.1" 200 3820
+0:0:0:0:0:0:0:1 - - [17/Jan/2022:03:01:59 +0900] "GET /spring/resources/css/style.css HTTP/1.1" 200 562
+0:0:0:0:0:0:0:1 - - [17/Jan/2022:03:01:59 +0900] "GET /spring/resources/images/logo-spring.png HTTP/1.1" 200 10513
+0:0:0:0:0:0:0:1 - - [17/Jan/2022:03:02:00 +0900] "GET /favicon.ico HTTP/1.1" 404 803
+0:0:0:0:0:0:0:1 - - [17/Jan/2022:03:02:05 +0900] "GET /spring/board/boardList.do HTTP/1.1" 200 7965
+0:0:0:0:0:0:0:1 - - [17/Jan/2022:03:02:05 +0900] "GET /spring/resources/images/file.png HTTP/1.1" 200 1136

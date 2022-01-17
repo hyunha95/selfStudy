@@ -1,0 +1,73 @@
+INFO :[2022/01/17 03:01:52] ContextLoader.java:270 - Root WebApplicationContext: initialization started
+INFO :[2022/01/17 03:01:54] ContextLoader.java:306 - Root WebApplicationContext initialized in 2442 ms
+INFO :[2022/01/17 03:01:54] FrameworkServlet.java:524 - Initializing Servlet 'appServlet'
+INFO :[2022/01/17 03:01:58] FrameworkServlet.java:546 - Completed initialization in 3077 ms
+DEBUG:[2022/01/17 03:01:59] LogInterceptor.java:31 - ============================== /spring/ ===================================
+DEBUG:[2022/01/17 03:01:59] LogInterceptor.java:46 - -------------------------------------------------------------------------------
+DEBUG:[2022/01/17 03:01:59] LogInterceptor.java:47 - modelAndView = ModelAndView [view="forward:/index.jsp"; model={}]
+DEBUG:[2022/01/17 03:01:59] LogInterceptor.java:48 - -------------------------------------------------------------------------------
+DEBUG:[2022/01/17 03:01:59] LogInterceptor.java:60 - ________________________________________________________________________________
+DEBUG:[2022/01/17 03:01:59] LogInterceptor.java:31 - ============================== /spring/resources/css/style.css ===================================
+DEBUG:[2022/01/17 03:01:59] LogInterceptor.java:46 - -------------------------------------------------------------------------------
+DEBUG:[2022/01/17 03:01:59] LogInterceptor.java:47 - modelAndView = null
+DEBUG:[2022/01/17 03:01:59] LogInterceptor.java:48 - -------------------------------------------------------------------------------
+DEBUG:[2022/01/17 03:01:59] LogInterceptor.java:60 - ________________________________________________________________________________
+DEBUG:[2022/01/17 03:01:59] LogInterceptor.java:31 - ============================== /spring/resources/images/logo-spring.png ===================================
+DEBUG:[2022/01/17 03:01:59] LogInterceptor.java:46 - -------------------------------------------------------------------------------
+DEBUG:[2022/01/17 03:01:59] LogInterceptor.java:47 - modelAndView = null
+DEBUG:[2022/01/17 03:01:59] LogInterceptor.java:48 - -------------------------------------------------------------------------------
+DEBUG:[2022/01/17 03:01:59] LogInterceptor.java:60 - ________________________________________________________________________________
+DEBUG:[2022/01/17 03:02:03] LogInterceptor.java:31 - ============================== /spring/board/boardList.do ===================================
+DEBUG:[2022/01/17 03:02:05] BoardController.java:161 - list = [Board(super=BoardEntity(no=82, title=파일없음, memberId=honggd, content=ㅁㅇㄴㄹ, regDate=Fri Dec 31 18:09:25 KST 2021, readCount=0), attachCount=0, attachments=null, member=null), Board(super=BoardEntity(no=81, title=첨부파일 2개, memberId=honggd, content=ㅁㄴㅇㄹ, regDate=Fri Dec 31 18:08:27 KST 2021, readCount=0), attachCount=2, attachments=null, member=null), Board(super=BoardEntity(no=61, title=안녕, memberId=honggd, content=2021년 잘가, regDate=Fri Dec 31 16:49:00 KST 2021, readCount=0), attachCount=0, attachments=null, member=null), Board(super=BoardEntity(no=60, title=안녕하세요, 게시판입니다 - 60, memberId=admin, content=안녕하세, regDate=Sun Jun 10 00:00:00 KST 2018, readCount=0), attachCount=2, attachments=null, member=null), Board(super=BoardEntity(no=59, title=안녕하세요, 게시판입니다 - 59, memberId=qwerty, content=반갑습니다, regDate=Sat Jun 09 00:00:00 KST 2018, readCount=0), attachCount=1, attachments=null, member=null), Board(super=BoardEntity(no=58, title=안녕하세요, 게시판입니다 - 58, memberId=abcde, content=안녕하세, regDate=Fri Jun 08 00:00:00 KST 2018, readCount=0), attachCount=0, attachments=null, member=null), Board(super=BoardEntity(no=57, title=안녕하세요, 게시판입니다 - 57, memberId=admin, content=반갑습니다, regDate=Thu Jun 07 00:00:00 KST 2018, readCount=0), attachCount=0, attachments=null, member=null), Board(super=BoardEntity(no=56, title=안녕하세요, 게시판입니다 - 56, memberId=qwerty, content=안녕하세, regDate=Wed Jun 06 00:00:00 KST 2018, readCount=0), attachCount=0, attachments=null, member=null), Board(super=BoardEntity(no=55, title=안녕하세요, 게시판입니다 - 55, memberId=abcde, content=반갑습니다, regDate=Tue Jun 05 00:00:00 KST 2018, readCount=0), attachCount=0, attachments=null, member=null), Board(super=BoardEntity(no=54, title=안녕하세요, 게시판입니다 - 54, memberId=admin, content=안녕하세, regDate=Mon Jun 04 00:00:00 KST 2018, readCount=0), attachCount=0, attachments=null, member=null)]
+DEBUG:[2022/01/17 03:02:05] BoardController.java:167 - totalContent = 63
+DEBUG:[2022/01/17 03:02:05] BoardController.java:168 - url = /spring/board/boardList.do
+DEBUG:[2022/01/17 03:02:05] BoardController.java:170 - pagebar = <nav>
+			  <ul class="pagination justify-content-center pagination-sm">
+			    <li class="page-item disabled">
+			      <a class="page-link" href="javascript:paging(0);" aria-label="Previous">
+			        <span aria-hidden="true">&laquo;</span>
+			        <span class="sr-only">Previous</span>
+			      </a>
+			    </li><li class="page-item active"><a class="page-link" href="javascript:paging(1)">1</a></li>
+<li class="page-item"><a class="page-link" href="javascript:paging(2)">2</a></li>
+<li class="page-item"><a class="page-link" href="javascript:paging(3)">3</a></li>
+<li class="page-item"><a class="page-link" href="javascript:paging(4)">4</a></li>
+<li class="page-item"><a class="page-link" href="javascript:paging(5)">5</a></li>
+<li class="page-item">
+			      <a class="page-link" href="javascript:paging(6)" aria-label="Next">
+			        <span aria-hidden="true">&raquo;</span>
+			        <span class="sr-only">Next</span>
+			      </a>
+			    </li>
+			  			  </ul>
+			</nav>
+<script>const paging = (pageNo) => { location.href = `/spring/board/boardList.do?cPage=${pageNo}`;  };</script>
+DEBUG:[2022/01/17 03:02:05] LogInterceptor.java:46 - -------------------------------------------------------------------------------
+DEBUG:[2022/01/17 03:02:05] LogInterceptor.java:47 - modelAndView = ModelAndView [view="board/boardList"; model={list=[Board(super=BoardEntity(no=82, title=파일없음, memberId=honggd, content=ㅁㅇㄴㄹ, regDate=Fri Dec 31 18:09:25 KST 2021, readCount=0), attachCount=0, attachments=null, member=null), Board(super=BoardEntity(no=81, title=첨부파일 2개, memberId=honggd, content=ㅁㄴㅇㄹ, regDate=Fri Dec 31 18:08:27 KST 2021, readCount=0), attachCount=2, attachments=null, member=null), Board(super=BoardEntity(no=61, title=안녕, memberId=honggd, content=2021년 잘가, regDate=Fri Dec 31 16:49:00 KST 2021, readCount=0), attachCount=0, attachments=null, member=null), Board(super=BoardEntity(no=60, title=안녕하세요, 게시판입니다 - 60, memberId=admin, content=안녕하세, regDate=Sun Jun 10 00:00:00 KST 2018, readCount=0), attachCount=2, attachments=null, member=null), Board(super=BoardEntity(no=59, title=안녕하세요, 게시판입니다 - 59, memberId=qwerty, content=반갑습니다, regDate=Sat Jun 09 00:00:00 KST 2018, readCount=0), attachCount=1, attachments=null, member=null), Board(super=BoardEntity(no=58, title=안녕하세요, 게시판입니다 - 58, memberId=abcde, content=안녕하세, regDate=Fri Jun 08 00:00:00 KST 2018, readCount=0), attachCount=0, attachments=null, member=null), Board(super=BoardEntity(no=57, title=안녕하세요, 게시판입니다 - 57, memberId=admin, content=반갑습니다, regDate=Thu Jun 07 00:00:00 KST 2018, readCount=0), attachCount=0, attachments=null, member=null), Board(super=BoardEntity(no=56, title=안녕하세요, 게시판입니다 - 56, memberId=qwerty, content=안녕하세, regDate=Wed Jun 06 00:00:00 KST 2018, readCount=0), attachCount=0, attachments=null, member=null), Board(super=BoardEntity(no=55, title=안녕하세요, 게시판입니다 - 55, memberId=abcde, content=반갑습니다, regDate=Tue Jun 05 00:00:00 KST 2018, readCount=0), attachCount=0, attachments=null, member=null), Board(super=BoardEntity(no=54, title=안녕하세요, 게시판입니다 - 54, memberId=admin, content=안녕하세, regDate=Mon Jun 04 00:00:00 KST 2018, readCount=0), attachCount=0, attachments=null, member=null)], pagebar=<nav>
+			  <ul class="pagination justify-content-center pagination-sm">
+			    <li class="page-item disabled">
+			      <a class="page-link" href="javascript:paging(0);" aria-label="Previous">
+			        <span aria-hidden="true">&laquo;</span>
+			        <span class="sr-only">Previous</span>
+			      </a>
+			    </li><li class="page-item active"><a class="page-link" href="javascript:paging(1)">1</a></li>
+<li class="page-item"><a class="page-link" href="javascript:paging(2)">2</a></li>
+<li class="page-item"><a class="page-link" href="javascript:paging(3)">3</a></li>
+<li class="page-item"><a class="page-link" href="javascript:paging(4)">4</a></li>
+<li class="page-item"><a class="page-link" href="javascript:paging(5)">5</a></li>
+<li class="page-item">
+			      <a class="page-link" href="javascript:paging(6)" aria-label="Next">
+			        <span aria-hidden="true">&raquo;</span>
+			        <span class="sr-only">Next</span>
+			      </a>
+			    </li>
+			  			  </ul>
+			</nav>
+<script>const paging = (pageNo) => { location.href = `/spring/board/boardList.do?cPage=${pageNo}`;  };</script>}]
+DEBUG:[2022/01/17 03:02:05] LogInterceptor.java:48 - -------------------------------------------------------------------------------
+DEBUG:[2022/01/17 03:02:05] LogInterceptor.java:60 - ________________________________________________________________________________
+DEBUG:[2022/01/17 03:02:05] LogInterceptor.java:31 - ============================== /spring/resources/images/file.png ===================================
+DEBUG:[2022/01/17 03:02:05] LogInterceptor.java:46 - -------------------------------------------------------------------------------
+DEBUG:[2022/01/17 03:02:05] LogInterceptor.java:47 - modelAndView = null
+DEBUG:[2022/01/17 03:02:05] LogInterceptor.java:48 - -------------------------------------------------------------------------------
+DEBUG:[2022/01/17 03:02:05] LogInterceptor.java:60 - ________________________________________________________________________________

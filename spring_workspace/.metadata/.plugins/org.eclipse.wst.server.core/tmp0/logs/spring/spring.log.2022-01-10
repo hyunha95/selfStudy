@@ -1,0 +1,9 @@
+INFO :[2022/01/10 04:59:38] ContextLoader.java:270 - Root WebApplicationContext: initialization started
+INFO :[2022/01/10 04:59:41] ContextLoader.java:306 - Root WebApplicationContext initialized in 2724 ms
+INFO :[2022/01/10 04:59:41] FrameworkServlet.java:524 - Initializing Servlet 'appServlet'
+INFO :[2022/01/10 04:59:44] FrameworkServlet.java:546 - Completed initialization in 3259 ms
+DEBUG:[2022/01/10 04:59:45] LogInterceptor.java:31 - ============================== /spring/member/selectOneMember.do ===================================
+DEBUG:[2022/01/10 04:59:47] LogInterceptor.java:46 - -------------------------------------------------------------------------------
+DEBUG:[2022/01/10 04:59:47] LogInterceptor.java:47 - modelAndView = null
+DEBUG:[2022/01/10 04:59:47] LogInterceptor.java:48 - -------------------------------------------------------------------------------
+DEBUG:[2022/01/10 04:59:47] LogInterceptor.java:60 - ________________________________________________________________________________

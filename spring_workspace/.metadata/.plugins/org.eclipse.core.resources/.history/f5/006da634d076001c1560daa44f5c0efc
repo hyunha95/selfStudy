@@ -1,0 +1,6 @@
+package com.spring.board.member.controller;
+
+public class CustomSuccessHandler implements AuthenticationSuccessHandler {
+
+	
+}

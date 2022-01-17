@@ -1,0 +1,14 @@
+127.0.0.1 - - [16/Nov/2021:21:37:37 +0900] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [16/Nov/2021:21:37:43 +0900] "GET /practice/ HTTP/1.1" 200 2304
+0:0:0:0:0:0:0:1 - - [16/Nov/2021:21:37:43 +0900] "GET /practice/js/jquery-3.6.0.js HTTP/1.1" 200 288580
+0:0:0:0:0:0:0:1 - - [16/Nov/2021:21:37:46 +0900] "GET /pratice/ HTTP/1.1" 404 804
+0:0:0:0:0:0:0:1 - - [16/Nov/2021:21:37:51 +0900] "GET /practice/images/Java-Servlets-JSP.png HTTP/1.1" 200 36466
+0:0:0:0:0:0:0:1 - - [16/Nov/2021:21:37:54 +0900] "GET /practice/board/boardList HTTP/1.1" 200 4034
+0:0:0:0:0:0:0:1 - - [16/Nov/2021:21:37:54 +0900] "GET /practice/css/board.css HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [16/Nov/2021:21:37:54 +0900] "GET /practice/images/file.png HTTP/1.1" 200 1136
+0:0:0:0:0:0:0:1 - - [16/Nov/2021:21:37:57 +0900] "POST /practice/member/login HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [16/Nov/2021:21:37:57 +0900] "GET /practice/ HTTP/1.1" 200 1841
+0:0:0:0:0:0:0:1 - - [16/Nov/2021:21:38:00 +0900] "GET /practice/board/boardList HTTP/1.1" 200 3650
+0:0:0:0:0:0:0:1 - - [16/Nov/2021:21:38:01 +0900] "GET /practice/board/boardView?no=287 HTTP/1.1" 200 -
+0:0:0:0:0:0:0:1 - - [16/Nov/2021:21:38:03 +0900] "GET /practice/board/boardView?no=287 HTTP/1.1" 200 -
+0:0:0:0:0:0:0:1 - - [16/Nov/2021:21:38:24 +0900] "GET /practice/board/boardForm HTTP/1.1" 200 3142

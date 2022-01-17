@@ -1,0 +1,15 @@
+BranchProjectTracker__C\:\\Workspaces\\web_server_workspace\\cowork\\.git_hyunha95=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<projects>\r\n<project>/</project>\r\n</projects>
+BranchProjectTracker__C\:\\Workspaces\\web_server_workspace\\cowork\\.git_master=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<projects>\r\n<project>/</project>\r\n</projects>
+BranchProjectTracker__C\:\\myrepo\\.git_animal=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<projects>\r\n<project>\\01_hello_git</project>\r\n</projects>
+BranchProjectTracker__C\:\\myrepo\\.git_bugFix=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<projects>\r\n<project>\\01_hello_git</project>\r\n<project>\\01_practice</project>\r\n</projects>
+BranchProjectTracker__C\:\\myrepo\\.git_bugfix=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<projects>\r\n<project>\\01_hello_git</project>\r\n</projects>
+BranchProjectTracker__C\:\\myrepo\\.git_master=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<projects>\r\n<project>\\01_hello_git</project>\r\n<project>\\01_practice</project>\r\n</projects>
+BranchProjectTracker__C\:\\myrepo\\.git_practice_animal=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<projects>\r\n<project>\\01_hello_git</project>\r\n<project>\\01_practice</project>\r\n</projects>
+commit_dialog_history_messages=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<messages>\r\n<message>new \uBA54\uC18C\uB4DC \uCD94\uAC00&\#x0A;</message>\r\n<message>Hyunha \uCD94\uAC00</message>\r\n<message>Hyunha95 class \uCD94\uAC00\!\!\!</message>\r\n<message>cowork init\!</message>\r\n<message>11111111111111111</message>\r\n<message>Merge branch &apos;practice_animal&apos;&\#x0A;&\#x0A;Conflicts\:&\#x0A;&\#x09;01_practice/src/com/kh/git/HelloGit.java&\#x0A;</message>\r\n<message>2 333333 4</message>\r\n<message>1 2 333</message>\r\n<message>1234</message>\r\n<message>Merge branch &apos;practice_animal&apos; - hellomaster + helloanimal&\#x0A;&\#x0A;Conflicts\:&\#x0A;&\#x09;01_practice/src/com/kh/git/HelloGit.java&\#x0A;</message>\r\n</messages>
+eclipse.preferences.version=1
+repositories_view_filters=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<FilterCache/>
+resourcehistory_compare_mode=false
+resourcehistory_graph_split=500,500
+resourcehistory_last_selected_ref_filters_C\:\\myrepo\\.git=HEAD\:refs/heads/**\:refs/remotes/**\:refs/tags/**
+resourcehistory_rev_split=700,300
+resourcehistory_selected_ref_filters_C\:\\myrepo\\.git=HEAD\:refs/heads/**\:refs/remotes/**\:refs/tags/**

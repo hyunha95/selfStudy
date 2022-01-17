@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>destructuring assignment</title>
+</head>
+<body>
+    <h1>destructuring assignment</h1>
+    <!-- 구조분해 할당(비구조화 할당) -->
+    <h2>배열</h2>
+    <button onclick="test1();">실행</button>
+    <script>
+    /**
+     * 배열 구조분해 할당
+     */
+    const test1 = () => {
+        const arr = [1,2,3];
+        const [a,b,c] = arr;
+        console.log(a); // 1
+        console.log(b); // 2
+        console.log(c); // 3
+
+        const [d, ,e, f] = arr;
+        console.log(d); // 1
+        console.log(e); // 3
+        console.log(f); // undefined
+
+        // 기본값 할당 : 할당된 값이 없는 경우 기본값 사용
+        const [g = 77,,,h = 100] = arr;
+        console.log(g); // 1
+        console.log(h); // 100
+
+        // 값교환
+        let i = 7;
+        let j = 8;
+        [i,j] = [j,i];
+        console.log(i); // 8
+        console.log(j); // 7
+
+        // 함수 리턴값
+        // 나머지파라미터 : 마지막에 딱 한번 사용가능하다.
+        const [k, l, m, ...rest] = foo();
+        console.log(k); // 1
+        console.log(l); // 2
+        console.log(m); // 3
+        console.log(rest); // [4, 5, 6, 7, 8, 9, 10]
+
+        // 배열인 함수인자 // 값을 받는 쪽에서 어떤식으로 받는지 확인하기
+        koo(rest);
+
+        // csv데이터
+        // 홍길동(남) 평균 80.0점
+        // 신사임당(여) 평균 88.5점
+        // 전봉준(남) 평균 60.5점
+        const data = '홍길동,남,90,80,70|신사임당,여,88,100,50|전봉준,남,55,80,77';
+        const temp = data.split("|");
+        const students = temp.map((s) => s.split(','));
+        // console.log(students);
+        //students.forEach((student) => printStudentInfo(student)); // 아래꺼와 똑같음
+        students.forEach(printStudentInfo);
+
+    };
+
+    const printStudentInfo = ([name, gender, ...scores]) => {
+        const sum = 
+            scores
+                .map((n) => Number(n))
+                .reduce((sum, n) => {
+                    console.log(sum, n);
+                    return sum + n
+                });
+        const avg = Math.round(sum / scores.length * 10) / 10;
+        console.log(`${name}(${gender}) - ${avg}점`);
+    };
+
+    const foo = () => [1,2,3,4,5,6,7,8,9,10];
+
+    const koo = ([a, b, ...rest]) => {
+        console.log(a, b); // 4 5
+        console.log(rest); // [6, 7, 8, 9, 10]
+    };
+
+    
+    </script>
+
+
+    <h2>객체</h2>
+    <button onclick="test2();">실행</button>
+    <button onclick="test3();">가족정보</button>
+    <script>
+    /**
+     * 두 회원의 가족정보는 다음과 같다.
+     * 한 명의 회원정보를 출력하는 printFamilyInfo를 사용하여 아래와 같이 출력
+     *  - 본인 : 홍길동, 부 : 홍기만, 모 : 이영희, 형제 : 홍진경
+     *  - 본인 : 유관순, 부 : 유재석, 모 : 강진희, 형제 : 유희열
+     */
+    const test3 = () => {
+        const people = [
+            {
+                name : '홍길동',
+                family : {
+                    father : "홍기만",
+                    mother : "이영희",
+                    sister : "홍진경"
+                }
+            },
+            {
+                name : '유관순',
+                family : {
+                    father : "유재석",
+                    mother : "강진희",
+                    brother : "유희영"
+                }
+            }
+        ];
+
+        //people.forEach((p) => printFamilyInfo(p)); //아래와 같음
+        people.forEach(printFamilyInfo);
+    };
+
+    const printFamilyInfo = ({name, family:{father,mother,brother,sister}}) => {
+        console.log(`본인:${name}, 부:${father}, 모:${mother}, 형제:${(brother || sister)}`);
+    };
+
+    /**
+     * 객체의 속성값을 변수에 쉽게 옮겨담는 문법
+     */
+    const test2 = () => {
+        const obj = {
+            id : 1234,
+            username : {
+                firstname : '홍',
+                lastname : '길동'
+            },
+            sns : ['facebook', 'instagram', 'twitter'],
+            address : '경기도 남양주시'
+        };
+        // const {name, id, address = '서울시 강남구'} = obj;
+        // console.log(id);
+        // console.log(name);
+        // console.log(address);
+
+        const {username : {firstname, lastname : familyname}} = obj; //username은 firstname을 가져오기 위한 수단이지 실제 선언된 변수는 아니다. familyname은 별칭
+        console.log(firstname);
+        console.log(familyname);
+        //console.log(username); // Uncaught ReferenceError: username is not defined
+
+        const {id: userId} = obj; // 이름 바꾸기
+        console.log(userId);
+
+        const {sns : [f, i, t]} = obj;
+        console.log(f); // facebook
+        console.log(i); // instagram
+        console.log(t); // twitter
+
+        // 함수 리턴
+        const {memberId, cash} = qoo();
+        console.log(memberId, cash);
+
+        // 인자로 객체를 전달하는 경우
+        kar(obj);
+
+        // 정보 안내 함수 : 해당 객체의 해당 내용만 출력
+        // kh는 kh정보를 담은 객체
+        const kh = getKHInfo();
+        sayUrl(kh);
+        sayTel(kh);
+        sayAddr(kh, '강남');
+        sayAddr(kh, '경기');
+        sayAddr(kh);
+    };
+    const sayUrl = ({url}) => {
+        console.log(`문의하신 url은 ${url}`);
+    };
+
+    const sayTel = ({tel}) => {
+        console.log(`문의하신 전화번호는 ${tel}입니다.`);
+    };
+
+    const sayAddr = ({addr}, search = '안녕') => {
+        const result = addr[search];
+        if(result){
+            console.log(`문의하신 ${search}지원은 ${result}에 위치합니다.`);
+        }
+        else {
+            console.log(`문의하신 ${search}지원은 존재하지 않습니다.`)
+        }
+    };
+
+    const getKHInfo = () => ({ // 객체를 리턴하는 경우 ()로 감싼다.
+        url: "https://iei.or.kr",
+        tel: [
+            "070-1234-1234",
+            "070-3333-5555",
+            "070-234-4567"
+        ],
+        addr: {
+            "강남" : "서울시 강남구",
+            "종로" : "서울시 종로구",
+            "당산" : "서울시 영등포구"
+        }
+    });
+
+    const kar = ({id, username, ...rest}) => {
+        console.log(id, username);
+        console.log(rest);
+    };
+
+    const qoo = () => {
+        return {
+            memberId : 'sinsa',
+            tel : "01012341234",
+            married : true,
+            cash : 10000000
+        };
+    }
+
+    </script>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>

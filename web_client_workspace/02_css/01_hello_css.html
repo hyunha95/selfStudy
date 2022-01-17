@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello CSS</title>
+    <!-- 외부 style sheet를 연결하기 -->
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+    /* 내부 style 태그에 작성*/
+    /* 라인마다 세미콜론*/
+    #span2 {
+        color:greenyellow;
+        font-size: 32px;
+
+    }
+    li {
+        text-decoration: underline;
+    }
+    </style>
+</head>
+<body>
+    <h1>Hello CSS</h1>
+    <h2>Cascading Style Sheet</h2>
+    <ul>
+        <li><span id="span1" style="color:red;">안녕하세요~</span></li>
+        <li><span id="span2">반갑습니다.</span></li>
+        <li><span id="span3">식사 하셨습니까?</span></li>
+    </ul>
+</body>
+</html>

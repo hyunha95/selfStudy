@@ -1,0 +1,87 @@
+INFO :[2022/01/16 19:46:44] ContextLoader.java:270 - Root WebApplicationContext: initialization started
+INFO :[2022/01/16 19:46:46] ContextLoader.java:306 - Root WebApplicationContext initialized in 2418 ms
+INFO :[2022/01/16 19:46:46] FrameworkServlet.java:524 - Initializing Servlet 'appServlet'
+INFO :[2022/01/16 19:46:50] FrameworkServlet.java:546 - Completed initialization in 3087 ms
+DEBUG:[2022/01/16 19:46:51] LogInterceptor.java:31 - ============================== /spring/ ===================================
+DEBUG:[2022/01/16 19:46:51] LogInterceptor.java:46 - -------------------------------------------------------------------------------
+DEBUG:[2022/01/16 19:46:51] LogInterceptor.java:47 - modelAndView = ModelAndView [view="forward:/index.jsp"; model={}]
+DEBUG:[2022/01/16 19:46:51] LogInterceptor.java:48 - -------------------------------------------------------------------------------
+DEBUG:[2022/01/16 19:46:51] LogInterceptor.java:60 - ________________________________________________________________________________
+DEBUG:[2022/01/16 19:46:52] LogInterceptor.java:31 - ============================== /spring/resources/css/style.css ===================================
+DEBUG:[2022/01/16 19:46:52] LogInterceptor.java:31 - ============================== /spring/resources/images/logo-spring.png ===================================
+DEBUG:[2022/01/16 19:46:52] LogInterceptor.java:46 - -------------------------------------------------------------------------------
+DEBUG:[2022/01/16 19:46:52] LogInterceptor.java:47 - modelAndView = null
+DEBUG:[2022/01/16 19:46:52] LogInterceptor.java:46 - -------------------------------------------------------------------------------
+DEBUG:[2022/01/16 19:46:52] LogInterceptor.java:47 - modelAndView = null
+DEBUG:[2022/01/16 19:46:52] LogInterceptor.java:48 - -------------------------------------------------------------------------------
+DEBUG:[2022/01/16 19:46:52] LogInterceptor.java:60 - ________________________________________________________________________________
+DEBUG:[2022/01/16 19:46:52] LogInterceptor.java:48 - -------------------------------------------------------------------------------
+DEBUG:[2022/01/16 19:46:52] LogInterceptor.java:60 - ________________________________________________________________________________
+DEBUG:[2022/01/16 19:46:53] LogInterceptor.java:31 - ============================== /spring/member/memberEnroll.do ===================================
+DEBUG:[2022/01/16 19:46:54] LogInterceptor.java:46 - -------------------------------------------------------------------------------
+DEBUG:[2022/01/16 19:46:54] LogInterceptor.java:47 - modelAndView = ModelAndView [view="member/memberEnroll"; model={}]
+DEBUG:[2022/01/16 19:46:54] LogInterceptor.java:48 - -------------------------------------------------------------------------------
+DEBUG:[2022/01/16 19:46:54] LogInterceptor.java:60 - ________________________________________________________________________________
+DEBUG:[2022/01/16 19:46:54] LogInterceptor.java:31 - ============================== /spring/resources/css/member.css ===================================
+DEBUG:[2022/01/16 19:46:54] LogInterceptor.java:46 - -------------------------------------------------------------------------------
+DEBUG:[2022/01/16 19:46:54] LogInterceptor.java:47 - modelAndView = null
+DEBUG:[2022/01/16 19:46:54] LogInterceptor.java:48 - -------------------------------------------------------------------------------
+DEBUG:[2022/01/16 19:46:54] LogInterceptor.java:60 - ________________________________________________________________________________
+DEBUG:[2022/01/16 19:46:56] LogInterceptor.java:31 - ============================== /spring/member/checkIdDuplicate3.do ===================================
+DEBUG:[2022/01/16 19:46:57] LogInterceptor.java:31 - ============================== /spring/member/checkIdDuplicate3.do ===================================
+DEBUG:[2022/01/16 19:46:57] LogInterceptor.java:31 - ============================== /spring/member/checkIdDuplicate3.do ===================================
+DEBUG:[2022/01/16 19:46:57] LogInterceptor.java:46 - -------------------------------------------------------------------------------
+DEBUG:[2022/01/16 19:46:57] LogInterceptor.java:46 - -------------------------------------------------------------------------------
+DEBUG:[2022/01/16 19:46:57] LogInterceptor.java:46 - -------------------------------------------------------------------------------
+DEBUG:[2022/01/16 19:46:57] LogInterceptor.java:47 - modelAndView = null
+DEBUG:[2022/01/16 19:46:57] LogInterceptor.java:47 - modelAndView = null
+DEBUG:[2022/01/16 19:46:57] LogInterceptor.java:48 - -------------------------------------------------------------------------------
+DEBUG:[2022/01/16 19:46:57] LogInterceptor.java:48 - -------------------------------------------------------------------------------
+DEBUG:[2022/01/16 19:46:57] LogInterceptor.java:47 - modelAndView = null
+DEBUG:[2022/01/16 19:46:57] LogInterceptor.java:48 - -------------------------------------------------------------------------------
+DEBUG:[2022/01/16 19:46:57] LogInterceptor.java:60 - ________________________________________________________________________________
+DEBUG:[2022/01/16 19:46:57] LogInterceptor.java:60 - ________________________________________________________________________________
+DEBUG:[2022/01/16 19:46:57] LogInterceptor.java:60 - ________________________________________________________________________________
+DEBUG:[2022/01/16 19:46:57] LogInterceptor.java:31 - ============================== /spring/member/checkIdDuplicate3.do ===================================
+DEBUG:[2022/01/16 19:46:57] LogInterceptor.java:46 - -------------------------------------------------------------------------------
+DEBUG:[2022/01/16 19:46:57] LogInterceptor.java:47 - modelAndView = null
+DEBUG:[2022/01/16 19:46:57] LogInterceptor.java:48 - -------------------------------------------------------------------------------
+DEBUG:[2022/01/16 19:46:57] LogInterceptor.java:60 - ________________________________________________________________________________
+DEBUG:[2022/01/16 19:46:58] LogInterceptor.java:31 - ============================== /spring/member/checkIdDuplicate3.do ===================================
+DEBUG:[2022/01/16 19:46:58] LogInterceptor.java:46 - -------------------------------------------------------------------------------
+DEBUG:[2022/01/16 19:46:58] LogInterceptor.java:47 - modelAndView = null
+DEBUG:[2022/01/16 19:46:58] LogInterceptor.java:48 - -------------------------------------------------------------------------------
+DEBUG:[2022/01/16 19:46:58] LogInterceptor.java:60 - ________________________________________________________________________________
+DEBUG:[2022/01/16 19:47:00] LogInterceptor.java:31 - ============================== /spring/member/memberEnroll.do ===================================
+INFO :[2022/01/16 19:47:00] MemberController.java:197 - member = Member(id=honggdddd, password=1234, name=홍길동, gender=M, birthday=Thu Sep 09 00:00:00 KST 1999, email=honggd@naver.com, phone=01012341234, address=서울시 강동구 천호동 123-456, hobby=[운동, 등산, 독서], enrollDate=null, enabled=false)
+DEBUG:[2022/01/16 19:47:00] LogInterceptor.java:46 - -------------------------------------------------------------------------------
+DEBUG:[2022/01/16 19:47:00] LogInterceptor.java:47 - modelAndView = ModelAndView [view="redirect:/"; model={}]
+DEBUG:[2022/01/16 19:47:00] LogInterceptor.java:48 - -------------------------------------------------------------------------------
+DEBUG:[2022/01/16 19:47:00] LogInterceptor.java:60 - ________________________________________________________________________________
+DEBUG:[2022/01/16 19:47:00] LogInterceptor.java:31 - ============================== /spring/ ===================================
+DEBUG:[2022/01/16 19:47:00] LogInterceptor.java:46 - -------------------------------------------------------------------------------
+DEBUG:[2022/01/16 19:47:00] LogInterceptor.java:47 - modelAndView = ModelAndView [view="forward:/index.jsp"; model={msg=회원 가입 성공!}]
+DEBUG:[2022/01/16 19:47:00] LogInterceptor.java:48 - -------------------------------------------------------------------------------
+DEBUG:[2022/01/16 19:47:00] LogInterceptor.java:60 - ________________________________________________________________________________
+DEBUG:[2022/01/16 19:47:27] LogInterceptor.java:31 - ============================== /spring/member/memberEnroll.do ===================================
+DEBUG:[2022/01/16 19:47:27] LogInterceptor.java:46 - -------------------------------------------------------------------------------
+DEBUG:[2022/01/16 19:47:27] LogInterceptor.java:47 - modelAndView = ModelAndView [view="member/memberEnroll"; model={}]
+DEBUG:[2022/01/16 19:47:27] LogInterceptor.java:48 - -------------------------------------------------------------------------------
+DEBUG:[2022/01/16 19:47:27] LogInterceptor.java:60 - ________________________________________________________________________________
+DEBUG:[2022/01/16 19:47:30] LogInterceptor.java:31 - ============================== /spring/member/checkIdDuplicate3.do ===================================
+DEBUG:[2022/01/16 19:47:30] LogInterceptor.java:46 - -------------------------------------------------------------------------------
+DEBUG:[2022/01/16 19:47:30] LogInterceptor.java:47 - modelAndView = null
+DEBUG:[2022/01/16 19:47:30] LogInterceptor.java:48 - -------------------------------------------------------------------------------
+DEBUG:[2022/01/16 19:47:30] LogInterceptor.java:60 - ________________________________________________________________________________
+DEBUG:[2022/01/16 19:47:32] LogInterceptor.java:31 - ============================== /spring/member/memberEnroll.do ===================================
+INFO :[2022/01/16 19:47:32] MemberController.java:197 - member = Member(id=honggdd, password=1234, name=홍길동, gender=M, birthday=Thu Sep 09 00:00:00 KST 1999, email=honggd@naver.com, phone=01012341234, address=서울시 강동구 천호동 123-456, hobby=[운동, 등산, 독서], enrollDate=null, enabled=false)
+DEBUG:[2022/01/16 19:47:32] LogInterceptor.java:46 - -------------------------------------------------------------------------------
+DEBUG:[2022/01/16 19:47:32] LogInterceptor.java:47 - modelAndView = ModelAndView [view="redirect:/"; model={}]
+DEBUG:[2022/01/16 19:47:32] LogInterceptor.java:48 - -------------------------------------------------------------------------------
+DEBUG:[2022/01/16 19:47:32] LogInterceptor.java:60 - ________________________________________________________________________________
+DEBUG:[2022/01/16 19:47:32] LogInterceptor.java:31 - ============================== /spring/ ===================================
+DEBUG:[2022/01/16 19:47:32] LogInterceptor.java:46 - -------------------------------------------------------------------------------
+DEBUG:[2022/01/16 19:47:32] LogInterceptor.java:47 - modelAndView = ModelAndView [view="forward:/index.jsp"; model={msg=회원 가입 성공!}]
+DEBUG:[2022/01/16 19:47:32] LogInterceptor.java:48 - -------------------------------------------------------------------------------
+DEBUG:[2022/01/16 19:47:32] LogInterceptor.java:60 - ________________________________________________________________________________
+INFO :[2022/01/16 19:51:40] ContextLoader.java:270 - Root WebApplicationContext: initialization started

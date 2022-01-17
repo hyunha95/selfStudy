@@ -1,0 +1,32 @@
+1640588168210	Rename local variable '_lang'
+1640589035554	Rename resource 'devList.배포.jsp'
+1640595799197	Rename resource 'memberEnroll.배포.jsp'
+1640601543645	Copy file
+1640601548778	Rename resource 'sample-mapper.xml'
+1640604571093	Delete element
+1640606588711	Rename resource 'memberLogin.배포.jsp'
+1640669188526	Copy file
+1640670551188	Copy files
+1640682300546	Delete element
+1640682968151	Copy compilation unit
+1640688061069	Rename type 'LoginInterceptor'
+1640764712084	Rename resource 'memo.배포.jsp'
+1640766214564	Copy file
+1640772407711	Rename method 'selectMemo'
+1640772428794	Rename method 'selectMemo'
+1640772540996	Rename resource 'sample-mapper.xml'
+1640781487644	Rename field 'foo'
+1640803208577	Copy compilation unit
+1640803297509	Rename type 'stopWatchAspect'
+1640859138918	Rename package 'com.kh.spring.board.model.controller'
+1640859707542	Rename resource 'boardList.배포.jsp'
+1640860051701	Delete element
+1640860855620	Delete element
+1640861099139	Copy file
+1640861108253	Rename resource 'sample-mapper.xml'
+1640866860700	Rename type 'MvcUtils'
+1640880802738	Rename local variable 'numPerPage'
+1640936026647	Rename resource 'boardForm.배포.jsp'
+1640940133954	Rename local variable 'originalName'
+1640940160136	Rename local variable 'originalFile'
+1640949119496	Rename resource 'boardDetail.배포.jsp'

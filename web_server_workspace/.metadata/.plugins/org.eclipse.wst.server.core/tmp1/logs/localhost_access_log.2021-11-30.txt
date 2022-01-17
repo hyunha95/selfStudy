@@ -1,0 +1,13 @@
+127.0.0.1 - - [30/Nov/2021:02:29:35 +0900] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [30/Nov/2021:02:29:42 +0900] "GET /mvc/ HTTP/1.1" 200 2509
+0:0:0:0:0:0:0:1 - - [30/Nov/2021:02:29:42 +0900] "GET /mvc/js/jquery-3.6.0.js HTTP/1.1" 200 288580
+0:0:0:0:0:0:0:1 - - [30/Nov/2021:02:29:42 +0900] "GET /mvc/css/style.css HTTP/1.1" 200 3066
+0:0:0:0:0:0:0:1 - - [30/Nov/2021:02:29:42 +0900] "GET /mvc/images/Java-Servlets-JSP.png HTTP/1.1" 200 36466
+0:0:0:0:0:0:0:1 - - [30/Nov/2021:02:29:44 +0900] "GET /mvc/member/memberEnroll HTTP/1.1" 200 7330
+0:0:0:0:0:0:0:1 - - [30/Nov/2021:02:30:04 +0900] "GET /mvc/member/checkIdDuplicate?memberId=rrerre HTTP/1.1" 200 726
+0:0:0:0:0:0:0:1 - - [30/Nov/2021:02:30:26 +0900] "POST /mvc/member/memberEnroll HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [30/Nov/2021:02:30:26 +0900] "GET /mvc/ HTTP/1.1" 200 2548
+0:0:0:0:0:0:0:1 - - [30/Nov/2021:02:31:56 +0900] "GET /mvc/member/memberEnroll HTTP/1.1" 200 7330
+0:0:0:0:0:0:0:1 - - [30/Nov/2021:02:32:00 +0900] "GET /mvc/member/checkIdDuplicate?memberId=dfsgfg HTTP/1.1" 200 726
+0:0:0:0:0:0:0:1 - - [30/Nov/2021:02:32:03 +0900] "POST /mvc/member/memberEnroll HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [30/Nov/2021:02:32:03 +0900] "GET /mvc/ HTTP/1.1" 200 2548

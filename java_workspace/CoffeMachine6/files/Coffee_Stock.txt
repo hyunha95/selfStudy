@@ -1,0 +1,11 @@
+beans,3
+decafBeans,10
+ice,5
+water,6
+syrup,10
+choco,8
+smallCup,89
+largeCup,0
+straw,-6
+milk,0
+vanillaSyrup,18

@@ -1,0 +1,27 @@
+package com.kh._enum;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+
+public class EnumMain {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}
+
+@Data
+@AllArgsConstructor
+class Member {
+	
+	public static final String GENDER_MALE = "M";
+	public static final String GENDER_FEMALE = "F";
+	public static final String ROLE_MEMBER = "M";
+	public static final String ROLE_ADMIN = "A";
+	
+	private String id;
+	private String gender; // M, F
+	private String role;   // M, A
+}

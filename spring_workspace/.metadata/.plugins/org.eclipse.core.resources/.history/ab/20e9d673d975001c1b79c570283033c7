@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans xmlns="http://www.springframework.org/schema/security"
+	xmlns:beans="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security-4.2.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+
+	<beans:bean
+		id="bcryptPasswordEncoder"
+		class="org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder"/>
+
+
+	<http pattern="/resources/**" security="none"/>	
+
+	<http auto-config="true">
+		<intercept-url pattern="/" access="permitAll"/>
+		<intercept-url pattern="/index.jsp" access="permitAll"/>
+		<intercept-url pattern="/member/login.do" access="permitAll"/>
+		<intercept-url pattern="/**" access="isAuthenticated()"/>
+	
+	
+	
+	
+	<form-login
+		login-page="/member/login.do"
+		login-processing-url="/member/login.do"
+		username-parameter="id"
+		password-parameter="password"
+		default-target-url="/"/>
+		
+		
+		
+		
+	</http>
+
+	
+
+
+	<authentication-manager>
+		<authentication-provider>
+			<password-encoder ref="bcryptPasswordEncoder"/>
+			<user-service>
+				<user 
+				name="hyunha" 
+				password="1234"
+				authorities="ROLE_USER"/>
+				<user 
+				name="admin"
+				password="1234" 
+				authorities="ROLE_ADMIN"/>
+			</user-service>
+		</authentication-provider>
+	</authentication-manager>
+	
+	<context:component-scan base-package="com.spring.board"/>
+</beans:beans>

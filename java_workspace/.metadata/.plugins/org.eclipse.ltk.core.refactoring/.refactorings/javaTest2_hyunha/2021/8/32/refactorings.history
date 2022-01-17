@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;book&apos; in &apos;ncs.test7.BookTest.main(...)&apos; to &apos;bookArray&apos;&#x0D;&#x0A;- Original project: &apos;javaTest2_hyunha&apos;&#x0D;&#x0A;- Original element: &apos;ncs.test7.BookTest.main(String[]).book&apos;&#x0D;&#x0A;- Renamed element: &apos;book&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename local variable &apos;book&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;ncs.test7{BookTest.java[BookTest~main~\[QString;@book!94!119!101!104!\[QBook;!0!false" name="bookArray" references="true" stamp="1628093077635" version="1.0"/>
+</session>

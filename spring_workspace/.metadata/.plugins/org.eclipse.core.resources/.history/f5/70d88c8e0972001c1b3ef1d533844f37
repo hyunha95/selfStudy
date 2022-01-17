@@ -1,0 +1,54 @@
+package com.kh.spring.menu.controller;
+
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.kh.spring.menu.model.service.MenuService;
+import com.kh.spring.menu.model.vo.Menu;
+
+import lombok.extern.slf4j.Slf4j;
+
+/**
+ * @RestController = @Controller + 모든 메소드에 @ResponseBody
+ * 
+ */
+@RestController
+@Slf4j
+public class MenuController {
+
+	@Autowired
+	private MenuService menuService;
+	
+	@GetMapping("/menus")
+	public List<Menu> menus(){
+		List<Menu> list = menuService.selectAllMenu();
+		log.debug("list = {}", list);
+		return list;
+	}
+	
+	/**
+	 * @PathVariable 경로변수
+	 * - url의 일부를 매개인자로 받을 수 있다.
+	 */
+	@GetMapping("/menus/{type}/{taste}")
+	public List<Menu> selectMenu(@PathVariable String type, @PathVariable String taste){
+		log.debug("type = {}, taste ={}", type, taste);
+		Map<String, Object> param = new HashMap<>();
+		param.put("type", type);
+		param.put("taste", taste);
+		return menuService.selectMenuByTypeAndTaste(param);
+	};
+	
+	@PostMapping("/menu")
+	public Map<String, Object> insertMenu(Menu menu){
+		log.debug("menu = {}", menu);
+		return null;
+	}
+}

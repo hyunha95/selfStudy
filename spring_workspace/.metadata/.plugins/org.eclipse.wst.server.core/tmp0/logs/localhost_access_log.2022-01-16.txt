@@ -1,0 +1,17 @@
+127.0.0.1 - - [16/Jan/2022:19:46:50 +0900] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [16/Jan/2022:19:46:51 +0900] "GET /spring/ HTTP/1.1" 200 3820
+0:0:0:0:0:0:0:1 - - [16/Jan/2022:19:46:52 +0900] "GET /spring/resources/images/logo-spring.png HTTP/1.1" 200 10513
+0:0:0:0:0:0:0:1 - - [16/Jan/2022:19:46:52 +0900] "GET /spring/resources/css/style.css HTTP/1.1" 200 562
+0:0:0:0:0:0:0:1 - - [16/Jan/2022:19:46:54 +0900] "GET /spring/member/memberEnroll.do HTTP/1.1" 200 8552
+0:0:0:0:0:0:0:1 - - [16/Jan/2022:19:46:54 +0900] "GET /spring/resources/css/member.css HTTP/1.1" 200 595
+0:0:0:0:0:0:0:1 - - [16/Jan/2022:19:46:57 +0900] "GET /spring/member/checkIdDuplicate3.do?id=honggdf HTTP/1.1" 200 71
+0:0:0:0:0:0:0:1 - - [16/Jan/2022:19:46:57 +0900] "GET /spring/member/checkIdDuplicate3.do?id=honggd HTTP/1.1" 200 71
+0:0:0:0:0:0:0:1 - - [16/Jan/2022:19:46:57 +0900] "GET /spring/member/checkIdDuplicate3.do?id=honggdd HTTP/1.1" 200 71
+0:0:0:0:0:0:0:1 - - [16/Jan/2022:19:46:57 +0900] "GET /spring/member/checkIdDuplicate3.do?id=honggddd HTTP/1.1" 200 72
+0:0:0:0:0:0:0:1 - - [16/Jan/2022:19:46:58 +0900] "GET /spring/member/checkIdDuplicate3.do?id=honggdddd HTTP/1.1" 200 73
+0:0:0:0:0:0:0:1 - - [16/Jan/2022:19:47:00 +0900] "POST /spring/member/memberEnroll.do HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [16/Jan/2022:19:47:00 +0900] "GET /spring/ HTTP/1.1" 200 3880
+0:0:0:0:0:0:0:1 - - [16/Jan/2022:19:47:27 +0900] "GET /spring/member/memberEnroll.do HTTP/1.1" 200 8552
+0:0:0:0:0:0:0:1 - - [16/Jan/2022:19:47:30 +0900] "GET /spring/member/checkIdDuplicate3.do?id=honggdd HTTP/1.1" 200 71
+0:0:0:0:0:0:0:1 - - [16/Jan/2022:19:47:32 +0900] "POST /spring/member/memberEnroll.do HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [16/Jan/2022:19:47:32 +0900] "GET /spring/ HTTP/1.1" 200 3880

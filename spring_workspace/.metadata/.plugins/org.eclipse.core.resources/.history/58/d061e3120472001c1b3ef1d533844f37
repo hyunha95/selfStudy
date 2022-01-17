@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.kh.spring.menu.model.dao.MenuDao">
+	<select id="selectAllMenu" resultType="menu">
+		select 
+			*
+		from
+			menu
+		order by
+			id desc
+	</select>
+	
+	<select id="selectMenuByTypeAndTaste" resultType="menu">
+		select
+			*
+		from
+			menu
+		<trim prefix="WHERE" prefixOverrides="AND|OR">
+			<choose>
+				<when test="type = 'kr'">
+					type = #{type}
+				</when>
+				<when test="type = 'jp'">
+					and type = #{type}
+				</when>
+				<when test="type = 'ch'">
+					and type = #{type}
+				</when>
+				<when test="type = 'all'">
+					
+				</when>
+			</choose>
+		</trim>
+	</select>
+</mapper>
+
+
+
+
+
+

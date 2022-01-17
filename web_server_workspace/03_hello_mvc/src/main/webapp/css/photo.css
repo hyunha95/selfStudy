@@ -1,0 +1,38 @@
+@CHARSET "UTF-8";
+/* 리스트보기 */
+section#photo-wrapper{width:600px; margin:0 auto; text-align:center;}
+section#photo-wrapper h2{margin:10px 0;}
+/* 더보기 페이징 */
+div#btn-more-container button#btn-more{float:right; margin: 0 0 15px;}
+
+/* 글쓰기버튼추가 */
+section#photo-wrapper input#btn-add{float:right; margin: 0 0 15px;}
+
+/* 사진게시판 작성 */
+table#tbl-photo{width:500px; margin:0 auto; border:1px solid black; border-collapse:collapse; clear:both; }
+table#tbl-photo th {width: 125px; border:1px solid; padding: 5px 0; text-align:center;} 
+table#tbl-photo td {border:1px solid; padding: 5px 10px 5px 10px; text-align:left;}
+table#tbl-photo #img-viewer-container {
+    width:350px;
+    height:200px;
+    border:2px dashed darkgray;
+    display:table-cell;
+}
+
+/* 사진 */
+.polaroid{
+	margin:10px auto;
+	width:300px;
+	background-color:#fff;
+	box-shadow: 2px 2px 3px rgba(135, 139, 133, 0.4);
+	transition: 0.5s
+}
+.polaroid:hover{
+	box-shadow: 10px 10px 8px rgba(135, 139, 133, 0.4);
+}
+.polaroid img {
+	width: 300px;
+}
+p.info{text-align:left;margin:0;}
+span.writer{font-weight:bold;font-size:8px;}
+span.photoDate{font-size:6px;}

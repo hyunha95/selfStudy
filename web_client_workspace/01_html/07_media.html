@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media</title>
+</head>
+<body>
+    <h1>media</h1>
+    <h2>audio</h2>
+    <!--<audio src="../sample/audio/major.mp3" controls muted preload="metadata"></audio>-->
+    <audio controls muted preload="metadata">
+        <source src="../sample/audio/major.mp3">
+    <!-- fallback-->
+    당신의 브라우져는 audio태그를 지원하지 않습니다.
+    </audio>
+
+    <h2>video</h2>
+    <!--<video src="../sample/video/small.mp4" controls loop muted poster="../sample/image/city1.PNG" width="300px"></video>-->
+    <video controls>
+        <!--
+            pc 웹브라우져라면 mp4, webm, ogg 모두처리가능
+            mobile 브라우져라면, mp4, 3gp포맷 처리가능
+            전부 보여주는게 아니라 브라우져별로 최적화된 파일을 보여주기 위함
+        -->
+        <source src="../sample/video/small.mp4" type="video/mp4">
+        <source src="../sample/video/small.webm" type="video/webm">
+        <source src="../sample/video/small.ogv" type="video/ogg">
+        당신의 브라우져는 video태그를 지원하지 않습니다.
+    </video>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/1n9u7cA3nTw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>

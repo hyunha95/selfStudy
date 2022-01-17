@@ -1,0 +1,6 @@
+GitRepositoriesView.GitDirectories=C\:\\myrepo\\prac5t1b\\.git;C\:\\Workspaces\\web_server_workspace\\cowork\\.git;C\:\\myrepo\\.git;
+GitRepositoriesView.GitDirectories.relative=C\:\\myrepo\\prac5t1b\\.git;cowork\\.git;C\:\\myrepo\\.git;
+RepositoryGroups.f2ab103a-1c78-47e7-adba-2134cc9ce11b=New Group
+RepositoryGroups.group.f2ab103a-1c78-47e7-adba-2134cc9ce11b=C\:\\myrepo\\.git\nC\:\\myrepo\\prac5t1b\\.git\ncowork\\.git
+RepositoryGroups.uuids=f2ab103a-1c78-47e7-adba-2134cc9ce11b
+eclipse.preferences.version=1

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item key="selection" value="log4j"/>
+		<item key="wrap" value="true"/>
+		<item key="casesensitive" value="false"/>
+		<item key="wholeword" value="false"/>
+		<item key="incremental" value="false"/>
+		<item key="isRegEx" value="false"/>
+		<list key="findhistory">
+			<item value="log4j"/>
+			<item value="fully responsive"/>
+			<item value="security"/>
+			<item value="securityService"/>
+			<item value="submit"/>
+			<item value="login"/>
+			<item value="script"/>
+			<item value="jstl"/>
+			<item value="logging"/>
+			<item value="loggin"/>
+			<item value="sign up"/>
+			<item value="mybatis"/>
+			<item value="spring-jdbc"/>
+			<item value="dataSource"/>
+			<item value="serial"/>
+		</list>
+		<list key="replacehistory">
+			<item value="birthday"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="1150"/>
+		<item key="DIALOG_Y_ORIGIN" value="206"/>
+		<item key="DIALOG_WIDTH" value="288"/>
+		<item key="DIALOG_HEIGHT" value="391"/>
+		<item key="DIALOG_FONT_NAME" value="1|맑은 고딕|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕"/>
+	</section>
+</section>
